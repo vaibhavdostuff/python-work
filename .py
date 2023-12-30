@@ -10,3 +10,11 @@ print("Array in reverse order: ");
   
 for i in range(len(arr)-1, -1, -1):     
     print(arr[i]),    
+
+    
+sum = 0;    
+         
+for i in range(0, len(arr)):    
+   sum = sum + arr[i];    
+     
+print("Sum of all the elements of an array: " + str(sum));    
