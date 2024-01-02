@@ -15,8 +15,13 @@
 #print("Sorted by Length (in reverse):", words)
 
 
+#people = [("vaibhav", 25), ("sriansh", 30), ("aakansha", 22), ("priyanka", 28)]
+#people.sort(key=lambda x: x[1])
+#print("Sorted by Age:", people)
+
+
 people = [("vaibhav", 25), ("sriansh", 30), ("aakansha", 22), ("priyanka", 28)]
-people.sort(key=lambda x: x[1])
+people.sort(key=lambda x: x[1], reverse=True)
 print("Sorted by Age:", people)
 
 
