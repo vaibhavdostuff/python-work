@@ -10,6 +10,13 @@
 #words.sort(key=len)
 #print("Sorted by Length:", words)
 
-words = ["apple", "mango", "banana", "orange", "grape"]
-words.sort(key=len, reverse=True)
-print("Sorted by Length (in reverse):", words)
+#words = ["apple", "mango", "banana", "orange", "grape"]
+#words.sort(key=len, reverse=True)
+#print("Sorted by Length (in reverse):", words)
+
+
+people = [("vaibhav", 25), ("sriansh", 30), ("aakansha", 22), ("priyanka", 28)]
+people.sort(key=lambda x: x[1])
+print("Sorted by Age:", people)
+
+
