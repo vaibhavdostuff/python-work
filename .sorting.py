@@ -6,6 +6,10 @@
 #list.sort(reverse=True)
 #print(list)
 
-words = ["apple", "mango" , "banana" , "orange" , "grape"]
-words.sort(key=len)
-print("Sorted by Length:", words)
+#words = ["apple", "mango" , "banana" , "orange" , "grape"]
+#words.sort(key=len)
+#print("Sorted by Length:", words)
+
+words = ["apple", "mango", "banana", "orange", "grape"]
+words.sort(key=len, reverse=True)
+print("Sorted by Length (in reverse):", words)
