@@ -32,3 +32,17 @@ print(bool(y))
  
 z = -10.10
 print(bool(z))
+
+#6
+x = 1
+y = 2
+z = 4
+ 
+if x > y or y < z:
+    print(True)
+else:
+    print(False)
+ 
+if x or y or z:
+    print("Atleast one number has boolean value as True")
+
