@@ -46,3 +46,20 @@ else:
 if x or y or z:
     print("Atleast one number has boolean value as True")
 
+
+#7
+
+x = 0
+y = 2
+z = 4
+ 
+if x > y and y<z:
+    print(True)
+else:
+    print(False)
+     
+if x and y and z:
+    print("All the numbers has boolean value as True")
+else:
+    print("Atleast one number has boolean value as False")
+
