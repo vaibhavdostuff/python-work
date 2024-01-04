@@ -22,3 +22,13 @@ print(bool(x))
 #5
 x = 'VAIBHAV NEGI'
 print(bool(x))
+
+#6
+x = 0
+print(bool(x))
+ 
+y = 1
+print(bool(y))
+ 
+z = -10.10
+print(bool(z))
