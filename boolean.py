@@ -69,3 +69,16 @@ x = 0
  
 if not x:
     print("Boolean value of x is False")
+
+#9
+x = 0
+y = 1
+ 
+if x == 0:
+    print(True)
+     
+if x == y:
+    print(True)
+     
+if x != y:
+    print(True)
