@@ -63,3 +63,9 @@ if x and y and z:
 else:
     print("Atleast one number has boolean value as False")
 
+
+#8
+x = 0
+ 
+if not x:
+    print("Boolean value of x is False")
