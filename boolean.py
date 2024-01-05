@@ -97,3 +97,8 @@ y = ["a", "b", "c", "d"]
  
 print(x is y)
 
+#11
+animals = ["dog", "cat", "mouse"]
+ 
+if "dog" in animals:
+    print(True)
