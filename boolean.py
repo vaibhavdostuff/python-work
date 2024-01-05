@@ -82,3 +82,18 @@ if x == y:
      
 if x != y:
     print(True)
+
+#10
+x = 10
+y = 10
+ 
+if x is y:
+    print(True)
+else:
+    print(False)
+ 
+x = ["a", "b", "c", "d"]
+y = ["a", "b", "c", "d"]
+ 
+print(x is y)
+
