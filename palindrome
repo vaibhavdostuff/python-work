@@ -1,5 +1,5 @@
-str = 'negi'  
-str2 = 'vav'  
+#1
+str = 'negi'   
 strstr = str.casefold()  
    
 rev = reversed(str)  
@@ -7,4 +7,23 @@ rev = reversed(str)
 if list(str) == list(rev):  
    print("PALINDROME !")  
 else:  
-   print("NOT PALINDROME !")  
+   print("NOT PALINDROME !") 
+
+#2
+str = 'negi'  
+str2 = 'vav'  
+strstr = str.casefold()  
+str2str2 = str2.casefold()  
+
+rev = reversed(str) 
+  
+if list(str) == list(rev):  
+   print("PALINDROME !")  
+else:  
+   print("NOT PALINDROME !")
+
+rev = reversed(str2) 
+if list(str2) == list(rev):  
+   print("PALINDROME !")  
+else:  
+   print("NOT PALINDROME !")    
