@@ -26,4 +26,12 @@ rev = reversed(str2)
 if list(str2) == list(rev):  
    print("PALINDROME !")  
 else:  
-   print("NOT PALINDROME !")    
+   print("NOT PALINDROME !")
+
+#3
+string=input(("Enter a word:"))  
+if(string==string[::-1]):  
+      print("The letter is a palindrome")  
+else:  
+      print("The letter is not a palindrome")      
+      
