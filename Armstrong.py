@@ -114,3 +114,9 @@ if isArmstrong(num1):
 else:
 	print(num1, "is not an Armstrong number.")
 
+# Example 2
+num2 = 120
+if isArmstrong(num2):
+	print(num2, "is an Armstrong number.")
+else:
+	print(num2, "is not an Armstrong number.")
