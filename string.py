@@ -41,3 +41,10 @@ print(String1[1:-2])
 #5
 String1= "vaibhav is here"
 print(String1[::-1])
+
+#6
+String1= "vaibhav is here"
+
+String1= "1".join(reversed(String1)) 
+  
+print(String1)
