@@ -38,3 +38,6 @@ print(String1[1:10])
 
 print(String1[1:-2]) 
 
+#5
+String1= "vaibhav is here"
+print(String1[::-1])
