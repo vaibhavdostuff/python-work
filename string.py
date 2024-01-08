@@ -29,3 +29,12 @@ print(String1[0])
 
 print("\nLast character of String is: ") 
 print(String1[-1]) 
+
+#4 
+String1 = "vaibhav is here"
+print(String1) 
+
+print(String1[1:10]) 
+
+print(String1[1:-2]) 
+
