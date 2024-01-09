@@ -67,3 +67,17 @@ String3 = String1[0:2] + '2' + String1[3:]
 print(String3) 
 
     
+#8
+String1 = "Hello,vaibhav is here"
+print("Initial String: ") 
+print(String1) 
+
+#1 
+list1 = list(String1) 
+list1[2] = '1'
+String2 = ''.join(list1) 
+print(String2) 
+
+#2 
+String3 = String1[0:10] + '1' + String1[7:] 
+print(String3) 
