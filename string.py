@@ -109,3 +109,13 @@ print(String1)
 String2 = String1[0:10] + String1[7:] 
 print("\nDeleting character at 2nd Index: ") 
 print(String2) 
+
+#12
+String1 = "Hello,vaibhav is here"
+print("Initial String: ") 
+print(String1) 
+
+
+del String1 
+print("\nDeleting entire String: ") 
+print(String1) 
