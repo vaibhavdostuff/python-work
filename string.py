@@ -80,4 +80,15 @@ print(String2)
 
 #2 
 String3 = String1[0:10] + '1' + String1[7:] 
-print(String3) 
+print(String3)
+
+#9
+String1 = "Hello,vaibhav is here"
+print("Initial String: ") 
+print(String1) 
+
+
+String1 = "working on programm"
+print("\nUpdated String: ") 
+print(String1) 
+
