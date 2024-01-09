@@ -50,9 +50,6 @@ String1= "1".join(reversed(String1))
 print(String1)
 
 #7
-# Python Program to Update 
-# character of a String 
-
 String1 = "Hello,vaibhav is here"
 print(String1) 
 
@@ -119,3 +116,5 @@ print(String1)
 del String1 
 print("\nDeleting entire String: ") 
 print(String1) 
+
+#13
