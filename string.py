@@ -100,3 +100,12 @@ print(String1)
 print("Deleting character at 2nd Index: ") 
 del String1[2] 
 print(String1)
+
+#11
+String1 = "Hello,vaibhav is here"
+print("Initial String: ") 
+print(String1) 
+
+String2 = String1[0:10] + String1[7:] 
+print("\nDeleting character at 2nd Index: ") 
+print(String2) 
