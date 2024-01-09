@@ -118,3 +118,15 @@ print("\nDeleting entire String: ")
 print(String1) 
 
 #13
+String1 = '''Hello,vaibhav is here'''
+print(String1) 
+
+
+String1 = 'Hello,vaibhav is here'
+print(String1) 
+
+
+String1 = "Hello,vaibhav is here"
+print(String1) 
+
+
