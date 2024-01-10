@@ -164,3 +164,8 @@ print(String1)
 String1 = r"This is \x76\x61\x69\x62\x68\x61\x76 in \x48\x45\x58"
 print("\nPrinting Raw String in HEX Format: ") 
 print(String1)
+
+#15
+String1 = "{} {} {}".format('vaibhav', 'is', 'here') 
+print("Print String in default order: ") 
+print(String1) 
