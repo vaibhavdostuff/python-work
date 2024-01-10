@@ -143,3 +143,7 @@ print("\nNew Line: ")
 print(String1) 
 
 #14
+# Printing hello in octal 
+String1 = "\110\145\154\154\157"
+print("\nPrinting in Octal with the use of Escape Sequences: ") 
+print(String1) 
