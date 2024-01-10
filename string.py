@@ -166,6 +166,8 @@ print("\nPrinting Raw String in HEX Format: ")
 print(String1)
 
 #15
-String1 = "{} {} {}".format('vaibhav', 'is', 'here') 
-print("Print String in default order: ") 
+String1 = "{} {} {}".format('vaibhav', 'is', 'here')
 print(String1) 
+
+String1 = "{2} {0} {1}".format('vaibhav', 'is', 'here')
+print(String1)
