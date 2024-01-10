@@ -171,3 +171,7 @@ print(String1)
 
 String1 = "{2} {0} {1}".format('vaibhav', 'is', 'here')
 print(String1)
+
+
+String1 = "{h} {i} {v}".format(v='vaibhav', i='is', h='here')
+print(String1) 
