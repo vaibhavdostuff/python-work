@@ -153,3 +153,8 @@ print(String1)
 String1 = r"This is \110\145\154\154\157"
 print("\nPrinting Raw String in Octal Format: ") 
 print(String1)
+
+# Printing Geeks in HEX 
+String1 = "This is \x76\x61\x69\x62\x68\x61\x76 in \x48\x45\x58"
+print("\nPrinting in HEX with the use of Escape Sequences: ") 
+print(String1) 
