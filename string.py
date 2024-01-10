@@ -95,7 +95,7 @@ print("Initial String: ")
 print(String1) 
 
 print("Deleting character at 2nd Index: ") 
-del String1[2] 
+#del String1[2] 
 print(String1)
 
 #11
@@ -115,7 +115,7 @@ print(String1)
 
 del String1 
 print("\nDeleting entire String: ") 
-print(String1) 
+#print(String1) 
 
 #13
 String1 = '''Hello,vaibhav is here'''
@@ -129,4 +129,17 @@ print(String1)
 String1 = "Hello,vaibhav is here"
 print(String1) 
 
+String1 = "C:\\Python\\string\\"
+print(String1)
+  
 
+String1 = "Hi\tstring"
+print("\nTab: ") 
+print(String1) 
+  
+
+String1 = "Python\nstring"
+print("\nNew Line: ") 
+print(String1) 
+
+#14
