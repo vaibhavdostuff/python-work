@@ -147,3 +147,9 @@ print(String1)
 String1 = "\110\145\154\154\157"
 print("\nPrinting in Octal with the use of Escape Sequences: ") 
 print(String1) 
+
+# Using raw String to 
+# ignore Escape Sequences 
+String1 = r"This is \110\145\154\154\157"
+print("\nPrinting Raw String in Octal Format: ") 
+print(String1)
