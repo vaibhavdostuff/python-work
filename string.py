@@ -175,3 +175,12 @@ print(String1)
 
 String1 = "{h} {i} {v}".format(v='vaibhav', i='is', h='here')
 print(String1) 
+
+#16
+String1 = "{0:b}".format(10)
+print(String1) 
+
+
+String1 = "{0:e}".format(165.6458)
+print(String1) 
+  
