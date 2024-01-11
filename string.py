@@ -186,3 +186,16 @@ print(String1)
 
 String1 = "{0:.2f}".format(1/7)
 print(String1)
+
+#17
+# String alignment 
+String1 = "|{:<10}|{:^10}|{:>10}|".format('vaibhav', 
+                                          'is',  
+                                          'here') 
+print("\nLeft, center and right alignment with Formatting: ") 
+print(String1) 
+  
+# To demonstrate aligning of spaces 
+String1 = "\n{0:^16} was started in {1:<4}!".format("vaibhav is here", 
+                                                    2023) 
+print(String1) 
