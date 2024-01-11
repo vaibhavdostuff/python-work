@@ -5,3 +5,4 @@
 # in boolean programm7 boolean exp works as 1 True	True True  2 True False	False 3 False True	False 4 False False	False
 # Fibonacci programm
 # String programm
+# here we will see data type related programms 
