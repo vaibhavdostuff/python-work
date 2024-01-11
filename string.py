@@ -183,4 +183,6 @@ print(String1)
 
 String1 = "{0:e}".format(165.6458)
 print(String1) 
-  
+
+String1 = "{0:.2f}".format(1/7)
+print(String1)
