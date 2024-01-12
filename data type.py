@@ -41,3 +41,9 @@ is
 here'''
 print("\nCreating a multiline String: ") 
 print(String1) 
+
+#4
+String1 = "vaibhav is here"
+print(String1)
+print(String1[0])
+print(String1[-1]) 
