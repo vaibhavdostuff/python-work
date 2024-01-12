@@ -47,3 +47,15 @@ String1 = "vaibhav is here"
 print(String1)
 print(String1[0])
 print(String1[-1]) 
+
+#5
+List = [] 
+print("Initial blank List: ") 
+print(List) 
+List = ['vaibhav is here'] 
+print(List) 
+List = ["vaibhav", "is", "here"]
+print(List[0]) 
+print(List[2]) 
+List = [['vaibhav', 'is'], ['here']]
+print(List) 
