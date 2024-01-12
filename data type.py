@@ -24,3 +24,20 @@ print("\nType of b: ", type(b))
 
 c = 2 + 4j
 print("\nType of c: ", type(c)) 
+
+
+#3
+String1 = 'vaibhav is here'
+print(String1) 
+String1 = "myself vaibhav"
+print(String1) 
+print(type(String1)) 
+String1 = '''myself vaibhav and I am here'''
+print(String1) 
+print(type(String1)) 
+
+String1 = '''vaibhav 
+is 
+here'''
+print("\nCreating a multiline String: ") 
+print(String1) 
