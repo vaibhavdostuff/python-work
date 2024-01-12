@@ -1,3 +1,4 @@
+#1
 x = "Hello World"
 x = 50
 x = 60.5
@@ -13,3 +14,13 @@ x = b"vaibhav"
 x = bytearray(4) 
 x = memoryview(bytes(6)) 
 x = None
+
+#2
+a = 5
+print("Type of a: ", type(a)) 
+
+b = 5.0
+print("\nType of b: ", type(b)) 
+
+c = 2 + 4j
+print("\nType of c: ", type(c)) 
