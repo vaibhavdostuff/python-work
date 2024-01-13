@@ -126,3 +126,20 @@ print("\nElements of set: ")
 for i in set1: 
 	print(i, end=" ") 
 print("vaibhav" in set1) 
+
+#12
+Dict = {} 
+print("Empty Dictionary: ") 
+print(Dict) 
+Dict = {1: 'vaibhav', 2: 'is', 3: 'here'} 
+print("\nDictionary with the use of Integer Keys: ") 
+print(Dict) 
+Dict = {'Name': 'vaibhav', 1: [1, 2, 3, 4]} 
+print("\nDictionary with the use of Mixed Keys: ") 
+print(Dict) 
+Dict = dict({1: 'vaibhav', 2: 'is', 3: 'here'}) 
+print("\nDictionary with the use of dict(): ") 
+print(Dict) 
+Dict = dict([(1, 'vaibhav'), (2, 'is')]) 
+print("\nDictionary with each item as a pair: ") 
+print(Dict) 
