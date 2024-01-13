@@ -117,3 +117,12 @@ print(set1)
 set1 = set([1, 2, 'vaibhav', 4, 'is', 6, 'here']) 
 print("\nSet with the use of Mixed Values") 
 print(set1) 
+
+#11
+set1 = set(["vaibhav", "is", "here"]) 
+print("\nInitial set") 
+print(set1) 
+print("\nElements of set: ") 
+for i in set1: 
+	print(i, end=" ") 
+print("vaibhav" in set1) 
