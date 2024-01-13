@@ -143,3 +143,10 @@ print(Dict)
 Dict = dict([(1, 'vaibhav'), (2, 'is')]) 
 print("\nDictionary with each item as a pair: ") 
 print(Dict) 
+
+#13
+Dict = {1: 'vaibhav', 'name': 'is', 3: 'here'} 
+print("Accessing a element using key:") 
+print(Dict['name']) 
+print("Accessing a element using get:") 
+print(Dict.get(3)) 
