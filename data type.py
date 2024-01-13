@@ -150,3 +150,11 @@ print("Accessing a element using key:")
 print(Dict['name']) 
 print("Accessing a element using get:") 
 print(Dict.get(3)) 
+
+#14
+fruits = ["apple", "mango", "banana"] 
+print(fruits) 
+fruits.append("orange") 
+print(fruits) 
+fruits.remove("apple") 
+print(fruits)
