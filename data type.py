@@ -97,3 +97,9 @@ print(tuple1[-1])
 
 print("\nThird last element of tuple") 
 print(tuple1[-3]) 
+
+#9
+print(type(True)) 
+print(type(False)) 
+
+print(type(true)) 
