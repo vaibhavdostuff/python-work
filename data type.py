@@ -158,3 +158,9 @@ fruits.append("orange")
 print(fruits) 
 fruits.remove("apple") 
 print(fruits)
+
+#15
+coordinates = (7, 10) 
+print(coordinates) 
+print("X-coordinate:", coordinates[0]) 
+print("Y-coordinate:", coordinates[1])
