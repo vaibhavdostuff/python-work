@@ -87,3 +87,13 @@ Tuple2 = ('ok', 'vaibhav')
 Tuple3 = (Tuple1, Tuple2) 
 print("\nTuple with nested tuples: ") 
 print(Tuple3) 
+
+#8
+tuple1 = tuple([1, 2, 3, 4, 5]) 
+print("First element of tuple") 
+print(tuple1[0]) 
+print("\nLast element of tuple") 
+print(tuple1[-1]) 
+
+print("\nThird last element of tuple") 
+print(tuple1[-3]) 
