@@ -44,3 +44,14 @@ else:
     result = "Invalid operation"
 
 print(f"The result is: {result}")
+
+#4
+import random
+
+while True:
+    input("Press Enter to roll the dice...")
+    dice_result = random.randint(1, 6)
+    print(f"The dice rolled a {dice_result}")
+    play_again = input("Roll again? (yes/no): ")
+    if play_again.lower() != 'yes':
+        break
