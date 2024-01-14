@@ -55,3 +55,9 @@ while True:
     play_again = input("Roll again? (yes/no): ")
     if play_again.lower() != 'yes':
         break
+
+#5
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+word_count = len(words)
+print(f"There are {word_count} words in the sentence.")
