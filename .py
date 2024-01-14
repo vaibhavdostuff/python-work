@@ -81,3 +81,38 @@ computer_choice = random.choice(choices)
 print(f"The computer chose: {computer_choice}")
 print(determine_winner(user_choice, computer_choice))
 
+#7
+import random
+
+def choose_word():
+    words = ["apple", "banana", "orange", "strawberry", "pineapple"]
+    return random.choice(words)
+
+def display_word(word, guessed_letters):
+    displayed_word = ""
+    for letter in word:
+        if letter in guessed_letters:
+            displayed_word += letter + " "
+        else:
+            displayed_word += "_ "
+    return displayed_word
+
+word_to_guess = choose_word()
+guessed_letters = []
+attempts = 6
+
+while attempts > 0:
+    print(display_word(word_to_guess, guessed_letters))
+    guess = input("Guess a letter: ").lower()
+    guessed_letters.append(guess)
+    if guess not in word_to_guess:
+        attempts -= 1
+        print(f"Incorrect! {attempts} attempts remaining.")
+        if attempts == 0:
+            print("You ran out of attempts. Game over!")
+    else:
+        print("Correct!")
+
+    if "_" not in display_word(word_to_guess, guessed_letters):
+        print(f"Congratulations! You guessed the word: {word_to_guess}")
+        break
