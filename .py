@@ -17,3 +17,10 @@ while True:
     else:
         print("Congratulations! You guessed the number!")
         break
+
+noun = input("Enter a noun: ")
+verb = input("Enter a verb: ")
+adjective = input("Enter an adjective: ")
+
+story = f"The {adjective} {noun} likes to {verb} in the park."
+print(story)
