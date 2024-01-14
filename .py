@@ -116,3 +116,18 @@ while attempts > 0:
     if "_" not in display_word(word_to_guess, guessed_letters):
         print(f"Congratulations! You guessed the word: {word_to_guess}")
         break
+
+#8
+def start_game():
+    print("Welcome to the Adventure Game!")
+    print("You find yourself in a dark forest...")
+    choice = input("Do you go left or right? ").lower()
+    if choice == "left":
+        print("You encounter a bear! Game over.")
+    elif choice == "right":
+        print("You find a treasure chest! You win!")
+    else:
+        print("Invalid choice. Try again.")
+        start_game()
+
+start_game()
