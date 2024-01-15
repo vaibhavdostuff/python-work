@@ -163,3 +163,17 @@ if is_prime(number):
     print(f"{number} is a prime number.")
 else:
     print(f"{number} is not a prime number.")
+
+#11
+def pig_latin(text):
+    words = text.split()
+    pig_latin_words = []
+    for word in words:
+        if word[0] in 'aeiou':
+            pig_latin_words.append(word + 'way')
+        else:
+            pig_latin_words.append(word[1:] + word[0] + 'ay')
+    return ' '.join(pig_latin_words)
+
+input_text = input("Enter text to translate to Pig Latin: ")
+print("Pig Latin:", pig_latin(input_text.lower()))
