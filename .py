@@ -204,3 +204,37 @@ def generate_password(length):
 
 password_length = int(input("Enter desired password length: "))
 print("Generated password:", generate_password(password_length))
+
+#17
+todo_list = []
+
+while True:
+    print("\n1. Add Task\n2. Remove Task\n3. View Tasks\n4. Exit")
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        task = input("Enter task to add: ")
+        todo_list.append(task)
+    elif choice == "2":
+        if todo_list:
+            print("Tasks:")
+            for i, task in enumerate(todo_list):
+                print(f"{i + 1}. {task}")
+            index = int(input("Enter task number to remove: ")) - 1
+            if 0 <= index < len(todo_list):
+                del todo_list[index]
+            else:
+                print("Invalid task number.")
+        else:
+            print("No tasks to remove.")
+    elif choice == "3":
+        if todo_list:
+            print("Tasks:")
+            for i, task in enumerate(todo_list):
+                print(f"{i + 1}. {task}")
+        else:
+            print("No tasks.")
+    elif choice == "4":
+        break
+    else:
+        print("Invalid choice.")
