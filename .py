@@ -256,3 +256,16 @@ frequencies = count_word_frequency(input_text)
 for word, frequency in frequencies.items():
     print(f"{word}: {frequency} times")
 
+#19
+import datetime
+import time
+
+alarm_time = input("Set the alarm time (HH:MM): ")
+while True:
+    current_time = datetime.datetime.now().strftime("%H:%M")
+    if current_time == alarm_time:
+        print("ALARM!")
+        break
+    else:
+        print(f"Current time is {current_time}. Waiting for {alarm_time}.")
+        time.sleep(60)  # Check every minute
