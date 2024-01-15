@@ -131,3 +131,20 @@ def start_game():
         start_game()
 
 start_game()
+
+#9
+def celsius_to_fahrenheit(celsius):
+    return celsius * 9/5 + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+temperature = float(input("Enter temperature: "))
+unit = input("Enter unit (C/F): ").upper()
+
+if unit == "C":
+    print(f"{temperature}°C is equal to {celsius_to_fahrenheit(temperature)}°F")
+elif unit == "F":
+    print(f"{temperature}°F is equal to {fahrenheit_to_celsius(temperature)}°C")
+else:
+    print("Invalid unit.")
