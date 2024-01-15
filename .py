@@ -177,3 +177,19 @@ def pig_latin(text):
 
 input_text = input("Enter text to translate to Pig Latin: ")
 print("Pig Latin:", pig_latin(input_text.lower()))
+
+#15
+def caesar_cipher(text, shift):
+    encrypted_text = ""
+    for char in text:
+        if char.isalpha():
+            shifted_char = chr(((ord(char) - ord('a' if char.islower() else 'A') + shift) % 26) + ord('a' if char.islower() else 'A'))
+            encrypted_text += shifted_char
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+plaintext = input("Enter text to encrypt: ")
+shift_amount = int(input("Enter shift amount: "))
+encrypted_text = caesar_cipher(plaintext, shift_amount)
+print(f"Encrypted text: {encrypted_text}")
