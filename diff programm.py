@@ -43,3 +43,27 @@ if __name__ == '__main__':
     year = 2020
     print(ISLP(year))
 
+#4
+
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+
+# Input from the user
+year_input = input("Enter a year: ")
+
+# Check if the input is a valid integer
+try:
+    year = int(year_input)
+    if year > 0:
+        if is_leap_year(year):
+            print(f"{year} is a leap year.")
+        else:
+            print(f"{year} is not a leap year.")
+    else:
+        print("Please enter a valid positive year.")
+except ValueError:
+    print("Invalid input. Please enter a valid year.")
+
