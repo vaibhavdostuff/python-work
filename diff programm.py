@@ -31,3 +31,15 @@ if (checkYear(year)):
 else: 
 	print("Not a Leap Year") 
 
+#3
+def ISLP(y):
+    if (y % 400 == 0) or (y % 100 != 0 and y % 4 == 0):
+        print("its a leap year")
+    else:
+        print("its not a leap year")
+
+# Driver code
+if __name__ == '__main__':
+    year = 2020
+    print(ISLP(year))
+
