@@ -76,5 +76,10 @@ ans = _sum(arr)
 # display sum
 print('Sum of the array is ', ans)
 
+#4
+list1 = [12, 3, 4, 15];s=0
+for i,a in enumerate(list1): 
+s+=a 
+print(s)
 
 
