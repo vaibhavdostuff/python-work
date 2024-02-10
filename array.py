@@ -97,3 +97,15 @@ print(sum_of_array(arr, 0, len(arr)-1)) # Output: 6
 arr = [15, 12, 13, 10]
 print(sum_of_array(arr, 0, len(arr)-1)) # Output: 50
 
+#6
+from collections import Counter
+
+arr = [12, 3, 4, 15]
+c = Counter(arr)
+sum = 0
+
+for key, value in c.items():
+	sum += key * value
+
+print("Sum of the array is", sum)
+
