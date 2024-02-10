@@ -188,3 +188,9 @@ if operator.gt(i,max):
 
 # printing the large number in the array
 print('The biggest number in the given array is:', max)
+
+#11
+array = [10, 5, 20, 8, 15]
+
+largest_element = max(array, key=lambda x: x)
+print("Largest element in the array:", largest_element)
