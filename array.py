@@ -77,9 +77,10 @@ ans = _sum(arr)
 print('Sum of the array is ', ans)
 
 #4
-list1 = [12, 3, 4, 15];s=0
+list1 = [12, 3, 4, 15];
+s = 0
 for i,a in enumerate(list1): 
-s+=a 
+s+=a # i have to see to it
 print(s)
 
 #5
@@ -183,8 +184,8 @@ print('The given array is:', arr)
 
 #checking for large element
 for i in arr:
-if operator.gt(i,max):
-	max=i
+	if operator.gt(i,max):
+		max=i
 
 # printing the large number in the array
 print('The biggest number in the given array is:', max)
