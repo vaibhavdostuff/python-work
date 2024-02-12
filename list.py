@@ -52,3 +52,14 @@ def swapList(list):
 # Driver code
 newList = [12, 35, 9, 56, 24]
 print(swapList(newList))
+
+#4
+# Python3 program to illustrate 
+# the usage of * operand
+list = [1, 2, 3, 4]
+
+a, *b, c = list
+
+print(a)
+print(b)
+print(c)
