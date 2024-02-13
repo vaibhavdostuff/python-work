@@ -177,3 +177,9 @@ List = [23, 65, 19, 90]
 pos1, pos2 = 1, 3
 
 print(swapPositions(List, pos1-1, pos2-1))
+
+#14
+# Python len()
+li = [10, 20, 30]
+n = len(li)
+print("The length of list is: ", n)
