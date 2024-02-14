@@ -298,3 +298,11 @@ def count_elements_recursion(lst):
 lst = [1, 2, 3, 4, 5]
 print("The length of the list is:", count_elements_recursion(lst))
 
+#22
+# python code to find the length
+# of list using enumerate function
+list1 = [1, 4, 5, 7, 8]
+s = 0
+for i, a in enumerate(list1):
+	s += 1
+print(s)
