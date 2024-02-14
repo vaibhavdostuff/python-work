@@ -344,3 +344,16 @@ end_time_hint = str(time.time() - start_time_hint)
 print("Time taken using naive method is : " + end_time_naive)
 print("Time taken using len() is : " + end_time_len)
 print("Time taken using length_hint() is : " + end_time_hint)
+
+#24
+lst=[ 1, 6, 3, 5, 3, 4 ] 
+#checking if element 7 is present
+# in the given list or not
+i=7
+# if element present then return
+# exist otherwise not exist
+if i in lst: 
+	print("exist") 
+else: 
+	print("not exist")
+
