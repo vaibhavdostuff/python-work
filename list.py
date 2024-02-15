@@ -442,3 +442,10 @@ else:
 	print("No, 15 does not exists in list")
 
 #31
+word = [6, 0, 4, 1]
+print('word before clear:', word)
+
+# Clearing list
+word.clear()
+print('word after clear:', word)
+
