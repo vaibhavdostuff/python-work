@@ -412,3 +412,18 @@ if bisect_left(test_list_bisect, 4)!=bisect(test_list_bisect, 4):
 	print ("Element Exists")
 else:
 	print("Element doesnt exist")
+
+#29
+# Initializing list
+test_list = [10, 15, 20, 7, 46, 2808]
+
+print("Checking if 15 exists in list")
+x=list(map(str,test_list))
+y="-".join(x)
+
+if y.find("15") !=-1:
+	print("Yes, 15 exists in list")
+else:
+	print("No, 15 does not exists in list")
+
+#30
