@@ -372,3 +372,18 @@ test_list = [1, 6, 3, 5, 3, 4]
 
 result = any(item in test_list for item in test_list)
 print("Does string contain any list element : " +str(bool(result)))
+
+#27
+# Initializing list
+test_list = [10, 15, 20, 7, 46, 2808]
+
+print("Checking if 15 exists in list")
+
+# number of times element exists in list
+exist_count = test_list.count(15)
+
+# checking if it is more than 0
+if exist_count > 0:
+	print("Yes, 15 exists in list")
+else:
+	print("No, 15 does not exists in list")
