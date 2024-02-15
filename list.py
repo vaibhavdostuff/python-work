@@ -494,3 +494,14 @@ print("List2 before deleting is : " + str(list2))
 # deleting list using del
 del list2[:]
 print("List2 after clearing using del : " + str(list2))
+
+#35
+list1 = [1, 2, 3]
+
+# Printing list1 before deleting
+print("List1 before deleting is : " + str(list1))
+
+# deleting list1
+while(len(list1) != 0):
+	list1.pop()
+print("List1 after clearing using del : " + str(list1))
