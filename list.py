@@ -505,3 +505,12 @@ print("List1 before deleting is : " + str(list1))
 while(len(list1) != 0):
 	list1.pop()
 print("List1 after clearing using del : " + str(list1))
+
+#36
+# Initializing list
+lst = [1, 2, 3, 4, 5]
+
+print("List before clearing: ",lst)
+# Clearing list using slicing
+lst = lst[:0]
+print("List after clearing using Slicing: ",lst)
