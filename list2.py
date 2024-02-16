@@ -52,3 +52,37 @@ original_list = [10, 11, 12, 13, 14, 15]
 new_list = [original_list[len(original_list) - i]
 			for i in range(1, len(original_list)+1)]
 print(new_list)
+
+#6
+import numpy as np
+
+# Input list
+my_list = [4, 5, 6, 7, 8, 9]
+
+# Convert the list to a 1D numpy array
+my_array = np.array(my_list)
+
+# Reverse the order of the array
+reversed_array = my_array[::-1]
+
+# Convert the reversed array to a list
+reversed_list = reversed_array.tolist()
+
+# Print the reversed list
+print(reversed_list)
+
+#7
+# Python program to find sum of elements in list
+
+total = 0
+
+# creating a list
+list1 = [11, 5, 17, 18, 23]
+
+# Iterate each element in list
+# and add them in variable total
+for ele in range(0, len(list1)):
+	total = total + list1[ele]
+
+# printing total value
+print("Sum of all elements in given list: ", total)
