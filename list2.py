@@ -125,3 +125,5 @@ def sumOfList(list, size):
 total = sumOfList(list1, len(list1))
 
 print("Sum of all elements in given list: ", total)
+
+#10
