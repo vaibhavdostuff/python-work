@@ -173,3 +173,23 @@ list1 = [12, 15, 3, 10] ;s=0
 for i in list1:
 s=s+operator.add(0,i)
 print(s)
+
+#16
+# Python program to multiply all values in the
+# list using traversal
+
+
+def multiplyList(myList):
+
+	# Multiply elements one by one
+	result = 1
+	for x in myList:
+		result = result * x
+	return result
+
+
+# Driver code
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
+print(multiplyList(list1))
+print(multiplyList(list2))
