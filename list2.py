@@ -162,3 +162,7 @@ print(s)
 list1 = [12, 15, 3, 10]
 s=[i for i in list1] 
 print(sum(s))
+
+#14
+list1 = [12, 15, 3, 10]
+print(sum(list(filter(lambda x: (x),list1))))
