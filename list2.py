@@ -151,3 +151,9 @@ for i in list1:
 	result = add(i, result)
 # printing the result
 print(result)
+
+#12
+list1 = [12, 15, 3, 10];s=0
+for i,a in enumerate(list1): 
+s+=a 
+print(s)
