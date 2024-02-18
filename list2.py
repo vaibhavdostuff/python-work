@@ -306,3 +306,12 @@ print(product) # Output: 6
 list2 = [3, 2, 4]
 product = product_recursive(list2)
 print(product) # Output: 24
+
+#25
+from functools import reduce
+from operator import mul
+
+list1 = [1, 2, 3]
+result = reduce(mul, list1)
+
+print(result)
