@@ -261,3 +261,22 @@ def multiply_list(list1):
 list1 = [1, 2, 3, 4, 5]
 result = multiply_list(list1)
 print(result)
+
+#22
+# Python program to multiply all values in the
+# list using traversal
+
+def multiplyList(myList) :
+	
+	# Multiply elements one by one
+	result = 1
+	for i in range(0,len(myList)):
+		result = result * myList[i]
+	return result
+	
+# Driver code
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
+print(multiplyList(list1))
+print(multiplyList(list2))
+
