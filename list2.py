@@ -280,3 +280,14 @@ list2 = [3, 2, 4]
 print(multiplyList(list1))
 print(multiplyList(list2))
 
+#23
+# Python3 program to multiply all values in the
+# list using lambda function and accumulate()
+from itertools import accumulate
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
+
+result1 = list(accumulate(list1, (lambda x, y: x * y)))
+result2 = list(accumulate(list2, (lambda x, y: x * y)))
+print(result1[-1])
+print(result2[-1])
