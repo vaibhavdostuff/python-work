@@ -338,3 +338,14 @@ list1.sort(reverse=True)
 
 # printing the first element
 print("Smallest element is:", list1[-1])
+
+#28
+# Python program to find smallest 
+# number in a list
+
+# list of numbers
+list1 = [10, 20, 1, 45, 99]
+
+
+# printing the minimum element
+print("Smallest element is:", min(list1))
