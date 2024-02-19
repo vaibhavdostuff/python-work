@@ -398,3 +398,9 @@ a,i = min((a,i) for (i,a) in enumerate(lst))
 print(a)
 
 #33
+# Python code to print smallest element in the list
+from functools import reduce
+lst = [20, 10, 20, 15, 100]
+print(reduce(min,lst) )
+
+#34
