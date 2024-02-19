@@ -393,3 +393,8 @@ lst = [20, 10, 20, 1, 100]
 print(min(lst, key=lambda value: int(value)) )
 
 #32
+lst = [20, 10, 20, 1, 100] 
+a,i = min((a,i) for (i,a) in enumerate(lst))
+print(a)
+
+#33
