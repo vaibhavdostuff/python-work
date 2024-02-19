@@ -404,3 +404,15 @@ lst = [20, 10, 20, 15, 100]
 print(reduce(min,lst) )
 
 #34
+# defining the list
+arr = [5,2,3,2,5,4,7,9,7,10,15,68]
+
+# converting the list into set
+set_arr = set(arr)
+
+# Now using the min function to get the minimum
+# value from the set
+
+print(min(set_arr))
+
+#35
