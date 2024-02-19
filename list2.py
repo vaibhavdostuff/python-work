@@ -387,3 +387,9 @@ for i in range(len(l)):
 print("The smallest element in the list is ",min1)
 
 #31
+# Python code to print smallest element in the list
+
+lst = [20, 10, 20, 1, 100]
+print(min(lst, key=lambda value: int(value)) )
+
+#32
