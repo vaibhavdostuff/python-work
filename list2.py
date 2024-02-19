@@ -416,3 +416,18 @@ set_arr = set(arr)
 print(min(set_arr))
 
 #35
+arr = [2,6,8,4,9,7,52,3,6,2,4,5,6,8,2]
+
+min_val = min(arr) # Finding the minimum value
+
+values = {}
+# print item with position
+for pos,val in enumerate(arr):
+	if val==min_val:
+		values.update({pos:val}) # pos - Index of the smallest element
+								# val - The value of the smallest element
+
+# get all min values
+print(values)
+
+#36
