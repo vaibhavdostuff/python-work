@@ -527,3 +527,18 @@ largest_element = heapq.nlargest(1, list1)[0]
 print("Largest element is:", largest_element)
 
 #43
+import numpy as np
+
+# given list
+list1 = [2, 7, 5, 64, 14]
+
+# converting list to numpy array
+arr = np.array(list1)
+
+# finding largest numbers using np.max() method
+num = arr.max()
+
+# printing largest number
+print(num)
+
+#44
