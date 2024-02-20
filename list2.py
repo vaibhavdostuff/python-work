@@ -515,3 +515,15 @@ list1 = [2, 1, 7, 9, 5, 4]
 FindLargest(0, list1[0], list1)
 
 #42
+import heapq
+
+# list of numbers
+list1 = [10, 20, 4, 45, 99]
+
+# finding the largest element using heapq.nlargest()
+largest_element = heapq.nlargest(1, list1)[0]
+
+# printing the largest element
+print("Largest element is:", largest_element)
+
+#43
