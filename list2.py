@@ -583,3 +583,20 @@ list2.sort()
 print("Second largest element is:", list2[-2])
 
 #46
+# Python program to find second largest number
+# in a list
+
+# List of numbers
+list1 = [10, 20, 4, 45, 99]
+
+# new_list is a set of list1
+new_list = set(list1)
+
+# Removing the largest element from temp list
+new_list.remove(max(new_list))
+
+# Elements in original list are not changed
+# print(list1)
+print(max(new_list))
+
+#47
