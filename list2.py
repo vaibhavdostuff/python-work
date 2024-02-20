@@ -480,3 +480,7 @@ list1 = [10, 20, 4, 45, 99]
 print("Largest element is:", myMax(list1))
 
 #39
+# python code to print largest element in the list
+
+lst = [20, 10, 20, 4, 100]
+print(max(lst, key=lambda value: int(value)) )
