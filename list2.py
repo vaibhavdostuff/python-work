@@ -600,3 +600,22 @@ new_list.remove(max(new_list))
 print(max(new_list))
 
 #47
+# Python program to find second largest
+# number in a list
+
+# creating list of integer type
+list1 = [10, 20, 4, 45, 99]
+
+'''
+# sort the list 
+list1.sort()
+	
+# print second maximum element
+print("Second largest element is:", list1[-2])
+
+'''
+
+# print second maximum element using sorted() method
+print("Second largest element is:", sorted(list1)[-2])
+
+#48
