@@ -661,3 +661,23 @@ x=[a for i,a in enumerate(lst) if a<m]
 print(max(x))
 
 #52
+import heapq
+
+def find_second_largest(numbers):
+	# Build a max heap using the elements in the list
+	heap = [(-x, x) for x in numbers]
+	heapq.heapify(heap)
+	
+	# Remove the root element (largest element)
+	heapq.heappop(heap)
+	
+	# The new root element is the second largest element
+	_, second_largest = heapq.heappop(heap)
+	
+	return second_largest
+
+# Test the function
+numbers = [10, 20, 4, 45, 99]
+print(find_second_largest(numbers)) # Output: 45
+
+#53
