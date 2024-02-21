@@ -681,3 +681,23 @@ numbers = [10, 20, 4, 45, 99]
 print(find_second_largest(numbers)) # Output: 45
 
 #53
+import numpy as np
+
+def find_second_largest(arr):
+	# creating numpy array
+	np_arr = np.array(arr)
+
+	# getting sorted indices
+	sorted_indices = np.argsort(np_arr)
+
+	# finding the second last index from sorted indices
+	second_last_index = sorted_indices[-2]
+
+	# returning the element at the second last index from original array
+	return np_arr[second_last_index]
+
+# example usage
+arr = [10, 20, 4, 45, 99]
+print(find_second_largest(arr)) # Output: 45
+
+#54
