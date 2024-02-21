@@ -638,3 +638,12 @@ def findLargest(arr):
 print(findLargest([10, 20, 4, 45, 99]))
 
 #49
+def secondmax(arr):
+sublist = [x for x in arr if x < max(arr)]
+return max(sublist)
+
+if __name__ == '__main__':
+arr = [10, 20, 4, 45, 99]
+print(secondmax(arr))
+
+#50
