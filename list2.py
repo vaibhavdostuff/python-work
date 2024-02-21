@@ -655,3 +655,9 @@ maximum2 = max(lst, key=lambda x: min(lst)-1 if (x == maximum1) else x)
 print(maximum2)
 
 #51
+lst = [10, 20, 4, 45, 99] 
+m=max(lst)
+x=[a for i,a in enumerate(lst) if a<m]
+print(max(x))
+
+#52
