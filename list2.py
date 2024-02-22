@@ -759,3 +759,27 @@ N = 3
 print(find_n_largest_elements(lst, N))
 
 #57
+import numpy as np
+
+def Nmaxelements(list1, N):
+	list1 = np.array(list1) # convert list to numpy array
+	return list1[np.argsort(list1)[-N:]]
+
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 3
+print(Nmaxelements(list1, N))
+
+#58
+# Python program to print Even Numbers in a List
+
+# list of numbers
+list1 = [10, 21, 4, 45, 66, 93]
+
+# iterating each number in list
+for num in list1:
+
+	# checking condition
+	if num % 2 == 0:
+		print(num, end=" ")
+
+#59
