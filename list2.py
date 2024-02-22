@@ -731,3 +731,13 @@ N = 2
 Nmaxelements(list1, N)
 
 #55
+# Python program to find N largest
+# element from given list of integers
+
+l = [1000, 298, 3579, 100, 200, -45, 900]
+n = 4
+
+l.sort()
+print(l[-n:])
+
+#56
