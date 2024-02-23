@@ -52,4 +52,19 @@ for element in list1:
 		print(element,end=' ')
 
 #6
+import numpy as np
+
+# given list
+list1 = [2, 7, 5, 64, 14]
+
+# converting list to numpy array
+arr = np.array(list1)
+
+# finding even numbers using where() method
+even_num = arr[np.where(arr % 2 == 0)]
+
+# printing even numbers
+print(even_num)
+
+#7
 		
