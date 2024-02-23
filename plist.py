@@ -37,4 +37,19 @@ if not element&1: #condition to check even or not
 
 
 #5
+# Python program to print all even no's in a list
+
+
+# Defining list with even and odd numbers
+# Initializing list 
+list1=[39,28,19,45,33,74,56]
+
+# Traversing list using for loop
+for element in list1:
+	
+	# condition to check even or not
+	if element|1 != element: 
+		print(element,end=' ')
+
+#6
 		
