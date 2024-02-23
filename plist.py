@@ -27,4 +27,14 @@ even_num = li[li % 2 == 0]
 print(even_num)
 
 #4
+#python program to print all even no's in a list
+#defining list with even and odd numbers 
+list1=[39,28,19,45,33,74,56] 
+#traversing list using for loop
+for element in list1:
+if not element&1: #condition to check even or not
+	print(element,end=' ')
+
+
+#5
 		
