@@ -67,4 +67,19 @@ even_num = arr[np.where(arr % 2 == 0)]
 print(even_num)
 
 #7
+# Using the filterfalse function from the itertools module
+from itertools import filterfalse
+
+# Test list1
+list1 = [39, 28, 19, 45, 33, 74, 56]
+
+# filtering even number
+even_numbers = filterfalse(lambda y: y % 2, list1)
+
+# Printing result
+for num in even_numbers:
+	print(num, end=" ")
+
+#8
+
 		
