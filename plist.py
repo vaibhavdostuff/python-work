@@ -120,4 +120,14 @@ only_odd = [num for num in list1 if num % 2 == 1]
 
 print(only_odd)
 
+#11
+#List of numbers
+list1 = [9,5,4,7,2]
+
+for ele in list1:
+if ele & 1: #Checking the element odd or not
+	print(ele,end=" ") 
+
+
+#12
 		
