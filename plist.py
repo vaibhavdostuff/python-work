@@ -149,4 +149,21 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(print_odd_numbers(numbers))
 
 #14
-		
+import numpy as np
+
+# list of numbers
+list1 = [10, 21, 4, 45, 66, 93]
+
+# convert list to numpy array
+arr = np.array(list1)
+
+# find indices where elements are odd
+idx = np.where(arr % 2 != 0)
+
+# extract elements at odd indices
+only_odd = arr[idx]
+
+# print only odd elements
+print(only_odd)
+
+#15
