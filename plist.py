@@ -179,3 +179,12 @@ odd_list = reduce(lambda a, b : a + [b] if b%2 else a, list1, [])
 print(odd_list)
 
 #16
+# Python program to print all even numbers in range
+for even_numbers in range(4,15,2):
+#here inside range function first no denotes starting,
+#second denotes end and
+#third denotes the interval
+	print(even_numbers,end=' ')
+
+
+#17
