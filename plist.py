@@ -130,4 +130,12 @@ if ele & 1: #Checking the element odd or not
 
 
 #12
+#List of numbers
+list1 = [9,5,4,7,2]
+
+for ele in list1:
+if ele | 1==ele: #Checking the element odd or not
+	print(ele,end=" ") 
+
+#13
 		
