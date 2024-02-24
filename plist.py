@@ -167,3 +167,15 @@ only_odd = arr[idx]
 print(only_odd)
 
 #15
+# Python program to print odd Numbers in a List
+from functools import reduce
+
+# list of numbers
+list1 = [10, 21, 4, 45, 66, 93]
+
+# Using reduce method in list
+odd_list = reduce(lambda a, b : a + [b] if b%2 else a, list1, [])
+
+print(odd_list)
+
+#16
