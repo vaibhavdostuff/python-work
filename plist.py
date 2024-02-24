@@ -138,4 +138,15 @@ if ele | 1==ele: #Checking the element odd or not
 	print(ele,end=" ") 
 
 #13
+def is_odd(number):
+return number % 2 == 1
+
+def print_odd_numbers(numbers):
+odd_numbers = list(filter(is_odd, numbers))
+return odd_numbers
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(print_odd_numbers(numbers))
+
+#14
 		
