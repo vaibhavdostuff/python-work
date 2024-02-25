@@ -235,3 +235,7 @@ even_num = list(filter(lambda x: (x%2==0),li))
 print(even_num)
 
 #21
+x=[i for i in range(4,15+1) if i%2==0]
+print(*x)
+
+#22
