@@ -215,3 +215,12 @@ start = start+1 if start&1 else start
 [ print( x ) for x in range(start, end + 1, 2)]
 
 #19
+def even(num1,num2):
+	if num1>num2:
+		return
+	print(num1,end=" ")
+	return even(num1+2,num2)
+num1=4;num2=15
+even(num1,num2)
+
+#20
