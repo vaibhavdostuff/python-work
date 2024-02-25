@@ -224,3 +224,14 @@ num1=4;num2=15
 even(num1,num2)
 
 #20
+# Python code To print all even numbers 
+# in a given range using the lambda function
+a=4;b=15
+li=[]
+for i in range(a,b+1):
+	li.append(i)
+# printing odd numbers using the lambda function
+even_num = list(filter(lambda x: (x%2==0),li)) 
+print(even_num)
+
+#21
