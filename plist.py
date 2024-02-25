@@ -253,3 +253,16 @@ else:
 	print(i,end=" ")
 
 #24
+# Python code To print all even numbers
+# in a given range using numpy array
+import numpy as np
+
+# Declaring Range
+a=4;b=15
+li= np.array(range(a, b+1))
+
+# printing odd numbers using numpy array
+even_num = li[li%2==0];
+print(even_num)
+
+#25
