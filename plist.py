@@ -245,3 +245,11 @@ l.append(i)
 print([a for j,a in enumerate(l) if a%2==0])
 
 #23
+a=4;b=15
+for i in range(a,b+1):
+if i%2!=0:
+	pass
+else:
+	print(i,end=" ")
+
+#24
