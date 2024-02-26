@@ -344,3 +344,7 @@ num1=5;num2=15
 odd(num1,num2)
 
 #31
+x = [i for i in range(4,15+1) if i%2!=0]
+print(*x)
+
+#32
