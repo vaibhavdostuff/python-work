@@ -332,3 +332,15 @@ odd_num = list(filter(lambda x: (x%2!=0),li))
 print(odd_num)
 
 #30
+def odd(num1,num2):
+	if num1>num2:
+		return
+	if num1&1:
+	print(num1,end=" ")
+	return odd(num1+2,num2)
+	else:
+	return odd(num1+1,num2)
+num1=5;num2=15
+odd(num1,num2)
+
+#31
