@@ -362,3 +362,14 @@ else:
 	print(i,end=" ")
 
 #34
+# Python program to print Even Numbers in given range
+
+# Range declaration
+a=4;
+b=15;
+
+#create a list that contains only Even numbers in given range
+l= filter(lambda a : a%2 , range(a, b+1))
+print(*l)
+
+#35
