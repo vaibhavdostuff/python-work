@@ -373,3 +373,24 @@ l= filter(lambda a : a%2 , range(a, b+1))
 print(*l)
 
 #35
+# Python program to print odd Numbers in given range
+#using bitwise | operator
+
+
+start, end = 4, 19
+
+
+
+# iterating each number in list
+
+for num in range(start, end + 1):
+
+	
+
+	# checking condition
+
+	if num | 1 == num:
+
+		print(num, end = " ")
+
+#36
