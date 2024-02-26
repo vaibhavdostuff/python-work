@@ -394,3 +394,16 @@ for num in range(start, end + 1):
 		print(num, end = " ")
 
 #36
+# Python 3 code to demonstrate
+# print odd number in range
+import itertools
+
+# Range declaration
+a = 3
+b = 15
+
+# using filterfalse function 
+evens = list(itertools.filterfalse(lambda x: x%2==0, range(a, b+1)))
+
+# Print the array of even numbers
+print(*evens)
