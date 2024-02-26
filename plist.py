@@ -348,3 +348,9 @@ x = [i for i in range(4,15+1) if i%2!=0]
 print(*x)
 
 #32
+a=4;b=15;l=[]
+for i in range(a,b+1):
+l.append(i)
+print([a for j,a in enumerate(l) if a%2!=0])
+
+#33
