@@ -321,3 +321,14 @@ for num in even_list:
 	print(num, end = " ")
 
 #29
+# Python code To print all odd numbers 
+# in a given range using the lambda function
+a=3;b=11
+li=[]
+for i in range(a,b+1):
+	li.append(i)
+# printing odd numbers using the lambda function
+odd_num = list(filter(lambda x: (x%2!=0),li)) 
+print(odd_num)
+
+#30
