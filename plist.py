@@ -490,4 +490,18 @@ pos_nos = list1[list1 >=0];
 print("Positive numbers in the list: ", *pos_nos)
 
 #44
+# Python program to print positive Numbers in a List
+
+# list of numbers
+list1 = [-10, 21, 4, -45, -66, 93, -11]
+
+import operator
+pos_nos = []
+for i in list1:
+	if operator.ge(i,0):
+		pos_nos.append(i)
+
+print("Positive numbers in the list: ", pos_nos)
+
+#45
 		
