@@ -466,4 +466,17 @@ l=[12, -7, 5, 64, -14]
 print([a for j,a in enumerate(l) if a>=0])
 
 #42
+# Python program to print positive numbers in a List
+
+# list of numbers
+list1 = [11, -21, 0, 45, 66, -93]
+res=[]
+list2=list(map(str,list1))
+for i in range(0,len(list2)):
+	if( not list2[i].startswith("-") and list2[i] !="0"):
+		res.append(str(list1[i]))
+res=" ".join(res)
+print(res)
+
+#43
 		
