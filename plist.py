@@ -407,3 +407,14 @@ evens = list(itertools.filterfalse(lambda x: x%2==0, range(a, b+1)))
 
 # Print the array of even numbers
 print(*evens)
+
+#37
+# Python program to print Positive Numbers in a List
+
+# list of numbers
+list1 = [-10, -21, -4, 45, -66, 93]
+
+# using list comprehension
+pos_nos = [num for num in list1 if num >= 0]
+
+print("Positive numbers in the list: ", *pos_nos)
