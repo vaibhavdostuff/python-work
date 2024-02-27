@@ -479,4 +479,15 @@ res=" ".join(res)
 print(res)
 
 #43
+# Python program to print Positive Numbers in a List
+import numpy as np
+# list of numbers
+list1 = np.array([-10, -21, -4, 45, -66, 93])
+
+# using numpy Array
+pos_nos = list1[list1 >=0];
+
+print("Positive numbers in the list: ", *pos_nos)
+
+#44
 		
