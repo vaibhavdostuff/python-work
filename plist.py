@@ -598,4 +598,19 @@ list1 = [-1,8,9,-5,7]
 PrintNegative(0,list1)
 
 #53
+import numpy as np
+
+# list of numbers
+list1 = [12, -7, 5, 64, -14]
+
+# converting list to numpy array
+arr1 = np.array(list1)
+
+# finding negative numbers in the array
+neg_nums = arr1[np.where(arr1 < 0)]
+
+# printing negative numbers
+print("Negative numbers in the list: ", *neg_nums)
+
+#54
 		
