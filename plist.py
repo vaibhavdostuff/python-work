@@ -586,4 +586,16 @@ neg_nos = temp[temp <= 0]
 print("Negative numbers in the list: ", *neg_nos)
 
 #52
+#Recursive function to check current element negative or not
+def PrintNegative(itr,list1):
+if itr == len(list1): #base condition
+	return
+if list1[itr] < 0: #check negative number or not
+	print( list1[itr],end = " ")
+PrintNegative(itr+1,list1) #recursive function call
+
+list1 = [-1,8,9,-5,7]
+PrintNegative(0,list1)
+
+#53
 		
