@@ -573,4 +573,17 @@ res = " ".join(res)
 print(res)
 
 #51
+# Python program to print negative Numbers in a List
+import numpy as np
+# list of numbers
+list1 = [-10, 21, 4, -45, -66, 93, -11]
+
+
+# Using numpy to print the negative number
+temp = np.array(list1)
+neg_nos = temp[temp <= 0]
+
+print("Negative numbers in the list: ", *neg_nos)
+
+#52
 		
