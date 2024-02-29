@@ -613,4 +613,16 @@ neg_nums = arr1[np.where(arr1 < 0)]
 print("Negative numbers in the list: ", *neg_nums)
 
 #54
+# Python program to print negative Numbers in a List
+from functools import reduce
+
+# list of numbers
+list1 = [-10, -21, -4, 45, -66, 93]
+
+# using reduce method
+neg_nos = reduce(lambda a, b : a + [ b ] if b < 0 else a ,list1, [])
+
+print("Negative numbers in the list: ", *neg_nos)
+
+#55
 		
