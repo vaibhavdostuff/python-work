@@ -661,4 +661,12 @@ positive_num = list(filter(lambda x: (x>=0),li))
 print(positive_num)
 
 #58
+# Python code 
+# To print all positive numbers in a given range 
+a=-4;b=5
+out=[i for i in range(a,b+1) if i>0] 
+# print the all positive numbers 
+print(*out) 
+
+#59
 		
