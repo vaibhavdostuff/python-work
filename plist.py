@@ -625,4 +625,16 @@ neg_nos = reduce(lambda a, b : a + [ b ] if b < 0 else a ,list1, [])
 print("Negative numbers in the list: ", *neg_nos)
 
 #55
+# Python program to print positive Numbers in given range 
+
+start, end = -4, 19
+
+# iterating each number in list 
+for num in range(start, end + 1): 
+
+	# checking condition 
+	if num >= 0: 
+		print(num, end=" ") 
+
+#56
 		
