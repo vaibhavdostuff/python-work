@@ -669,4 +669,10 @@ out=[i for i in range(a,b+1) if i>0]
 print(*out) 
 
 #59
+a=-4;b=5;l=[] 
+for i in range(a,b+1): 
+l.append(i) 
+print([a for j,a in enumerate(l) if a>=0]) 
+
+#60
 		
