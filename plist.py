@@ -650,4 +650,15 @@ for num in range(start, end + 1):
 		print(num, end=" ") 
 
 #57
+# Python code To print all positive numbers 
+# in a given range using the lambda function 
+a=-4;b=5
+li=[] 
+for i in range(a,b+1): 
+	li.append(i) 
+# printing positive numbers using the lambda function 
+positive_num = list(filter(lambda x: (x>=0),li)) 
+print(positive_num)
+
+#58
 		
