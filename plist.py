@@ -693,3 +693,10 @@ a,b=-5,10
 printPositives(a,b) #function calling 
 
 #62
+a = -4
+b = 5
+
+positive_nums = list(filter(lambda x: x >= 0, range(a, b+1))) 
+print(positive_nums) 
+
+#63
