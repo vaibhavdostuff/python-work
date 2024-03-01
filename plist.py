@@ -684,3 +684,12 @@ else:
 
 
 #61
+def printPositives(start,end): #defining recursive function to print positives 
+if start==end:return #base condition 
+if start>=0: #check for positive number 
+	print(start,end=' ') 
+printPositives(start+1,end) # recursive calling 
+a,b=-5,10
+printPositives(a,b) #function calling 
+
+#62
