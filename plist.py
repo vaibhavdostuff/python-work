@@ -788,3 +788,19 @@ b = 5
 PrintNegative(a,b) 
 
 #71
+import numpy as np
+
+# Taking input values for start and end of the range
+start = -4
+end = 5
+
+# Creating an array using numpy.arange()
+arr = np.arange(start, end+1)
+
+# Filtering negative numbers using numpy.where()
+neg_arr = arr[np.where(arr<0)]
+
+# Printing the resulting array
+print(neg_arr)
+
+#72
