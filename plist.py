@@ -744,3 +744,16 @@ for num in range(start, end + 1):
 		print(num, end = " ")
 
 #66
+# Python code To print all negative 
+# numbers in a given range using lambda function
+
+# inputs
+a=-4;b=5
+li=[]
+for i in range(a,b):
+	li.append(i)
+# printing negative numbers using the lambda function
+negative_num = list(filter(lambda x: (x<0),li)) 
+print(negative_num)
+
+#67
