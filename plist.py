@@ -763,3 +763,7 @@ l.append(i)
 print([a for j,a in enumerate(l) if a<0])
 
 #68
+a=-4;b=5
+print([i for i in range(a,b+1) if i<0])
+
+#69
