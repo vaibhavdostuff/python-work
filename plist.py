@@ -775,3 +775,16 @@ else:
 	print(i,end=" ")
 
 #70
+#Recursive function to print Negative numbers
+def PrintNegative(itr,end):
+	if itr == end:#Base Condition
+		return
+if itr < 0: #checking Negative or not
+	print(itr,end=" ")
+PrintNegative(itr+1,end) #Recursive function call
+return
+a = -5
+b = 5
+PrintNegative(a,b) 
+
+#71
