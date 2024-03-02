@@ -757,3 +757,9 @@ negative_num = list(filter(lambda x: (x<0),li))
 print(negative_num)
 
 #67
+a=-4;b=5;l=[]
+for i in range(a,b+1):
+l.append(i)
+print([a for j,a in enumerate(l) if a<0])
+
+#68
