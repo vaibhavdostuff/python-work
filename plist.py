@@ -878,3 +878,10 @@ for ele in sorted(unwanted, reverse = True):
 print (*list1)
 
 #77
+list1 = [11, 5, 17, 18, 23, 50] 
+
+list1 = [ elem for i,elem in enumerate(list1) if elem % 2 != 0]
+
+print(list1)
+
+#78
