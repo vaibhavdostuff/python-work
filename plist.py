@@ -885,3 +885,24 @@ list1 = [ elem for i,elem in enumerate(list1) if elem % 2 != 0]
 print(list1)
 
 #78
+import numpy as np
+
+#creating a list
+list1 = [12, 15, 3, 10]
+
+#convert list to numpy array
+arr = np.array(list1)
+
+#indices of elements to be removed
+remove_idx = [0, 2]
+
+#use numpy.delete() to remove elements
+new_arr = np.delete(arr, remove_idx)
+
+#convert numpy array back to list
+new_list = new_arr.tolist()
+
+#print the results
+print("Removed =", [list1[i] for i in remove_idx], ", New_List =", new_list)
+
+#79
