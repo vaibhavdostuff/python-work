@@ -1011,3 +1011,8 @@ y=list(map(int,y))
 print("List after empty list removal : " + str(y))
 
 #85
+test_list = [5, 6, [], 3, [], [], 9]
+res = [ele for i,ele in enumerate(test_list) if ele != []]
+print(res)
+
+#86
