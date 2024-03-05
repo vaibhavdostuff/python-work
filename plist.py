@@ -1047,4 +1047,25 @@ res = list(filter(lambda x: x != [], test_list))
 # Printing the resultant list
 print("List after empty list removal : " + str(res))
 
-#88
+
+#88 
+# Python3 code to Demonstrate Remove empty List
+#defining recursive function to remove empty list 
+def remove_empty(start,oldlist,newlist):
+if start==len(oldlist): #base condition 
+	return newlist
+if oldlist[start]==[]: #checking the element is empty list or not
+	pass
+else:
+	newlist.append(oldlist[start]) #appending non empty list element to newlist
+return remove_empty(start+1,oldlist,newlist) #recursive function call
+
+test_list = [5, 6, [], 3, [], [], 9]
+
+# printing original list
+print("The original list is : " + str(test_list))
+result=remove_empty(0,test_list,[])
+# printing result
+print("List after empty list removal : " ,result)
+
+#89
