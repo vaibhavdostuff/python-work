@@ -1069,3 +1069,21 @@ result=remove_empty(0,test_list,[])
 print("List after empty list removal : " ,result)
 
 #89
+# Python3 Code to Demonstrate Remove empty List
+# from List
+import itertools
+
+# Initializing list by custom values
+test_list = [5, 6, [], 3, [], [], 9]
+
+# Printing original list
+print("The original list is : " + str(test_list))
+
+# Removing empty List from List
+# using lambda function
+res = list(itertools.filterfalse(lambda x: x == [], test_list))
+
+# Printing the resultant list
+print("List after empty list removal : " + str(res))
+
+#90
