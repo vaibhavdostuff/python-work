@@ -1101,4 +1101,4 @@ res = list(filter(None, [x for x in input_list if not re.match('\[\]', str(x))])
 # print resultant list
 print(f"List after empty list removal : {res}")
 
-#91
+
