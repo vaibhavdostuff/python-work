@@ -1087,3 +1087,18 @@ res = list(itertools.filterfalse(lambda x: x == [], test_list))
 print("List after empty list removal : " + str(res))
 
 #90
+import re
+
+# input list values
+input_list = [5, 6, [], 3, [], [], 9]
+
+# print initial list values
+print(f"The original list is : {input_list}")
+
+# removing empty list from list
+res = list(filter(None, [x for x in input_list if not re.match('\[\]', str(x))]))
+
+# print resultant list
+print(f"List after empty list removal : {res}")
+
+#91
