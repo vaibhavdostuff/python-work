@@ -632,3 +632,11 @@ print("Original List:", lst)
 print("After Cloning:", li_copy) 
 
 #46
+# Python code to clone or copy a list
+# Using map function
+lst = [4, 8, 2, 10, 15, 18]
+li_copy = map(int, lst)
+print("Original List:", lst)
+print("After Cloning:", *li_copy)
+
+#47
