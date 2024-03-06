@@ -613,3 +613,14 @@ print("Original List:", li1)
 print("After Cloning:", li2)
 
 #44
+# importing copy module
+import copy
+
+# initializing list 1 
+li1 = [1, 2, [3,5], 4]
+
+# using deepcopy for deepcopy 
+li3 = copy.deepcopy(li1) 
+print(li3)
+
+#45
