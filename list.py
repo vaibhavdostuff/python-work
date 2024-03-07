@@ -712,3 +712,8 @@ x = 2
 print(f"{x} has occurred {op.countOf(l, x)} times")
 
 #54
+lis = ['a', 'd', 'd', 'c', 'a', 'b', 'b', 'a', 'c', 'd', 'e']
+occurrence = {item: lis.count(item) for item in lis}
+print(occurrence.get('e'))
+
+#55
