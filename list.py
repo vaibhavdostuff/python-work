@@ -702,3 +702,13 @@ d = Counter(l)
 print('{} has occurred {} times'.format(x, d[x]))
 
 #53
+import operator as op
+
+# declaring the list
+l = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5]
+
+# driver program
+x = 2
+print(f"{x} has occurred {op.countOf(l, x)} times")
+
+#54
