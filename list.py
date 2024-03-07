@@ -717,3 +717,13 @@ occurrence = {item: lis.count(item) for item in lis}
 print(occurrence.get('e'))
 
 #55
+import pandas as pd
+
+# declaring the list
+l = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5]
+
+count = pd.Series(l).value_counts()
+print("Element Count")
+print(count)
+
+#56
