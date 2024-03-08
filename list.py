@@ -848,3 +848,15 @@ tuples = list(filter(lambda x: len(x) > 0, tuples))
 print(tuples)
 
 #65
+import itertools # import the itertools module
+
+def Remove(tuples):
+	tuples = list(itertools.filterfalse(lambda x: x == (), tuples)) # remove empty tuples using filterfalse from itertools
+	return tuples
+
+# Driver code
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
+		('krishna', 'akbar', '45'), ('',''),()] # define the input list of tuples
+print(Remove(tuples)) # call the Remove function and print the output
+
+#66
