@@ -798,3 +798,9 @@ tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
 print(Remove(tuples))
 
 #61
+tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
+		('krishna', 'akbar', '45'), ('', ''), ()]
+res = [t for i, t in enumerate(tuples) if t]
+print(res)
+
+#62
