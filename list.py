@@ -785,3 +785,16 @@ tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
 print(Remove(tuples))
 
 #60
+# Python program to remove empty tuples from a
+# list of tuples function to remove empty tuples
+def Remove(tuples):
+	for i in tuples:
+		if(i==()):
+			tuples.remove(i)
+			return tuples
+# Driver Code
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
+		('krishna', 'akbar', '45'), ('',''),()]
+print(Remove(tuples))
+
+#61
