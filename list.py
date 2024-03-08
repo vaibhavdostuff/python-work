@@ -804,3 +804,17 @@ res = [t for i, t in enumerate(tuples) if t]
 print(res)
 
 #62
+# Python program to remove empty tuples from
+# a list of tuples function to remove empty
+# tuples using while loop and in operator 
+def Remove(tuples):
+	while () in tuples:
+		tuples.remove(());
+	return tuples
+
+# Driver Code
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
+		('krishna', 'akbar', '45'), ('',''),()]
+print (Remove(tuples))
+
+#63
