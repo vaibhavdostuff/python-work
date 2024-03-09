@@ -941,3 +941,19 @@ output_list = cumulative_sum(input_list)
 print(output_list)
 
 #73
+import numpy as np
+
+def cumulative_sum(input_list):
+	# Convert the list to a NumPy array
+	input_array = np.array(input_list)
+	# Compute the cumulative sum along the first axis of the array
+	cumulative_sum_array = np.cumsum(input_array)
+	# Convert the NumPy array back to a list and return it
+	return cumulative_sum_array.tolist()
+
+input_list = [10, 20, 30, 40, 50]
+output_list = cumulative_sum(input_list)
+print(output_list)
+
+#74
+	
