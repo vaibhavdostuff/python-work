@@ -927,3 +927,17 @@ lists = [10, 20, 30, 40, 50]
 print (Cumulative(lists)) 
 
 #72
+from itertools import accumulate
+import operator
+
+def cumulative_sum(input_list):
+	# Use the accumulate() function to perform a cumulative sum of the elements in the list
+	cumulative_sum_iter = accumulate(input_list, operator.add)
+	# Convert the iterator to a list and return it
+	return list(cumulative_sum_iter)
+
+input_list = [10, 20, 30, 40, 50]
+output_list = cumulative_sum(input_list)
+print(output_list)
+
+#73
