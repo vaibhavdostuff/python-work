@@ -898,3 +898,7 @@ for i in x:
 print(y)
 
 #69
+input_list = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
+print(list(set([x for i,x in enumerate(input_list) if input_list.count(x) > 1])))
+
+#70
