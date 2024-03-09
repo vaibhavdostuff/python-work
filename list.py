@@ -956,4 +956,17 @@ output_list = cumulative_sum(input_list)
 print(output_list)
 
 #74
-	
+from collections import Counter
+
+def cumulative_sum(lst):
+	cnt = Counter(lst)
+	cum_sum = [lst[0]]
+	for i in range(1, len(lst)):
+		cum_sum.append(cum_sum[i-1] + lst[i])
+	return cum_sum
+
+lst = [10, 20, 30, 40, 50]
+result = cumulative_sum(lst)
+print(result)
+
+#75
