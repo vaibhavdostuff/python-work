@@ -1030,3 +1030,19 @@ res = [reduce(lambda x, y: int(x) + int(y), list(str(i))) for i in test_list]
 print("List Integer Summation : " + str(res))
 
 #78
+import numpy as np
+
+# Initializing list
+test_list = [12, 67, 98, 34]
+
+# printing original list
+print("The original list is : " + str(test_list))
+
+# Sum of number digits in List
+# using numpy
+res = np.sum([list(map(int, str(ele))) for ele in test_list], axis=1)
+
+# printing result
+print("List Integer Summation : " + str(list(res)))
+
+#79
