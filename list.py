@@ -1060,3 +1060,16 @@ def sum_of_digits_list(lst):
 print(sum_of_digits_list(lst))
 
 #80
+# Initializing list
+test_list = [12, 67, 98, 34]
+
+# printing original list
+print("The original list is : " + str(test_list))
+
+# Sum of number digits in List
+# creating an expression
+res = list(sum(int(digit) for digit in str(num)) for num in test_list)
+# printing result
+print("List Integer Summation : " + str(list(res)))
+
+#81
