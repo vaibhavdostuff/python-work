@@ -898,3 +898,9 @@ x = [l[i:i + n] for i in range(0, len(l), n)]
 print(x) 
 
 #67
+import numpy as np 
+
+arr = range(30) 
+np.array_split(arr, 6)
+
+#68
