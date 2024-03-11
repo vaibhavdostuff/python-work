@@ -904,3 +904,14 @@ arr = range(30)
 np.array_split(arr, 6)
 
 #68
+from itertools import islice 
+
+
+def chunk(arr_range, arr_size): 
+	arr_range = iter(arr_range) 
+	return iter(lambda: tuple(islice(arr_range, arr_size)), ()) 
+
+
+list(chunk(range(30), 5)) 
+
+#69
