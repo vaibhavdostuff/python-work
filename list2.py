@@ -1011,3 +1011,12 @@ for i in a:
 print(res)
 
 #74
+# Python program to sort values of first list based on second list
+from collections import OrderedDict
+list1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+list2 = [0, 1, 1, 0, 1, 2, 2, 0, 1]
+d = OrderedDict(zip(list1, list2))
+res = list(OrderedDict(sorted(d.items(), key=lambda x: x[1])))
+print(res)
+
+#75
