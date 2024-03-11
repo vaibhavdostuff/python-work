@@ -928,3 +928,12 @@ while deque_obj:
 	for _ in range(chunk_size): 
 		if deque_obj: 
 		chunk.append(deque_obj.popleft()) 
+		
+	# Yield the chunk 
+	yield chunk 
+input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+chunk_size = 3
+chunks = list(split_list(input_list, chunk_size)) 
+print(chunks) # [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]] 
+
+#70
