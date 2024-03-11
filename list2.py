@@ -937,3 +937,10 @@ chunks = list(split_list(input_list, chunk_size))
 print(chunks) # [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]] 
 
 #70
+my_list = list(range(10)) 
+chunk_size = 3
+while my_list: 
+	chunk, my_list = my_list[:chunk_size], my_list[chunk_size:] 
+	print(chunk)
+
+#71
