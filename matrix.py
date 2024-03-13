@@ -374,3 +374,17 @@ for row in matrix2:
 		print(element, end=" ")
 	print()
 
+# Subtracting two matrices
+result = [[0, 0], [0, 0]]
+for i in range(len(matrix1)):
+	for j in range(len(matrix1[0])):
+		result[i][j] = matrix1[i][j] - matrix2[i][j]
+
+# Printing the result
+print("Subtraction of two matrix")
+for row in result:
+	for element in row:
+		print(element, end=" ")
+	print()
+
+#18
