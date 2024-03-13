@@ -293,3 +293,26 @@ for i in test_list:
 print("The total element product in lists is : " + str(res))
 
 #14
+# function to calculate the product of all elements in the nested list
+def multiply_nested_list(nested_list):
+	res = 1
+	for i in nested_list:
+		if isinstance(i, list):
+			res *= multiply_nested_list(i)
+		else:
+			res *= i
+	return res
+
+# initializing list
+test_list = [[1, 4, 5], [7, 3], [4], [46, 7, 3]]
+
+# printing original list
+print("The original list : " + str(test_list))
+
+# call the function to get the product
+res = multiply_nested_list(test_list)
+
+# print result
+print("The total element product in lists is : " + str(res))
+
+#15
