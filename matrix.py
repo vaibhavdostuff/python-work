@@ -356,3 +356,21 @@ print("Subtraction of two matrix")
 print(np.subtract(A, B))
 
 #17
+# Input matrices
+matrix1 = [[1, 2], [3, 4]]
+matrix2 = [[4, 5], [6, 7]]
+
+# Printing elements of matrix1
+print("Printing elements of first matrix")
+for row in matrix1:
+	for element in row:
+		print(element, end=" ")
+	print()
+
+# Printing elements of matrix2
+print("Printing elements of second matrix")
+for row in matrix2:
+	for element in row:
+		print(element, end=" ")
+	print()
+
