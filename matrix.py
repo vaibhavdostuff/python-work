@@ -414,4 +414,11 @@ print("\n")
 print(numpy.transpose(matrix))
 
 #21
+import numpy as np
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+print(matrix)
+print("\n")
+print(matrix.T)
+
+#22
 	
