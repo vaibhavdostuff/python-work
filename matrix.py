@@ -421,4 +421,20 @@ print("\n")
 print(matrix.T)
 
 #22
+from itertools import chain
+import time
+import numpy as np
+
+def transpose2(M):
+	n = len(M[0])
+	L = list(chain(*M))
+	return [L[i::n] for i in range(n)]
+
+start = time.time_ns()
+matrix = np.array([[1, 2, 3], [4, 5, 6]])
+end = time.time_ns()
+print(transpose2(matrix))
+print("Time taken", end-start, "ns")
+
+#23
 	
