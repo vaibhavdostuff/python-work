@@ -407,4 +407,11 @@ for row in t_matrix:
 	print(row)
 
 #20
+import numpy
+matrix = [[1, 2, 3], [4, 5, 6]]
+print(matrix)
+print("\n")
+print(numpy.transpose(matrix))
+
+#21
 	
