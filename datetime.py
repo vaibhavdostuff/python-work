@@ -22,3 +22,12 @@ currentTime = now_method.strftime("%H:%M:%S")
 print("Current Time =", currentTime)
 
 #3
+from datetime import datetime
+
+# Time object containing
+# the current time.
+time = datetime.now().time()
+
+print("Current Time =", time)
+
+#4
