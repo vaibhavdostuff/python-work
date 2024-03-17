@@ -109,3 +109,17 @@ x = dt.now().isoformat()
 print('Current ISO:', x)
 
 #11
+import time
+
+curr_time = time.strftime("%H:%M:%S", time.localtime())
+
+print("Current Time is :", curr_time)
+
+#12
+import time
+
+millisec = int(round(time.time() * 1000))
+
+print("Time in Milli seconds: ", millisec)
+
+#13
