@@ -142,3 +142,8 @@ gmt_time = time.gmtime(time.time())
 print('Current GMT Time:\n', gmt_time)
 
 #15
+import time
+
+print("Epoch Time is : ", int(time.time()))
+
+#16
