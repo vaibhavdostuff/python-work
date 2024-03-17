@@ -46,3 +46,15 @@ currentTime = time.strftime("%H:%M:%S", Time)
 print(currentTime)
 
 #5
+# Getting current date and time using now().
+
+# importing datetime module for now()
+import datetime
+
+# using now() to get current time
+current_time = datetime.datetime.now()
+
+# Printing value of now.
+print("Time now at greenwich meridian is:", current_time)
+
+#6
