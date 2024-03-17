@@ -98,3 +98,14 @@ current_time = datetime.datetime.now(pytz.timezone('Asia/Kolkata'))
 print("The current time in india is :", current_time)
 
 #9
+from datetime import datetime
+
+print("UTC Time: ", datetime.utcnow())
+
+#10
+from datetime import datetime as dt
+
+x = dt.now().isoformat()
+print('Current ISO:', x)
+
+#11
