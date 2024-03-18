@@ -343,3 +343,11 @@ timestamp = datetime.datetime.timestamp(element)
 print(timestamp)
 
 #26
+from datetime import datetime
+
+timestamp_string = "2023-07-21 15:30:45"
+format_string = "%Y-%m-%d %H:%M:%S"
+datetime_object = datetime.strptime(timestamp_string, format_string)
+print(datetime_object)
+
+#27
