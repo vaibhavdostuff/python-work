@@ -361,3 +361,11 @@ print("date_time:",dt_obj)
 print("type of dt:",type(dt_obj))
 
 #28
+from dateutil.parser import parse
+
+timestamp_string = "2023-07-17 11:30:45"
+
+datetime_object = parse(timestamp_string)
+print(datetime_object)
+
+#29
