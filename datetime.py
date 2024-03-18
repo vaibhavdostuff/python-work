@@ -275,3 +275,22 @@ try:
 		# Total time elapsed
 		# since the timer started
 		totaltime = round((time.time() - starttime), 2)
+
+		# Printing the lap number,
+		# lap-time and total time
+		print("Lap No. "+str(lapnum))
+		print("Total Time: "+str(totaltime))
+		print("Lap Time: "+str(laptime))
+
+		print("*"*20)
+
+		# Updating the previous total time
+		# and lap number
+		lasttime = time.time()
+		lapnum += 1
+
+# Stopping when CTRL+C is pressed
+except KeyboardInterrupt:
+	print("Done")
+
+#23
