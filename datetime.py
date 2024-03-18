@@ -252,3 +252,26 @@ print(convert_to_24hour('11:21:30 PM'))
 print(convert_to_24hour('12:12:20 AM'))
 
 #22
+# importing libraries
+import time
+
+
+# Timer starts
+starttime = time.time()
+lasttime = starttime
+lapnum = 1
+
+print("Press ENTER to count laps.\nPress CTRL+C to stop")
+
+try:
+	while True:
+
+		# Input for the ENTER key press
+		input()
+
+		# The current lap-time
+		laptime = round((time.time() - lasttime), 2)
+
+		# Total time elapsed
+		# since the timer started
+		totaltime = round((time.time() - starttime), 2)
