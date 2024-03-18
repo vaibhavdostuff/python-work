@@ -351,3 +351,13 @@ datetime_object = datetime.strptime(timestamp_string, format_string)
 print(datetime_object)
 
 #27
+from datetime import datetime
+
+
+timestamp = 1545730073
+dt_obj = datetime.fromtimestamp(1140825600)
+
+print("date_time:",dt_obj)
+print("type of dt:",type(dt_obj))
+
+#28
