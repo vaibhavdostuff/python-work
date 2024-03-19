@@ -212,3 +212,19 @@ print("\nFormatting in 3.4f format: ")
 print('The value of Integer1 is %3.4f' % Integer1) 
 
 #19
+import re
+
+
+def replace_substring(test_str, s1, s2):
+	# Replacing all occurrences of substring s1 with s2
+	test_str = re.sub(s1, s2, test_str)
+	return test_str
+
+
+# test
+test_str = "geeksforgeeks"
+s1 = "geeks"
+s2 = "abcd"
+print(replace_substring(test_str, s1, s2))
+
+#20
