@@ -369,3 +369,13 @@ datetime_object = parse(timestamp_string)
 print(datetime_object)
 
 #29
+import datetime
+
+timestamp = 1690433696
+
+# Convert timestamp to datetime object
+dt_object = datetime.datetime.fromtimestamp(timestamp)
+
+print(dt_object) 
+
+#30
