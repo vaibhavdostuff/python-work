@@ -379,3 +379,27 @@ dt_object = datetime.datetime.fromtimestamp(timestamp)
 print(dt_object) 
 
 #30
+# python program Find number of
+# times every day occurs in a Year 
+
+
+import datetime 
+import calendar
+
+def day_occur_time(year):
+	
+	# stores days in a week 
+	days = [ "Monday", "Tuesday", "Wednesday", 
+		"Thursday", "Friday", "Saturday", 
+		"Sunday" ]
+	
+	# Initialize all counts as 52
+	L = [52 for i in range(7)]
+	
+	# Find the index of the first day
+	# of the year
+	pos = -1
+	day = datetime.datetime(year, month = 1, day = 1).strftime("%A")
+	for i in range(7):
+		if day == days[i]:
+			pos = i
