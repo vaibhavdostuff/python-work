@@ -326,3 +326,22 @@ if __name__ == "__main__":
 	find_dup_char(input)
 
 #25
+def find_duplicate_chars(string):
+	# Create empty sets to store unique and duplicate characters
+	unique_chars = set()
+	duplicate_chars = set()
+
+	# Iterate through each character in the string
+	for char in string:
+		# If the character is already in unique_chars, it is a duplicate
+		if char in unique_chars:
+			duplicate_chars.add(char)
+		# Otherwise, add it to unique_chars
+		else:
+			unique_chars.add(char)
+	return duplicate_chars
+
+# Example usage:
+print(find_duplicate_chars("vaibhavishere")) # Output: ['e', 'g', 'k', 's']
+
+#26
