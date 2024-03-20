@@ -345,3 +345,16 @@ def find_duplicate_chars(string):
 print(find_duplicate_chars("vaibhavishere")) # Output: ['e', 'g', 'k', 's']
 
 #26
+from functools import reduce
+
+def find_dup_char(input):
+	x = reduce(lambda x, b: x + b if input.rindex(b) != input.index(b) and b not in x else x, input, '')
+	print(x)
+
+
+# Driver Code
+if __name__ == "__main__":
+	input = 'vaibhavishere'
+	find_dup_char(input)
+
+#27
