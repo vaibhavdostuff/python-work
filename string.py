@@ -429,3 +429,12 @@ print("Left Rotation: ", left_rotated)
 print("Right Rotation: ", right_rotated)
 
 #30
+code = '"hello" + "world"'
+result = eval(code)
+print(result) # Output: "hello world"
+
+code = '["a", "b", "c"][1]'
+result = eval(code)
+print(result) # Output: "b"
+
+#31
