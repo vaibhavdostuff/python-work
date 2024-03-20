@@ -409,3 +409,23 @@ if __name__ == "__main__":
 	rotate(input,d)
 
 #29
+from collections import deque
+
+def rotate_string(s, d):
+	deq = deque(s)
+	if d > 0:
+		deq.rotate(-d)
+	else:
+		deq.rotate(abs(d))
+	return ''.join(deq)
+
+s = 'vaibhavishere'
+d = 2
+
+left_rotated = rotate_string(s, d)
+right_rotated = rotate_string(s, -d)
+
+print("Left Rotation: ", left_rotated)
+print("Right Rotation: ", right_rotated)
+
+#30
