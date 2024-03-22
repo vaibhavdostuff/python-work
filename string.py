@@ -495,4 +495,22 @@ string = 'My Profile: https://auth.geeksforgeeks.org/user/Chinmoy%20Lenka/articl
 print("Urls: ", Find(string))
 
 #35
+from urllib.parse import urlparse
+
+string = 'My Profile: https://auth.geeksforgeeks.org/user/Chinmoy%20Lenka/articles in the portal of https://www.geeksforgeeks.org/'
+
+# Split the string into words
+words = string.split()
+
+# Extract URLs from the words using urlparse()
+urls = []
+for word in words:
+	parsed = urlparse(word)
+	if parsed.scheme and parsed.netloc:
+		urls.append(word)
+
+# Print the extracted URLs
+print("URLs:", urls)
+
+#36
 
