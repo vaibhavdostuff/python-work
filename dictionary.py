@@ -42,3 +42,28 @@ res = list(sorted(set(chain(*test_dict.values()))))
 print("The unique values list is : " + str(res))
 
 #3
+# Python3 code to demonstrate working of
+# Extract Unique values dictionary values
+# initializing dictionary
+test_dict = {'a' : [5, 6, 7, 8],
+			'b' : [10, 11, 7, 5],
+			'c' : [6, 12, 10, 8],
+			'd' : [1, 2, 5]}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+x=list(test_dict.values())
+y=[]
+res=[]
+for i in x:
+	y.extend(i)
+for i in y:
+	if i not in res:
+		res.append(i)
+res.sort()
+
+# printing result
+print("The unique values list is : " + str(res))
+
+#4
