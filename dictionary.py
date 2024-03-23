@@ -196,3 +196,18 @@ dict = {'a': 100, 'b': 200, 'c': 300}
 print("Sum :", returnSum(dict))
 
 #10
+# Python3 Program to find sum of
+# all items in a Dictionary
+
+# Function to print sum
+
+
+def returnSum(dict):
+	return sum(dict.values())
+
+
+# Driver Function
+dict = {'a': 100, 'b': 200, 'c': 300}
+print("Sum :", returnSum(dict))
+
+#11
