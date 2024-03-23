@@ -117,3 +117,21 @@ res.sort()
 print("The unique values list is : " + str(res))
 
 #6
+#Python3 code to demonstrate working of
+#Extract Unique values dictionary values
+#initializing dictionary
+test_dict = {'a' : [5, 6, 7, 8],
+'b' : [10, 11, 7, 5],
+'c' : [6, 12, 10, 8],
+'d' : [1, 2, 5]}
+
+#printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+#Extract Unique values dictionary values
+result = list(set(sum(test_dict.values(), [])))
+
+#printing result
+print("The unique values list is : " + str(result))
+
+#7
