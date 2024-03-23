@@ -67,3 +67,27 @@ res.sort()
 print("The unique values list is : " + str(res))
 
 #4
+# Python3 code to demonstrate working of
+# Extract Unique values dictionary values
+# initializing dictionary
+from collections import Counter
+test_dict = {'a': [5, 6, 7, 8],
+			'b': [10, 11, 7, 5],
+			'c': [6, 12, 10, 8],
+			'd': [1, 2, 5]}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+valuesList = []
+for key, values in test_dict.items():
+	for value in values:
+		valuesList.append(value)
+freq = Counter(valuesList)
+uniqueValues = list(freq.keys())
+uniqueValues.sort()
+
+# printing result
+print("The unique values list is : " + str(uniqueValues))
+
+#5
