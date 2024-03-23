@@ -91,3 +91,29 @@ uniqueValues.sort()
 print("The unique values list is : " + str(uniqueValues))
 
 #5
+# Python3 code to demonstrate working of
+# Extract Unique values dictionary values
+import operator as op
+# initializing dictionary
+test_dict = {'a' : [5, 6, 7, 8],
+			'b' : [10, 11, 7, 5],
+			'c' : [6, 12, 10, 8],
+			'd' : [1, 2, 5]}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+x=list(test_dict.values())
+y=[]
+res=[]
+for i in x:
+	y.extend(i)
+for i in y:
+	if op.countOf(res,i)==0:
+		res.append(i)
+res.sort()
+
+# printing result
+print("The unique values list is : " + str(res))
+
+#6
