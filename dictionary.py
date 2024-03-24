@@ -291,3 +291,14 @@ new_dict = {key: val for key,
 print("The dictionary after remove is : " + str(new_dict))
 
 #16
+# Initializing dictionary
+test_dict = {"Arushi": 22, "Anuradha": 21, "Mani": 21, "Haritha": 21}
+
+# Printing dictionary before removal
+print("The dictionary before performing remove is : \n" + str(test_dict))
+
+a_dict = {key: test_dict[key] for key in test_dict if key != 'Mani'}
+
+print("The dictionary after performing remove is : \n", a_dict)
+
+#17
