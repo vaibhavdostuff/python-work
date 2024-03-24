@@ -220,3 +220,13 @@ sum_dic = functools.reduce(lambda ac,k: ac+dic[k], dic, 0)
 print("Sum :", sum_dic)
 
 #12
+import functools
+
+def sum_dict_values(dict):
+	return functools.reduce(lambda acc, x: acc + dict[x], dict, 0)
+
+# Driver Function
+dict = {'a': 100, 'b': 200, 'c': 300}
+print("Sum :", sum_dict_values(dict))
+
+#13
