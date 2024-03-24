@@ -274,3 +274,20 @@ print("The dictionary after remove is : " + str(test_dict))
 print("The removed key's value is : " + str(removed_value))
 
 #15
+# Initializing dictionary
+test_dict = {"Arushi": 22, "Anuradha": 21, 
+			"Mani": 21, "Haritha": 21}
+
+# Printing dictionary before removal
+print("The dictionary before performing\
+remove is : " + str(test_dict))
+
+# Using items() + dict comprehension to remove a dict. pair
+# removes Mani
+new_dict = {key: val for key, 
+			val in test_dict.items() if key != 'Mani'}
+
+# Printing dictionary after removal
+print("The dictionary after remove is : " + str(new_dict))
+
+#16
