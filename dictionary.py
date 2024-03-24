@@ -327,3 +327,13 @@ except:
 	print('Deleted!')
 
 #19
+# Initializing dictionary
+test_dict = {"Arushi": 22, "Anuradha": 21, "Mani": 21, "Haritha": 21}
+print(test_dict)
+
+# empty the dictionary d
+test_dict.clear()
+print("Length", len(test_dict))
+print(test_dict)
+
+#20
