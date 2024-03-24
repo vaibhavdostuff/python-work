@@ -302,3 +302,16 @@ a_dict = {key: test_dict[key] for key in test_dict if key != 'Mani'}
 print("The dictionary after performing remove is : \n", a_dict)
 
 #17
+# Initializing dictionary
+test_dict = {"Arushi": 22, "Anuradha": 21, "Mani": 21, "Haritha": 21}
+print(test_dict)
+
+# empty the dictionary d
+y = {}
+# eliminate the unrequired element
+for key, value in test_dict.items():
+	if key != 'Arushi':
+		y[key] = value
+print(y)
+
+#18
