@@ -315,3 +315,15 @@ for key, value in test_dict.items():
 print(y)
 
 #18
+# Initializing dictionary
+test_dict = {"Arushi": 22, "Anuradha": 21, "Mani": 21, "Haritha": 21}
+print(test_dict)
+
+# empty the dictionary d
+del test_dict
+try:
+	print(test_dict)
+except:
+	print('Deleted!')
+
+#19
