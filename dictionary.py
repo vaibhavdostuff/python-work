@@ -475,3 +475,23 @@ merged_dict = Merge(dict1, dict2)
 print(merged_dict)
 
 #27
+# Python3 code to demonstrate working of 
+# Convert key-values list to flat dictionary
+# Using dict() + zip()
+from itertools import product
+
+# initializing dictionary
+test_dict = {'month' : [1, 2, 3],
+			'name' : ['Jan', 'Feb', 'March']}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+# Convert key-values list to flat dictionary
+# Using dict() + zip()
+res = dict(zip(test_dict['month'], test_dict['name']))
+
+# printing result 
+print("Flattened dictionary : " + str(res)) 
+
+#28
