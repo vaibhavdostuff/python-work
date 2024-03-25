@@ -425,3 +425,23 @@ dict3 = Merge(dict1, dict2)
 print(dict3)
 
 #24
+from collections import ChainMap
+
+# create the dictionaries to be merged
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+
+# create a ChainMap with the dictionaries as elements
+merged_dict = ChainMap(dict1, dict2)
+
+# access and modify elements in the merged dictionary
+print(merged_dict['a']) # prints 1
+print(merged_dict['c']) # prints 3
+merged_dict['c'] = 5 # updates value in dict2
+print(merged_dict['c']) # prints 5
+
+# add a new key-value pair to the merged dictionary
+merged_dict['e'] = 6 # updates dict1
+print(merged_dict['e']) # prints 6
+
+#25
