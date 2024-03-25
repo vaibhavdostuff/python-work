@@ -457,3 +457,21 @@ dict2 = {'a': 6, 'b': 4}
 print(merge_dictionaries(dict1, dict2))
 
 #26
+# method to merge two dictionaries using the dict() constructor with the union operator (|)
+def Merge(dict1, dict2):
+	# create a new dictionary by merging the items of the two dictionaries using the union operator (|)
+	merged_dict = dict(dict1.items() | dict2.items())
+	# return the merged dictionary
+	return merged_dict
+
+# Driver code
+dict1 = {'a': 10, 'b': 8}
+dict2 = {'d': 6, 'c': 4}
+
+# merge the two dictionaries using the Merge() function
+merged_dict = Merge(dict1, dict2)
+
+# print the merged dictionary
+print(merged_dict)
+
+#27
