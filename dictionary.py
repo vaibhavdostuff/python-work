@@ -520,3 +520,24 @@ res = {test_dict['month'][i]: test_dict['name'][i] for i in range(len(test_dict[
 print("Flattened dictionary:", res)
 
 #30
+# Python3 code to demonstrate working of 
+# Convert key-values list to flat dictionary
+# Using for loop
+
+# initializing dictionary
+test_dict = {'month' : [1, 2, 3],
+			'name' : ['Jan', 'Feb', 'March']}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+# Convert key-values list to flat dictionary
+# Using for loop
+res = {}
+for i in range(len(test_dict['month'])):
+	res[test_dict['month'][i]] = test_dict['name'][i]
+
+# printing result 
+print("Flattened dictionary : " + str(res))
+
+#31
