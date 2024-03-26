@@ -571,3 +571,23 @@ both = OrderedDict(list(ini_dict2.items()) + list(ini_dict1.items()))
 print ("Resultant Dictionary :"+str(both))
 
 #33
+from collections import OrderedDict
+
+# Initialising ordered_dict
+ini_dict = OrderedDict([('akshat', '1'), ('nikhil', '2')])
+
+# Creating a iniordered ordered dict
+iniordered_dict = OrderedDict()
+
+# Inserting new key-value pair at the beginning of iniordered_dict
+iniordered_dict.update({'manjeet':'3'})
+iniordered_dict.move_to_end('manjeet', last = False)
+
+# popitem() method to remove and insert key-value pair at beginning
+while ini_dict:
+	iniordered_dict.update({ini_dict.popitem(last=False)})
+
+# Print result
+print("Resultant Dictionary :" + str(iniordered_dict))
+
+#34
