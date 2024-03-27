@@ -759,3 +759,16 @@ res = a
 print("The ordered keys and values : " + str(res))
 
 #41
+# initializing dictionary
+test_dict = {"Gfg": 1, "is": 3, "Best": 2}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+# using the zip() function and list comprehension to append dictionary keys and values
+res = [val for val in zip(test_dict.values(), test_dict.keys())]
+
+# printing result
+print("The ordered keys and values : " + str(res))
+
+#42
