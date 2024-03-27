@@ -772,3 +772,26 @@ res = [val for val in zip(test_dict.values(), test_dict.keys())]
 print("The ordered keys and values : " + str(res))
 
 #42
+# Python3 code to demonstrate working of 
+# Append Dictionary Keys and Values ( In order ) in dictionary
+# Using sorted() + list comprehension
+
+# initializing dictionary
+test_dict = {"Gfg" : 1, "is" : 3, "Best" : 2}
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+# using sorted() to get the keys in alphabetical order
+keys = sorted(test_dict.keys())
+
+# using list comprehension to get the values corresponding to each key
+values = [test_dict[key] for key in keys]
+
+# concatenating the keys and values lists
+res = keys + values
+
+# printing result 
+print("The ordered keys and values : " + str(res)) 
+
+#43
