@@ -1022,3 +1022,18 @@ res = {k: sorted(v) for k, v in sorted_tuples}
 print("The sorted dictionary: " + str(res))
 
 #53
+def sort_dict_recursive(test_dict):
+	if not test_dict:
+		return {}
+	min_key = min(test_dict.keys())
+	sorted_values = sorted(test_dict[min_key])
+	rest_dict = {k: v for k, v in test_dict.items() if k != min_key}
+	sorted_rest_dict = sort_dict_recursive(rest_dict)
+	return {min_key: sorted_values, **sorted_rest_dict}
+
+test_dict = {'gfg': [7, 6, 3], 'is': [2, 10, 3], 'best': [19, 4]}
+res = sort_dict_recursive(test_dict)
+print("The original dictionary is: " + str(test_dict))
+print("The sorted dictionary : " + str(res))
+
+#54
