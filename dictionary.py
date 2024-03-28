@@ -999,3 +999,26 @@ for key in res:
 print("The sorted dictionary: " + str(res))
 
 #52
+# Python3 code to demonstrate working of 
+# Sort Dictionary key and values List
+# Using zip() function with sorted()
+
+# initializing dictionary
+test_dict = {'gfg': [7, 6, 3], 
+			'is': [2, 10, 3], 
+			'best': [19, 4]}
+
+# printing original dictionary
+print("The original dictionary is: " + str(test_dict))
+
+# Sort Dictionary key and values List
+# Using zip() function with sorted()
+keys = list(test_dict.keys())
+values = list(test_dict.values())
+sorted_tuples = sorted(zip(keys, values), key=lambda x: x[0])
+res = {k: sorted(v) for k, v in sorted_tuples}
+
+# printing result 
+print("The sorted dictionary: " + str(res))
+
+#53
