@@ -1413,3 +1413,7 @@ string = 'Python is great and Java is also great'
 print(' '.join(dict.fromkeys(string.split())))
 
 #73
+string = 'Python is great and Java is also great'
+print(' '.join(set(string.split())))
+
+#74
