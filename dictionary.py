@@ -1430,3 +1430,15 @@ for i in l:
 print(' '.join(k))
 
 #75
+def remove_duplicates(sentence):
+	words = sentence.split(" ")
+	result = []
+	for word in words:
+		if word not in result:
+			result.append(word)
+	return " ".join(result)
+
+sentence = "Python is great and Java is also great"
+print(remove_duplicates(sentence))
+
+#76
