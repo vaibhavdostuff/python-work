@@ -1393,3 +1393,16 @@ if __name__ == "__main__":
 	remov_duplicates(input)
 
 #71
+# Program without using any external library
+s = "Python is great and Java is also great"
+l = s.split()
+k = []
+for i in l:
+
+	# If condition is used to store unique string 
+	# in another list 'k' 
+	if (s.count(i)>=1 and (i not in k)):
+		k.append(i)
+print(' '.join(k))
+
+#72
