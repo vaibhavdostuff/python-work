@@ -1417,3 +1417,16 @@ string = 'Python is great and Java is also great'
 print(' '.join(set(string.split())))
 
 #74
+# Program using operator.countOf()
+import operator as op
+s = "Python is great and Java is also great"
+l = s.split()
+k = []
+for i in l:
+# If condition is used to store unique string 
+# in another list 'k' 
+ if (op.countOf(l,i)>=1 and (i not in k)):
+	 k.append(i)
+print(' '.join(k))
+
+#75
