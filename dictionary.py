@@ -1406,3 +1406,10 @@ for i in l:
 print(' '.join(k))
 
 #72
+# Python3 program
+
+string = 'Python is great and Java is also great'
+
+print(' '.join(dict.fromkeys(string.split())))
+
+#73
