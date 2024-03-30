@@ -1442,3 +1442,16 @@ sentence = "Python is great and Java is also great"
 print(remove_duplicates(sentence))
 
 #76
+def remove_duplicates(sentence):
+	words = sentence.split(" ")
+	if len(words) == 1:
+		return words[0]
+	if words[0] in words[1:]:
+		return remove_duplicates(" ".join(words[1:]))
+	else:
+		return words[0] + " " + remove_duplicates(" ".join(words[1:]))
+
+sentence = "Python is great and Java is also great"
+print(remove_duplicates(sentence))
+
+#77
