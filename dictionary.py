@@ -1349,3 +1349,25 @@ words = ['ant', 'magenta', 'magnate', 'tan', 'gnamate']
 print(largest_anagram_subset_size(words)) 
 
 #69
+from collections import Counter
+
+words = ['cars', 'bikes', 'arcs', 'steer']
+
+max_anagrams = max(
+	list(
+		map(
+			lambda x: sum(
+				map(
+					lambda y: Counter(y) == Counter(x), 
+					words
+				)
+			),
+			words
+		)
+	),
+	default=0
+)
+
+print(max_anagrams)
+
+#70
