@@ -1584,3 +1584,20 @@ for student, score in list_1:
 print(dict_1)
 
 #84
+# Python code to convert into dictionary
+def Convert(tup, di):
+	di = dict(tup)
+	return di
+	
+# Driver Code 
+tups = [("akash", 10), ("gaurav", 12), ("anand", 14), 
+	("suraj", 20), ("akhil", 25), ("ashish", 30)]
+dictionary = {}
+print (Convert(tups, dictionary))
+
+#85
+# Python code to convert into dictionary
+
+print(dict([('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]))
+
+#86
