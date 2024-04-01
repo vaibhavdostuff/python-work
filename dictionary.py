@@ -1625,3 +1625,28 @@ tuple_list = [("akash", 10), ("gaurav", 12), ("anand", 14),
 print(convert_to_dict(tuple_list)) # {'akash':
 
 #87
+def convert_to_dict(tuple_list):
+	# Create an empty dictionary
+	dictionary = {}
+
+	# Iterate over each tuple in the list
+	for tuple in tuple_list:
+		# Check if the key is already in the dictionary
+		if tuple[0] in dictionary:
+			# If the key is already in the dictionary, append the value to the existing list
+			dictionary[tuple[0]].append(tuple[1])
+		else:
+			# If the key is not in the dictionary, add it and set the value as a new list
+			dictionary[tuple[0]] = [tuple[1]]
+
+	# Return the completed dictionary
+	return dictionary
+
+
+# Test the function
+tuple_list = [("akash", 10), ("gaurav", 12), ("anand", 14),
+			("suraj", 20), ("akhil", 25), ("ashish", 30)]
+# {'akash': [10], 'gaurav': [12], 'anand': [14], 'suraj': [20], 'akhil': [25], 'ashish': [30]}
+print(convert_to_dict(tuple_list))
+
+#88
