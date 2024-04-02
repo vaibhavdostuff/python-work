@@ -1837,3 +1837,17 @@ characters = ['e','o','b', 'a','m','g', 'l']
 find_words(dictionary, characters)
 
 #94
+def possible_words(Dict, arr):
+	arr_set = set(arr)
+	result = []
+	for word in Dict:
+		if set(word).issubset(arr_set):
+			result.append(word)
+	return result
+
+
+Dict = ["go", "bat", "me", "eat", "goal", "boy", "run"]
+arr = ['e', 'o', 'b', 'a', 'm', 'g', 'l']
+print(possible_words(Dict, arr))
+
+#95
