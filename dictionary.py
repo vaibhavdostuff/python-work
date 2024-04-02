@@ -1873,3 +1873,30 @@ for key, val in test_dict.items():
 print("The values associated dictionary : " + str(dict(res))) 
 
 #96
+# Python3 code to demonstrate working of
+# Assign values to initialized dictionary keys
+
+# Python3 code to demonstrate working of 
+# Values Associated Keys
+# Using dict comprehension + loop
+
+# initializing dictionary
+test_dict = {'gfg' : [1, 2, 3], 'is' : [1, 4], 'best' : [4, 2]} 
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+# Values Associated Keys
+# Using dict comprehension + loop
+result_dict = {}
+for key, val in test_dict.items():
+	for ele in val:
+		if ele in result_dict:
+			result_dict[ele].append(key)
+		else:
+			result_dict[ele] = [key]
+
+# printing result 
+print("The values associated dictionary : " + str(result_dict))
+
+#97
