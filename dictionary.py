@@ -1818,3 +1818,22 @@ if __name__ == "__main__":
 	possible_words(input, charSet)
 
 #93
+def find_words(dictionary, characters, word=''):
+	# base case: if the word is in the dictionary, print it
+	if word in dictionary:
+		print(word)
+	
+	# recursive case: for each character in the characters list, make a new list of characters
+	# with that character removed, and call find_words with the new list of characters and the
+	# current word appended with the current character
+	for char in characters:
+		new_characters = characters.copy()
+		new_characters.remove(char)
+		find_words(dictionary, new_characters, word + char)
+
+# example usage
+dictionary = ["go","bat","me","eat","goal","boy", "run"]
+characters = ['e','o','b', 'a','m','g', 'l']
+find_words(dictionary, characters)
+
+#94
