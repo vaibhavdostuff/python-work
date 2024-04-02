@@ -1900,3 +1900,24 @@ for key, val in test_dict.items():
 print("The values associated dictionary : " + str(result_dict))
 
 #97
+# Python3 code to demonstrate working of 
+# Values Associated Keys
+# Using setdefault()
+
+# initializing dictionary
+test_dict = {'gfg' : [1, 2, 3], 'is' : [1, 4], 'best' : [4, 2]} 
+
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+# Values Associated Keys
+# Using setdefault()
+result_dict = {}
+for key, val in test_dict.items():
+	for ele in val:
+		result_dict.setdefault(ele, []).append(key)
+
+# printing result 
+print("The values associated dictionary : " + str(result_dict))
+
+#98
