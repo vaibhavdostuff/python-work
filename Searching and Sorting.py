@@ -80,3 +80,11 @@ else:
 	print("Element is not present in array")
 
 #3
+import bisect
+
+def binary_search_bisect(arr, x):
+	i = bisect.bisect_left(arr, x)
+	if i != len(arr) and arr[i] == x:
+		return i
+	else:
+		return -1
