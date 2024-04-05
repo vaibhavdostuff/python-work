@@ -477,3 +477,33 @@ class Graph:
 			else:
 				# no already-visited neighbor (or no more of them)
 				stack.append(v)
+				
+	# The function to do Topological Sort.
+	def nonRecursiveTopologicalSort(self):
+		# Mark all the vertices as not visited
+		visited = [False]*self.V
+		
+		# result stack
+		stack = []
+
+		# Call the helper function to store Topological
+		# Sort starting from all vertices one by one
+		for i in range(self.V):
+			if not(visited[i]):
+				self.nonRecursiveTopologicalSortUtil(i, visited,stack)
+		# Print contents of the stack in reverse
+		stack.reverse()
+		print(stack)
+
+g= Graph(6)
+g.addEdge(5, 2);
+g.addEdge(5, 0);
+g.addEdge(4, 0);
+g.addEdge(4, 1);
+g.addEdge(2, 3);
+g.addEdge(3, 1);
+
+print("The following is a Topological Sort of the given graph")
+g.nonRecursiveTopologicalSort()
+
+#17
