@@ -659,14 +659,3 @@ def pigeonhole_sort(a):
 			holes[count] -= 1
 			a[i] = count + my_min 
 			i += 1
-			
-
-a = [8, 3, 2, 7, 4, 6, 8] 
-print("Sorted order is : ", end =" ") 
-
-pigeonhole_sort(a) 
-		
-for i in range(0, len(a)): 
-	print(a[i], end =" ")
-
-#21
