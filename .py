@@ -269,3 +269,35 @@ while True:
     else:
         print(f"Current time is {current_time}. Waiting for {alarm_time}.")
         time.sleep(60)  # Check every minute
+
+#20 
+
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+        # Process the form data here (e.g., save to database or send an email)
+        return redirect(url_for('thank_you', name=name))
+    return render_template('contact.html')
+
+@app.route('/thank_you')
+def thank_you():
+    name = request.args.get('name')
+    return render_template('thank_you.html', name=name)
+
+if __name__ == '__main__':
+    app.run(debug=True)
