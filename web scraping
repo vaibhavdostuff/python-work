@@ -5,3 +5,11 @@ url = "https://example.com"
 
 # Send a GET request to the URL
 response = requests.get(url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    html_content = response.text
+    print("Webpage fetched successfully.")
+else:
+    print(f"Failed to fetch webpage. Status code: {response.status_code}")
+
