@@ -7,3 +7,9 @@ soup = BeautifulSoup(html_content, 'html.parser')
 for link in soup.find_all('a'):
     print(link.get('href'))  # Print the URL from the href attribute
 
+# Example: Extracting specific data, like all paragraphs
+paragraphs = soup.find_all('p')
+for p in paragraphs:
+    print(p.text)  # Print the text inside each paragraph tag
+
+    
