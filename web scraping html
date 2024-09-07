@@ -1,0 +1,9 @@
+from bs4 import BeautifulSoup
+
+# Create a BeautifulSoup object and parse the HTML content
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Example: Extracting all hyperlinks (anchor tags)
+for link in soup.find_all('a'):
+    print(link.get('href'))  # Print the URL from the href attribute
+
