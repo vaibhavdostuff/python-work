@@ -12,3 +12,15 @@ if response.status_code == 200:
     # Parse the HTML content
     soup = BeautifulSoup(response.text, 'html.parser')
 
+# Find all quote elements
+    quotes = soup.find_all('span', class_='text')
+    authors = soup.find_all('small', class_='author')
+
+    # Loop through and print quotes and their authors
+    for quote, author in zip(quotes, authors):
+        print(f"Quote: {quote.text}")
+        print(f"Author: {author.text}\n")
+else:
+    print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+
+    
