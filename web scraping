@@ -1,0 +1,7 @@
+import requests
+
+# URL of the page to scrape
+url = "https://example.com"
+
+# Send a GET request to the URL
+response = requests.get(url)
