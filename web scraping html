@@ -12,4 +12,8 @@ paragraphs = soup.find_all('p')
 for p in paragraphs:
     print(p.text)  # Print the text inside each paragraph tag
 
+    # Example: Extracting elements by class name
+headings = soup.find_all('h2', class_='headline')
+for heading in headings:
+    print(heading.text)
     
