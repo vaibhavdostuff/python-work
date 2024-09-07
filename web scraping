@@ -1,15 +1,9 @@
 import requests
+from bs4 import BeautifulSoup
 
-# URL of the page to scrape
-url = "https://example.com"
+# URL to scrape
+url = "http://quotes.toscrape.com"
 
-# Send a GET request to the URL
+# Send a GET request
 response = requests.get(url)
-
-# Check if the request was successful
-if response.status_code == 200:
-    html_content = response.text
-    print("Webpage fetched successfully.")
-else:
-    print(f"Failed to fetch webpage. Status code: {response.status_code}")
 
