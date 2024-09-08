@@ -10,3 +10,9 @@ animal.speak()  # Output: The animal speaks.
 def new_speak():
     print("The animal roars!")
 
+# Replace the original speak method with new_speak
+animal.speak = new_speak
+
+# Modified behavior
+animal.speak()  # Output: The animal roars!
+
