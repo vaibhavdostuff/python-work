@@ -16,3 +16,8 @@ animal.speak = new_speak
 # Modified behavior
 animal.speak()  # Output: The animal roars!
 
+
+class Car:
+    def start(self):
+        print("The car starts normally.")
+
