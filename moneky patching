@@ -2,3 +2,7 @@ class Animal:
     def speak(self):
         print("The animal speaks.")
 
+# Original behavior
+animal = Animal()
+animal.speak()  # Output: The animal speaks.
+
