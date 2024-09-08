@@ -1,3 +1,5 @@
+#1
+
 class Animal:
     def speak(self):
         print("The animal speaks.")
@@ -16,6 +18,7 @@ animal.speak = new_speak
 # Modified behavior
 animal.speak()  # Output: The animal roars!
 
+# 2
 
 class Car:
     def start(self):
@@ -35,3 +38,7 @@ Car.start = start_with_sound
 # Modified behavior
 car.start()  # Output: The car starts with a loud roar!
 
+import math_operations
+
+# Original behavior
+print(math_operations.add(2, 3))  # Output: 5
