@@ -21,3 +21,7 @@ class Car:
     def start(self):
         print("The car starts normally.")
 
+# Original behavior
+car = Car()
+car.start()  # Output: The car starts normally.
+
