@@ -29,3 +29,9 @@ car.start()  # Output: The car starts normally.
 def start_with_sound():
     print("The car starts with a loud roar!")
 
+# Replace the original start method with start_with_sound
+Car.start = start_with_sound
+
+# Modified behavior
+car.start()  # Output: The car starts with a loud roar!
+
