@@ -42,3 +42,8 @@ import math_operations
 
 # Original behavior
 print(math_operations.add(2, 3))  # Output: 5
+
+# Monkey patching the add function
+def subtract(a, b):
+    return a - b
+
