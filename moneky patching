@@ -6,3 +6,7 @@ class Animal:
 animal = Animal()
 animal.speak()  # Output: The animal speaks.
 
+# Monkey patching the speak method
+def new_speak():
+    print("The animal roars!")
+
