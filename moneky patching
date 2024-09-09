@@ -67,3 +67,9 @@ dog2 = Dog()
 dog1.bark()  # Output: Woof!
 dog2.bark()  # Output: Woof!
 
+# Patch the bark method for only dog1
+def growl():
+    print("Grrr!")
+
+dog1.bark = growl
+
