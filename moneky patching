@@ -79,3 +79,10 @@ dog1.bark()  # Output: Grrr!
 # dog2 remains unaffected
 dog2.bark()  # Output: Woof!
 
+# Automating GUI Interactions
+
+import pyautogui
+
+# Move the mouse to the (x, y) position
+pyautogui.moveTo(100, 100, duration=1)
+
