@@ -92,3 +92,7 @@ pyautogui.click()
 # Type a string as keyboard input
 pyautogui.write('Hello, world!', interval=0.1)
 
+# Take a screenshot
+screenshot = pyautogui.screenshot()
+screenshot.save('screenshot.png')
+
