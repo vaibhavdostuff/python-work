@@ -105,3 +105,10 @@ import pyautogui
 
 # Move the mouse to the starting position
 pyautogui.moveTo(300, 300, duration=1)
+
+# Drag the mouse to draw a square
+pyautogui.dragTo(400, 300, duration=1)  # Drag right
+pyautogui.dragTo(400, 400, duration=1)  # Drag down
+pyautogui.dragTo(300, 400, duration=1)  # Drag left
+pyautogui.dragTo(300, 300, duration=1)  # Drag up
+
