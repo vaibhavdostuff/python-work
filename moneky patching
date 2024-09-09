@@ -79,7 +79,10 @@ dog1.bark()  # Output: Grrr!
 # dog2 remains unaffected
 dog2.bark()  # Output: Woof!
 
+
 # Automating GUI Interactions
+#Automating Mouse and Keyboard Actions
+#1
 
 import pyautogui
 
@@ -96,3 +99,9 @@ pyautogui.write('Hello, world!', interval=0.1)
 screenshot = pyautogui.screenshot()
 screenshot.save('screenshot.png')
 
+#Dragging and Dropping
+#1
+import pyautogui
+
+# Move the mouse to the starting position
+pyautogui.moveTo(300, 300, duration=1)
