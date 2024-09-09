@@ -73,3 +73,9 @@ def growl():
 
 dog1.bark = growl
 
+# Modified behavior for dog1
+dog1.bark()  # Output: Grrr!
+
+# dog2 remains unaffected
+dog2.bark()  # Output: Woof!
+
