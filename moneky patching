@@ -59,3 +59,11 @@ class Dog:
     def bark(self):
         print("Woof!")
 
+# Create two instances of Dog
+dog1 = Dog()
+dog2 = Dog()
+
+# Original behavior
+dog1.bark()  # Output: Woof!
+dog2.bark()  # Output: Woof!
+
