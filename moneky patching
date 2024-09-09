@@ -112,3 +112,13 @@ pyautogui.dragTo(400, 400, duration=1)  # Drag down
 pyautogui.dragTo(300, 400, duration=1)  # Drag left
 pyautogui.dragTo(300, 300, duration=1)  # Drag up
 
+#Scrolling the Mouse
+#1
+import pyautogui
+
+# Scroll up by 500 units
+pyautogui.scroll(500)
+
+# Scroll down by 500 units
+pyautogui.scroll(-500)
+
