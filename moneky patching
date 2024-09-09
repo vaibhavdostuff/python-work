@@ -86,3 +86,9 @@ import pyautogui
 # Move the mouse to the (x, y) position
 pyautogui.moveTo(100, 100, duration=1)
 
+# Click the mouse at the current position
+pyautogui.click()
+
+# Type a string as keyboard input
+pyautogui.write('Hello, world!', interval=0.1)
+
