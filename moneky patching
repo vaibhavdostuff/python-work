@@ -167,3 +167,14 @@ time.sleep(2)
 pyautogui.write('John Doe', interval=0.1)
 pyautogui.press('tab')  # Move to the next field
 
+# Enter email
+pyautogui.write('john.doe@example.com', interval=0.1)
+pyautogui.press('tab')  # Move to the next field
+
+# Enter phone number
+pyautogui.write('1234567890', interval=0.1)
+pyautogui.press('tab')  # Move to the next field
+
+# Submit the form
+pyautogui.press('enter')
+
