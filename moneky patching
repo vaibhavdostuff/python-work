@@ -160,3 +160,10 @@ else:
 import pyautogui
 import time
 
+# Wait for the form to be ready
+time.sleep(2)
+
+# Enter name
+pyautogui.write('John Doe', interval=0.1)
+pyautogui.press('tab')  # Move to the next field
+
