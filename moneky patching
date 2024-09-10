@@ -188,3 +188,10 @@ pyautogui.hotkey('win', 's')  # Open Windows search
 pyautogui.write('chrome', interval=0.1)
 pyautogui.press('enter')
 
+# Wait for the browser to open
+time.sleep(2)
+
+# Navigate to the login page
+pyautogui.write('https://example-login-page.com', interval=0.1)
+pyautogui.press('enter')
+
