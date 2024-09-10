@@ -139,6 +139,7 @@ pyautogui.press('enter')
 pyautogui.hotkey('ctrl', 'v')
 
  #Finding and Clicking on a Screen Element
+ #1
  import pyautogui
 
 # Locate an image on the screen (e.g., an icon or button)
@@ -153,4 +154,9 @@ if location:
     pyautogui.click()
 else:
     print("Image not found on the screen.")
+
+#Automating a Form Fill
+#1
+import pyautogui
+import time
 
