@@ -122,3 +122,11 @@ pyautogui.scroll(500)
 # Scroll down by 500 units
 pyautogui.scroll(-500)
 
+#Handling Keyboard Shortcuts
+#1
+import pyautogui
+import time
+
+# Type some text into an active text editor
+pyautogui.write('This text will be copied and pasted.', interval=0.1)
+
