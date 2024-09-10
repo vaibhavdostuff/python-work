@@ -144,3 +144,13 @@ pyautogui.hotkey('ctrl', 'v')
 # Locate an image on the screen (e.g., an icon or button)
 location = pyautogui.locateOnScreen('example_icon.png', confidence=0.8)
 
+if location:
+    # Get the center of the located image
+    center = pyautogui.center(location)
+
+    # Move to the center of the image and click
+    pyautogui.moveTo(center, duration=1)
+    pyautogui.click()
+else:
+    print("Image not found on the screen.")
+
