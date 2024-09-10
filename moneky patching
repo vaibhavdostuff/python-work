@@ -138,3 +138,9 @@ pyautogui.hotkey('ctrl', 'c')
 pyautogui.press('enter')
 pyautogui.hotkey('ctrl', 'v')
 
+ #Finding and Clicking on a Screen Element
+ import pyautogui
+
+# Locate an image on the screen (e.g., an icon or button)
+location = pyautogui.locateOnScreen('example_icon.png', confidence=0.8)
+
