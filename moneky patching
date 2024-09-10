@@ -195,3 +195,14 @@ time.sleep(2)
 pyautogui.write('https://example-login-page.com', interval=0.1)
 pyautogui.press('enter')
 
+# Wait for the page to load
+time.sleep(5)
+
+# Enter username
+pyautogui.write('username', interval=0.1)
+pyautogui.press('tab')  # Move to password field
+
+# Enter password
+pyautogui.write('password123', interval=0.1)
+pyautogui.press('enter')  # Submit the login form
+
