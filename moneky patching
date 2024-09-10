@@ -178,3 +178,13 @@ pyautogui.press('tab')  # Move to the next field
 # Submit the form
 pyautogui.press('enter')
 
+#Automated Login to a Website
+#1
+import pyautogui
+import time
+
+# Open a web browser (e.g., via Start Menu or specific shortcut)
+pyautogui.hotkey('win', 's')  # Open Windows search
+pyautogui.write('chrome', interval=0.1)
+pyautogui.press('enter')
+
