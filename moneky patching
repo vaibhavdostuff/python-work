@@ -130,3 +130,11 @@ import time
 # Type some text into an active text editor
 pyautogui.write('This text will be copied and pasted.', interval=0.1)
 
+# Select all text (Ctrl+A) and copy (Ctrl+C)
+pyautogui.hotkey('ctrl', 'a')
+pyautogui.hotkey('ctrl', 'c')
+
+# Move the cursor to a new line and paste (Ctrl+V)
+pyautogui.press('enter')
+pyautogui.hotkey('ctrl', 'v')
+
