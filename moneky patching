@@ -214,3 +214,11 @@ import time
 # Wait for the application to be ready
 time.sleep(2)
 
+# Find and click the "Start" button in the app
+start_button = pyautogui.locateCenterOnScreen('start_button.png', confidence=0.8)
+
+if start_button:
+    pyautogui.click(start_button)
+else:
+    print("Start button not found.")
+
