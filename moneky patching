@@ -206,3 +206,11 @@ pyautogui.press('tab')  # Move to password field
 pyautogui.write('password123', interval=0.1)
 pyautogui.press('enter')  # Submit the login form
 
+# Automating Screenshot-Based Navigation
+#1
+import pyautogui
+import time
+
+# Wait for the application to be ready
+time.sleep(2)
+
