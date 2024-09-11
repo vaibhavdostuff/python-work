@@ -222,3 +222,9 @@ if start_button:
 else:
     print("Start button not found.")
 
+# Wait a bit before taking the next action
+time.sleep(1)
+
+# Find and click the "Next" button
+next_button = pyautogui.locateCenterOnScreen('next_button.png', confidence=0.8)
+
