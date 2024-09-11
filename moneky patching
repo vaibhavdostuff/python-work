@@ -228,3 +228,8 @@ time.sleep(1)
 # Find and click the "Next" button
 next_button = pyautogui.locateCenterOnScreen('next_button.png', confidence=0.8)
 
+if next_button:
+    pyautogui.click(next_button)
+else:
+    print("Next button not found.")
+
