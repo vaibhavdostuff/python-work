@@ -327,4 +327,13 @@ session = frida.attach("notepad.exe")
 script = session.create_script(script_code)
 script.load()
 
+# Keep the script running
+print("Script loaded. Press Ctrl+C to stop.")
+try:
+    sys.stdin.read()
+except KeyboardInterrupt:
+    print("Detaching...")
+finally:
+    session.detach()
+
 
