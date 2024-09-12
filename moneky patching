@@ -287,4 +287,12 @@ if hwnd:
 
     time.sleep(2)
 
+    # Restore the Notepad window
+    win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
+
+    # Close the Notepad window
+    win32gui.PostMessage(hwnd, win32con.WM_CLOSE, 0, 0)
+else:
+    print("Notepad window not found.")
+
     
