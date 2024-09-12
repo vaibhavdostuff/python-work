@@ -320,4 +320,11 @@ Interceptor.attach(Module.findExportByName("user32.dll", "MessageBoxW"), {
 });
 """
 
+# Attach to a running process by name
+session = frida.attach("notepad.exe")
+
+# Load the script
+script = session.create_script(script_code)
+script.load()
+
 
