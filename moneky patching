@@ -233,3 +233,16 @@ if next_button:
 else:
     print("Next button not found.")
 
+#Injecting Scripts into Running Processes
+#1
+import subprocess
+
+# Start a process (e.g., Notepad on Windows)
+process = subprocess.Popen(['notepad.exe'])
+
+# Wait for a few seconds and then terminate the process
+import time
+time.sleep(5)
+process.terminate()
+
+
