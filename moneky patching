@@ -279,3 +279,12 @@ time.sleep(2)  # Wait for Notepad to open
 hwnd = win32gui.FindWindow(None, "Untitled - Notepad")
 
 if hwnd:
+    # Send some keystrokes to Notepad
+    win32gui.SendMessage(hwnd, win32con.WM_SETTEXT, 0, "Hello, this text is from a script!")
+
+    # Minimize the Notepad window
+    win32gui.ShowWindow(hwnd, win32con.SW_MINIMIZE)
+
+    time.sleep(2)
+
+    
