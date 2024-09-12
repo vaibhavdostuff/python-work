@@ -305,4 +305,19 @@ for proc in psutil.process_iter(['pid', 'name']):
         print(f"Terminating process {proc.info['pid']} ({proc.info['name']})")
         proc.terminate()
 
+#Attaching to a Running Process with frida
+#5
+import frida
+import sys
+
+# Define a script to intercept and log calls to MessageBoxW in user32.dll (Windows)
+script_code = """
+Interceptor.attach(Module.findExportByName("user32.dll", "MessageBoxW"), {
+    onEnter: function (args) {
+        console.log("MessageBox called!");
+        console.log("Text: " + Memory.readUtf16String(args[1]));
+    }
+});
+"""
+
 
