@@ -264,3 +264,10 @@ print(output)  # Output: Hello from the subprocess!
 
 # Close the process
 process.terminate()
+
+#Automating a Windows Application with pywin32
+#3
+import win32gui
+import win32con
+import time
+
