@@ -271,3 +271,11 @@ import win32gui
 import win32con
 import time
 
+# Open Notepad
+subprocess.Popen(['notepad.exe'])
+time.sleep(2)  # Wait for Notepad to open
+
+# Find the Notepad window by its title
+hwnd = win32gui.FindWindow(None, "Untitled - Notepad")
+
+if hwnd:
