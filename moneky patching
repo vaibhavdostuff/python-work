@@ -233,6 +233,7 @@ if next_button:
 else:
     print("Next button not found.")
 
+#3
 #Injecting Scripts into Running Processes
 #1
 import subprocess
@@ -245,4 +246,11 @@ import time
 time.sleep(5)
 process.terminate()
 
+
+#Running and Interacting with a Command-Line Process
+#2
+import subprocess
+
+# Start a process (e.g., Python interpreter)
+process = subprocess.Popen(['python'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
