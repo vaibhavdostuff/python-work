@@ -365,3 +365,9 @@ import psutil
 for proc in psutil.process_iter(['pid', 'name', 'username']):
     print(f"PID: {proc.info['pid']}, Name: {proc.info['name']}, User: {proc.info['username']}")
 
+# Find a specific process and print its memory usage
+for proc in psutil.process_iter(['pid', 'name']):
+    if proc.info['name'] == 'notepad.exe':
+        print(f"Notepad is running with PID {proc.info['pid']}")
+        print(f"Memory usage: {proc.memory_info().rss / (1024 * 1024):.2f} MB")
+
