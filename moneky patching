@@ -359,3 +359,9 @@ process.terminate()
 
 #Monitoring and Interacting with System Processes
 #7
+import psutil
+
+# Get the list of all running processes
+for proc in psutil.process_iter(['pid', 'name', 'username']):
+    print(f"PID: {proc.info['pid']}, Name: {proc.info['name']}, User: {proc.info['username']}")
+
