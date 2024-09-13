@@ -382,3 +382,14 @@ result = subprocess.run(['ls', '-l'], capture_output=True, text=True)
 # Print the captured output
 print(result.stdout)
 
+#Spawning a Detached Background Process
+#9
+import subprocess
+import os
+
+# Start a background process (e.g., a server)
+process = subprocess.Popen(['python', '-m', 'http.server'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
+
+# The process runs in the background, independent of the parent
+print(f"Started background server with PID {process.pid}")
+
