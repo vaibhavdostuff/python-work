@@ -406,3 +406,9 @@ app = application.Application().start("notepad.exe")
 # Select the Notepad window
 notepad = app.Notepad
 
+# Type text into Notepad
+notepad.Edit.type_keys("Hello, this is an automated script!", with_spaces=True)
+
+# Save the file via the File menu
+notepad.MenuSelect("File -> SaveAs")
+
