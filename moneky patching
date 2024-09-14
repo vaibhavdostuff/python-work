@@ -393,3 +393,9 @@ process = subprocess.Popen(['python', '-m', 'http.server'], stdout=subprocess.DE
 # The process runs in the background, independent of the parent
 print(f"Started background server with PID {process.pid}")
 
+
+#4
+#Using pywinauto for Windows GUI Automation
+#Automating a Windows Application with pywinauto
+#1
+from pywinauto import application
