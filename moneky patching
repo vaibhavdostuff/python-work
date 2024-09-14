@@ -412,3 +412,11 @@ notepad.Edit.type_keys("Hello, this is an automated script!", with_spaces=True)
 # Save the file via the File menu
 notepad.MenuSelect("File -> SaveAs")
 
+# Interact with the Save As dialog
+save_as = app.SaveAs
+save_as.Edit.type_keys("example.txt")
+save_as.Save.click()
+
+# Close Notepad
+notepad.close()
+
