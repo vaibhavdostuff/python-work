@@ -399,3 +399,10 @@ print(f"Started background server with PID {process.pid}")
 #Automating a Windows Application with pywinauto
 #1
 from pywinauto import application
+
+# Start Notepad
+app = application.Application().start("notepad.exe")
+
+# Select the Notepad window
+notepad = app.Notepad
+
