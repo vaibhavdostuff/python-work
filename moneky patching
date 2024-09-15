@@ -503,4 +503,9 @@ paint.Toolbar.child_window(title="Brushes", control_type="SplitButton").click()
 paint.child_window(title="Ruler").move_mouse_input(coords=(100, 100))
 paint.child_window(title="Ruler").drag_mouse_input(coords=(200, 200))
 
+# Wait for the drawing to complete
+time.sleep(2)
+
+# Close MS Paint
+paint.close()
 
