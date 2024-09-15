@@ -437,3 +437,10 @@ calc.ButtonAdd.click()  # Click '+'
 calc.Button3.click()  # Click '3'
 calc.ButtonEquals.click()  # Click '='
 
+# Get the result from the calculator
+result = calc.Static2.window_text()
+print(f"Result: {result}")  # Output: 8
+
+# Close the Calculator
+calc.close()
+
