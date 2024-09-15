@@ -448,3 +448,12 @@ calc.close()
 #3
 from pywinauto import application
 
+# Start Notepad
+app = application.Application().start("notepad.exe")
+
+# Select the Notepad window
+notepad = app.Notepad
+
+# Open the File -> Open menu
+notepad.MenuSelect("File -> Open")
+
