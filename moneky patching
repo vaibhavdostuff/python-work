@@ -465,3 +465,8 @@ open_dialog.Open.click()
 # Close Notepad
 notepad.close()
 
+#Automating Windows Task Manager
+#4
+from pywinauto import application
+
+
