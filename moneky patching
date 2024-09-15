@@ -469,4 +469,9 @@ notepad.close()
 #4
 from pywinauto import application
 
+# Start Task Manager
+app = application.Application().start("taskmgr.exe")
+
+# Select the Task Manager window
+task_manager = app.TaskManager
 
