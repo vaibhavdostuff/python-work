@@ -490,4 +490,10 @@ task_manager.close()
 from pywinauto import application
 import time
 
+# Start MS Paint
+app = application.Application().start("mspaint.exe")
+
+# Select the Paint window
+paint = app.UntitledPaint
+
 
