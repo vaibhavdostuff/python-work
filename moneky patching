@@ -485,3 +485,9 @@ print("Processes:", process_list)
 # Close Task Manager
 task_manager.close()
 
+#Automating Windows Paint Application
+#5
+from pywinauto import application
+import time
+
+
