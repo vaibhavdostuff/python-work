@@ -457,3 +457,11 @@ notepad = app.Notepad
 # Open the File -> Open menu
 notepad.MenuSelect("File -> Open")
 
+# Interact with the Open dialog
+open_dialog = app.Open
+open_dialog.Edit.type_keys("example.txt")
+open_dialog.Open.click()
+
+# Close Notepad
+notepad.close()
+
