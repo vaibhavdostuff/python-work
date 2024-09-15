@@ -444,3 +444,7 @@ print(f"Result: {result}")  # Output: 8
 # Close the Calculator
 calc.close()
 
+#Automating a File Open Dialog in Notepad
+#3
+from pywinauto import application
+
