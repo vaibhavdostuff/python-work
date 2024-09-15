@@ -420,3 +420,14 @@ save_as.Save.click()
 # Close Notepad
 notepad.close()
 
+
+#2
+#Automating Calculator
+from pywinauto import application
+
+# Start the Calculator application
+app = application.Application().start("calc.exe")
+
+# Select the Calculator window
+calc = app.Calculator
+
