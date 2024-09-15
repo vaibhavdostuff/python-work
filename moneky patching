@@ -496,4 +496,11 @@ app = application.Application().start("mspaint.exe")
 # Select the Paint window
 paint = app.UntitledPaint
 
+# Select the 'Brushes' tool
+paint.Toolbar.child_window(title="Brushes", control_type="SplitButton").click()
+
+# Draw on the canvas (move the mouse and hold the left button)
+paint.child_window(title="Ruler").move_mouse_input(coords=(100, 100))
+paint.child_window(title="Ruler").drag_mouse_input(coords=(200, 200))
+
 
