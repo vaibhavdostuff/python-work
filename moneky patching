@@ -431,3 +431,9 @@ app = application.Application().start("calc.exe")
 # Select the Calculator window
 calc = app.Calculator
 
+# Click buttons on the calculator
+calc.Button5.click()  # Click '5'
+calc.ButtonAdd.click()  # Click '+'
+calc.Button3.click()  # Click '3'
+calc.ButtonEquals.click()  # Click '='
+
