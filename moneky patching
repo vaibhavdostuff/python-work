@@ -475,3 +475,13 @@ app = application.Application().start("taskmgr.exe")
 # Select the Task Manager window
 task_manager = app.TaskManager
 
+# Switch to the 'Processes' tab
+task_manager.TabControl.select('Processes')
+
+# Get the list of processes
+process_list = task_manager.ListView.children_texts()
+print("Processes:", process_list)
+
+# Close Task Manager
+task_manager.close()
+
