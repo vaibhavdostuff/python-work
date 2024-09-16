@@ -557,3 +557,7 @@ login_dialog.OK.click()  # Click the 'OK' button
 
 # Continue interacting with the app after login...
 
+#Automating a Web Browser (Basic)
+#9
+from pywinauto import application
+
