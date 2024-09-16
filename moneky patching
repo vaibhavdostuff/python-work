@@ -530,3 +530,9 @@ explorer.close()
 #7
 from pywinauto import application
 
+# Start Control Panel
+app = application.Application().start("control.exe")
+
+# Select the Control Panel window
+control_panel = app.ControlPanel
+
