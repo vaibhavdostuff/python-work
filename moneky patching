@@ -509,3 +509,7 @@ time.sleep(2)
 # Close MS Paint
 paint.close()
 
+#Automating Windows File Explorer
+#6
+from pywinauto import application
+
