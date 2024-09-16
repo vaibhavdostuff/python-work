@@ -542,3 +542,7 @@ control_panel.child_window(title="System and Security", control_type="Hyperlink"
 # Close Control Panel
 control_panel.close()
 
+#Handling a Login Dialog
+#8
+from pywinauto import application
+
