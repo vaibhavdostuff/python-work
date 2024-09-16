@@ -561,3 +561,9 @@ login_dialog.OK.click()  # Click the 'OK' button
 #9
 from pywinauto import application
 
+# Start Internet Explorer
+app = application.Application().start("iexplore.exe")
+
+# Select the Internet Explorer window
+browser = app.InternetExplorer
+
