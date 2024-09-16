@@ -551,3 +551,9 @@ app = application.Application().start("your_app.exe")
 
 # Interact with the login dialog
 login_dialog = app.Login
+login_dialog.Edit1.type_keys("your_username")  # Enter username
+login_dialog.Edit2.type_keys("your_password")  # Enter password
+login_dialog.OK.click()  # Click the 'OK' button
+
+# Continue interacting with the app after login...
+
