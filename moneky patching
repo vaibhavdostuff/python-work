@@ -519,3 +519,10 @@ app = application.Application().start("explorer.exe")
 # Select the File Explorer window
 explorer = app.WindowSpecification(title="File Explorer")
 
+# Navigate to a specific folder
+explorer.type_keys(r'C:\Users\YourUsername\Documents', with_spaces=True)
+explorer.type_keys('{ENTER}')
+
+# Close File Explorer
+explorer.close()
+
