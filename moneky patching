@@ -526,3 +526,7 @@ explorer.type_keys('{ENTER}')
 # Close File Explorer
 explorer.close()
 
+#Automating Control Panel
+#7
+from pywinauto import application
+
