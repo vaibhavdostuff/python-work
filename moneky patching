@@ -513,3 +513,9 @@ paint.close()
 #6
 from pywinauto import application
 
+# Start File Explorer
+app = application.Application().start("explorer.exe")
+
+# Select the File Explorer window
+explorer = app.WindowSpecification(title="File Explorer")
+
