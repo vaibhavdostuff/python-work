@@ -546,3 +546,8 @@ control_panel.close()
 #8
 from pywinauto import application
 
+# Start the application that shows a login dialog
+app = application.Application().start("your_app.exe")
+
+# Interact with the login dialog
+login_dialog = app.Login
