@@ -536,3 +536,9 @@ app = application.Application().start("control.exe")
 # Select the Control Panel window
 control_panel = app.ControlPanel
 
+# Interact with the Control Panel, for example, open 'System and Security'
+control_panel.child_window(title="System and Security", control_type="Hyperlink").click()
+
+# Close Control Panel
+control_panel.close()
+
