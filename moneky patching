@@ -567,3 +567,9 @@ app = application.Application().start("iexplore.exe")
 # Select the Internet Explorer window
 browser = app.InternetExplorer
 
+# Navigate to a website
+browser.Edit.type_keys("https://www.example.com{ENTER}")
+
+# Close Internet Explorer
+browser.close()
+
