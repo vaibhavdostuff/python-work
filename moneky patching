@@ -573,3 +573,9 @@ browser.Edit.type_keys("https://www.example.com{ENTER}")
 # Close Internet Explorer
 browser.close()
 
+#5. Web Browser Automation with Selenium
+# Automating Browser Actions with Selenium
+
+from selenium import webdriver
+
+
