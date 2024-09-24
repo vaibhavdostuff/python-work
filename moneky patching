@@ -625,3 +625,12 @@ driver.quit()
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+# Set up the WebDriver (ChromeDriver)
+driver = webdriver.Chrome()
+
+# Open a webpage that triggers an alert
+driver.get("https://www.example.com/alert-page")
+
+# Trigger the alert by clicking a button
+alert_button = driver.find_element(By.ID, "trigger-alert")
+alert_button.click()
