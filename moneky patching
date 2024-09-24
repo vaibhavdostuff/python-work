@@ -611,3 +611,11 @@ driver.get("https://www.example.com/login")
 username = driver.find_element(By.NAME, "username")
 password = driver.find_element(By.NAME, "password")
 
+# Submit the form
+login_button = driver.find_element(By.CSS_SELECTOR, "button[type='submit']")
+login_button.click()
+
+# Wait and then close the browser
+driver.implicitly_wait(10)
+driver.quit()
+
