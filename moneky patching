@@ -589,3 +589,8 @@ driver.get("https://www.example.com")
 search_box = driver.find_element("name", "q")
 search_box.send_keys("Python automation")
 search_box.submit()
+
+# Wait and then close the browser
+driver.implicitly_wait(10)
+driver.quit()
+
