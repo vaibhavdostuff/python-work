@@ -648,3 +648,14 @@ driver.quit()
 
 from selenium import webdriver
 
+# Set up the WebDriver (ChromeDriver)
+driver = webdriver.Chrome()
+
+# Open a webpage
+driver.get("https://www.example.com")
+
+# Take a screenshot and save it
+driver.save_screenshot("screenshot.png")
+
+# Close the browser
+driver.quit()
