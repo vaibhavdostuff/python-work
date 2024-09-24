@@ -585,3 +585,7 @@ driver = webdriver.Chrome()
 driver.get("https://www.example.com")
 
 
+# Find an element and perform an action
+search_box = driver.find_element("name", "q")
+search_box.send_keys("Python automation")
+search_box.submit()
