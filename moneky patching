@@ -643,3 +643,8 @@ alert.accept()
 driver.implicitly_wait(5)
 driver.quit()
 
+# 4
+# Taking a Screenshot
+
+from selenium import webdriver
+
