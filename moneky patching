@@ -634,3 +634,12 @@ driver.get("https://www.example.com/alert-page")
 # Trigger the alert by clicking a button
 alert_button = driver.find_element(By.ID, "trigger-alert")
 alert_button.click()
+
+# Switch to the alert and accept it
+alert = driver.switch_to.alert
+alert.accept()
+
+# Wait and then close the browser
+driver.implicitly_wait(5)
+driver.quit()
+
