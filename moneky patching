@@ -714,4 +714,9 @@ driver.quit()
 #7
 #from selenium import webdriver
 
+# Set up the WebDriver (ChromeDriver)
+driver = webdriver.Chrome()
+
+# Open a webpage
+driver.get("https://www.example.com")
 
