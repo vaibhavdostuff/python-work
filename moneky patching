@@ -678,3 +678,8 @@ link.click()
 
 # Go back to the previous page
 driver.back()
+
+# Wait and then close the browser
+driver.implicitly_wait(5)
+driver.quit()
+
