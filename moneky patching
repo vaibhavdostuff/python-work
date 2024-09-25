@@ -720,3 +720,11 @@ driver = webdriver.Chrome()
 # Open a webpage
 driver.get("https://www.example.com")
 
+# Open a new tab
+driver.execute_script("window.open('https://www.google.com', '_blank');")
+
+# Switch to the new tab
+driver.switch_to.window(driver.window_handles[1])
+
+# Perform actions on the new tab
+driver.get("https://www.python.org")
