@@ -702,3 +702,11 @@ dropdown = Select(driver.find_element(By.ID, "dropdown"))
 # Select an option by visible text
 dropdown.select_by_visible_text("Option 2")
 
+# Select an option by index
+dropdown.select_by_index(1)
+
+# Select an option by value
+dropdown.select_by_value("option1")
+
+# Close the browser
+driver.quit()
