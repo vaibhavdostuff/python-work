@@ -695,3 +695,10 @@ driver = webdriver.Chrome()
 
 # Open a webpage
 driver.get("https://www.example.com/dropdown-page")
+
+# Locate the dropdown menu
+dropdown = Select(driver.find_element(By.ID, "dropdown"))
+
+# Select an option by visible text
+dropdown.select_by_visible_text("Option 2")
+
