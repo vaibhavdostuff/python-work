@@ -659,3 +659,10 @@ driver.save_screenshot("screenshot.png")
 
 # Close the browser
 driver.quit()
+
+#5
+#Navigating Between Pages
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
