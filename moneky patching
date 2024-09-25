@@ -672,3 +672,9 @@ driver = webdriver.Chrome()
 # Open a webpage
 driver.get("https://www.example.com")
 
+# Click a link to navigate to another page
+link = driver.find_element(By.LINK_TEXT, "About Us")
+link.click()
+
+# Go back to the previous page
+driver.back()
