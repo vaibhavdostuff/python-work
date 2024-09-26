@@ -794,3 +794,15 @@ driver = webdriver.Chrome()
 
 # Open a webpage
 driver.get("https://www.example.com")
+
+# Get the full page source (HTML)
+page_source = driver.page_source
+print(page_source)
+
+# Get text from a specific element
+element = driver.find_element(By.CSS_SELECTOR, "h1")
+print(element.text)
+
+# Close the browser
+driver.quit()
+
