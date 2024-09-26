@@ -751,3 +751,10 @@ driver.get("https://www.example.com/long-page")
 # Scroll down by a specific amount (e.g., 1000 pixels)
 driver.execute_script("window.scrollBy(0, 1000);")
 
+
+# Scroll to the bottom of the page
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+# Close the browser
+driver.quit()
+
