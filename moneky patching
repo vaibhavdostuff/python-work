@@ -766,3 +766,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Set up the WebDriver (ChromeDriver)
+driver = webdriver.Chrome()
+
+# Open a webpage
+driver.get("https://www.example.com")
+
+# Wait for an element to appear (up to 10 seconds)
