@@ -783,3 +783,8 @@ element.click()
 # Close the browser
 driver.quit()
 
+# 10
+# Extracting Page Source and Text
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
