@@ -812,3 +812,11 @@ driver.quit()
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+# Set up the WebDriver (ChromeDriver)
+driver = webdriver.Chrome()
+
+# Open a webpage with a file upload input
+driver.get("https://www.example.com/upload")
+
+# Locate the file input element
+file_input = driver.find_element(By.NAME, "file-upload")
