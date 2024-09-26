@@ -739,3 +739,9 @@ driver.quit()
 # 8
 # Scrolling the Page
 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+# Set up the WebDriver (ChromeDriver)
+driver = webdriver.Chrome()
+
