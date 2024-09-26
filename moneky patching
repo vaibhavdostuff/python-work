@@ -745,3 +745,9 @@ from selenium.webdriver.common.by import By
 # Set up the WebDriver (ChromeDriver)
 driver = webdriver.Chrome()
 
+# Open a webpage
+driver.get("https://www.example.com/long-page")
+
+# Scroll down by a specific amount (e.g., 1000 pixels)
+driver.execute_script("window.scrollBy(0, 1000);")
+
