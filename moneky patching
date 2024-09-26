@@ -712,7 +712,7 @@ dropdown.select_by_value("option1")
 driver.quit()
 
 #7
-#from selenium import webdriver
+# from selenium import webdriver
 
 # Set up the WebDriver (ChromeDriver)
 driver = webdriver.Chrome()
@@ -735,4 +735,7 @@ driver.switch_to.window(driver.window_handles[0])
 
 # Close the browser
 driver.quit()
+
+# 8
+# Scrolling the Page
 
