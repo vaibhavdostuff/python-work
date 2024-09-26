@@ -806,3 +806,9 @@ print(element.text)
 # Close the browser
 driver.quit()
 
+# 11
+# Uploading a File
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
