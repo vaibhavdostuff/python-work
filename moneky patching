@@ -820,3 +820,12 @@ driver.get("https://www.example.com/upload")
 
 # Locate the file input element
 file_input = driver.find_element(By.NAME, "file-upload")
+
+# Upload a file by sending the file path
+file_input.send_keys(r"C:\path\to\file.txt")
+
+# Submit the form
+driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
+
+# Close the browser
+driver.quit()
