@@ -887,3 +887,8 @@ session.detach()
 
 import frida
 
+# Attach to a running process (e.g., Calculator on Windows)
+session = frida.attach("Calculator.exe")
+
+# Define a script that modifies the return value of a function
+script = session.create_script("""
