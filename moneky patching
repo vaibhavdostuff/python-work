@@ -927,3 +927,9 @@ Interceptor.attach(Module.findExportByName("user32.dll", "MessageBoxA"), {
 
 # Load and execute the script
 script.load()
+
+
+# Keep the script running
+input("Press Enter to detach...")
+session.detach()
+
