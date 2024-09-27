@@ -882,3 +882,8 @@ script.load()
 input("Press Enter to detach...")
 session.detach()
 
+#3
+# Modifying a Return Value in a Running Process
+
+import frida
+
