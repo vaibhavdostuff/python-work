@@ -919,4 +919,11 @@ session = frida.attach("notepad.exe")
 # Define a script that monitors calls to a specific API function (e.g., MessageBoxA)
 script = session.create_script("""
 Interceptor.attach(Module.findExportByName("user32.dll", "MessageBoxA"), {
-    onEnter: function(args)
+    onEnter: function(args){
+        console.log("MessageBoxA called with args: " + args[1].readUtf8String());
+    }
+});
+""")
+
+# Load and execute the script
+script.load()
