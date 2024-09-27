@@ -899,4 +899,12 @@ Interceptor.attach(ptr("%s"), {
         console.log("Modified return value: 9999");
     }
 });
-""" 
+""" % some_function_address)
+
+# Load and execute the script
+script.load()
+
+# Keep the script running
+input("Press Enter to detach...")
+session.detach()
+
