@@ -855,3 +855,8 @@ script.load()
 input("Press Enter to detach...")
 session.detach()
 
+#2
+# Hooking a Function in a Windows Application
+
+import frida
+
