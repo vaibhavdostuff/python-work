@@ -838,3 +838,12 @@ import frida
 
 # Attach to a running process (e.g., Calculator on Windows)
 session = frida.attach("Calculator.exe")
+
+# Inject a simple script
+script = session.create_script("""
+Interceptor.attach(ptr("%s"), {
+    onEnter: function(args) {
+        console.log("Function called!");
+    }
+});
+""" % some_function_address)
