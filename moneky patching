@@ -829,3 +829,12 @@ driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
 # Close the browser
 driver.quit()
+
+
+#Advanced Memory Manipulation
+#1
+
+import frida
+
+# Attach to a running process (e.g., Calculator on Windows)
+session = frida.attach("Calculator.exe")
