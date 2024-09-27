@@ -860,3 +860,8 @@ session.detach()
 
 import frida
 
+# Attach to a running process (e.g., Notepad on Windows)
+session = frida.attach("notepad.exe")
+
+# Define a script that hooks a function and logs the arguments
+script = session.create_script
