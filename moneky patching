@@ -933,3 +933,11 @@ script.load()
 input("Press Enter to detach...")
 session.detach()
 
+# 5
+# Bypassing a Conditional Check
+
+import frida
+
+# Attach to a running process (e.g., target application)
+session = frida.attach("target_application.exe")
+
