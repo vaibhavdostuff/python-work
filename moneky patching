@@ -989,3 +989,11 @@ import frida
 
 # Attach to a running process (e.g., Notepad on Windows)
 session = frida.attach("notepad.exe")
+
+# Define a script that hooks multiple functions and logs their calls
+script = session.create_script("""
+Interceptor.attach(ptr("%s"), {
+    onEnter: function(args) {
+        console.log("Function 1 called");
+    }
+});
