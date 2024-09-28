@@ -946,4 +946,8 @@ script = session.create_script("""
 Interceptor.attach(ptr("%s"), {
     onEnter: function(args) {
         console.log("Original argument: " + args[0].toInt32());
-        
+        args[0] = ptr(1);  // Force the condition to always succeed
+        console.log("Modified argument: 1");
+    }
+});
+""" % some_function_address)
