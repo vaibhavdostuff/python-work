@@ -997,3 +997,12 @@ Interceptor.attach(ptr("%s"), {
         console.log("Function 1 called");
     }
 });
+
+
+Interceptor.attach(ptr("%s"), {
+    onEnter: function(args) {
+        console.log("Function 2 called");
+    }
+});
+""" % (function_1_address, function_2_address))     
+
