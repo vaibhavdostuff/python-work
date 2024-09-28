@@ -967,3 +967,10 @@ import frida
 # Attach to a running process (e.g., target application)
 session = frida.attach("target_application.exe")
 
+# Define a script that writes data to a specific memory address
+script = session.create_script("""
+var memory_address = ptr("%s");
+Memory.protect(memory_address, 0x1000, 'rw-');
+memory_address.writeUtf8String("Injected data!");
+console.log("Memory written with: " + memory_address.readUtf8String());
+""" % target_memory_address)
