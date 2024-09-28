@@ -974,3 +974,11 @@ Memory.protect(memory_address, 0x1000, 'rw-');
 memory_address.writeUtf8String("Injected data!");
 console.log("Memory written with: " + memory_address.readUtf8String());
 """ % target_memory_address)
+
+# Load and execute the script
+script.load()
+
+# Keep the script running
+input("Press Enter to detach...")
+session.detach()
+
