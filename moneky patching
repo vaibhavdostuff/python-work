@@ -1052,3 +1052,9 @@ session = frida.attach("notepad.exe")
 
 # Define a script that calls a native function (e.g., Sleep in kernel32.dll)
 script = session.create_script("""
+var kernel32 = Module.findBaseAddress("kernel32.dll");
+var sleep = new NativeFunction(ptr(kernel32.add(0x4f3a)), 'void', ['uint']);
+console.log("Calling Sleep function...");
+sleep(3000);  // Sleep for 3 seconds
+""")
+
