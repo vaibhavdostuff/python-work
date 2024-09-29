@@ -1042,3 +1042,8 @@ script.load()
 input("Press Enter to detach...")
 session.detach()
 
+# 9
+# Calling Native Functions from a Script
+
+import frida
+
