@@ -1029,3 +1029,8 @@ var memory_dump = Memory.readByteArray(memory_address, 0x1000);  // Dump 4KB of 
 send(memory_dump);
 """ % target_memory_address)
 
+# Function to handle dumped memory
+def on_message(message, data):
+    with open("memory_dump.bin", "wb") as f:
+        f.write(data)
+
