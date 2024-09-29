@@ -1065,3 +1065,8 @@ script.load()
 input("Press Enter to detach...")
 session.detach()
 
+# 10
+# Tracing Function Calls
+
+import frida
+
