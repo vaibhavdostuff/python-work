@@ -1019,3 +1019,8 @@ session.detach()
 
 import frida
 
+# Attach to a running process (e.g., Notepad on Windows)
+session = frida.attach("notepad.exe")
+
+# Define a script that dumps memory from a specific address
+script = session.create_script("""
