@@ -68,3 +68,13 @@ for idx, title in enumerate(titles, 1):
 import requests
 from bs4 import BeautifulSoup
 
+# Find the table by its class or ID
+table = soup.find("table", id="example2")
+
+# Loop through the rows of the table
+for row in table.find_all("tr"):
+    columns = row.find_all("td")
+    if columns:  # Ensure the row has data
+        country = columns[1].get_text()
+        population = columns[2].get_text()
+        print(f"Country: {country}, Population: {population}")
