@@ -78,3 +78,8 @@ for row in table.find_all("tr"):
         country = columns[1].get_text()
         population = columns[2].get_text()
         print(f"Country: {country}, Population: {population}")
+
+
+# 4
+# Using Selenium for Dynamic Pages
+
