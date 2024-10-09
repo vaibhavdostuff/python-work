@@ -107,3 +107,6 @@ for result in results:
 # Close the browser
 driver.quit()
 
+# 5
+# Handling Pagination
+
