@@ -42,3 +42,9 @@ soup = BeautifulSoup(response.content, "html.parser")
 page_title = soup.title.string
 print("Page Title:", page_title)
 
+# 2
+# Scraping Multiple Elements (e.g., Article Titles)
+
+import requests
+from bs4 import BeautifulSoup
+
