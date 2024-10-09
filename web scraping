@@ -110,3 +110,9 @@ driver.quit()
 # 5
 # Handling Pagination
 
+base_url = "https://example.com/page/"
+
+for page in range(1, 6):  # Iterate through first 5 pages
+    response = requests.get(base_url + str(page))
+    soup = BeautifulSoup(response.content, "html.parser")
+
