@@ -97,3 +97,13 @@ search_box = driver.find_element("name", "q")
 search_box.send_keys("Python")
 search_box.send_keys(Keys.RETURN)
 
+# Wait for results to load, and extract the data
+driver.implicitly_wait(5)
+results = driver.find_elements("class name", "result")
+
+for result in results:
+    print(result.text)
+
+# Close the browser
+driver.quit()
+
