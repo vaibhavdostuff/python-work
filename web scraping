@@ -89,3 +89,11 @@ from selenium.webdriver.common.keys import Keys
 # Set up the WebDriver (e.g., ChromeDriver)
 driver = webdriver.Chrome()
 
+# Open the website
+driver.get("https://www.example.com")
+
+# Locate an element, perform an action, and extract the result
+search_box = driver.find_element("name", "q")
+search_box.send_keys("Python")
+search_box.send_keys(Keys.RETURN)
+
