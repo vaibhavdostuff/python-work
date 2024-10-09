@@ -61,3 +61,10 @@ titles = soup.find_all("a", class_="storylink")
 for idx, title in enumerate(titles, 1):
     print(f"{idx}. {title.get_text()}")
 
+
+# 3
+# Scraping Data from a Table
+
+import requests
+from bs4 import BeautifulSoup
+
