@@ -48,3 +48,9 @@ print("Page Title:", page_title)
 import requests
 from bs4 import BeautifulSoup
 
+url = "https://news.ycombinator.com/"
+response = requests.get(url)
+
+# Parse the content of the response
+soup = BeautifulSoup(response.content, "html.parser")
+
