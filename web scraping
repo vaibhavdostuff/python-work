@@ -83,3 +83,9 @@ for row in table.find_all("tr"):
 # 4
 # Using Selenium for Dynamic Pages
 
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+# Set up the WebDriver (e.g., ChromeDriver)
+driver = webdriver.Chrome()
+
