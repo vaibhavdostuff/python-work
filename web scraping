@@ -54,3 +54,10 @@ response = requests.get(url)
 # Parse the content of the response
 soup = BeautifulSoup(response.content, "html.parser")
 
+# Find all elements with the class 'storylink'
+titles = soup.find_all("a", class_="storylink")
+
+# Print each title
+for idx, title in enumerate(titles, 1):
+    print(f"{idx}. {title.get_text()}")
+
