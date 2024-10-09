@@ -116,3 +116,10 @@ for page in range(1, 6):  # Iterate through first 5 pages
     response = requests.get(base_url + str(page))
     soup = BeautifulSoup(response.content, "html.parser")
 
+    items = soup.find_all("div", class_="item")
+    
+    for item in items:
+        title = item.find("h2").get_text()
+        price = item.find("span", class_="price").get_text()
+        print(f"Title: {title}, Price: {price}")
+
