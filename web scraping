@@ -140,4 +140,9 @@ with open("data.csv", "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(["Title", "Price"])  # Writing header row
 
-    
+    items = soup.find_all("div", class_="item")
+
+    for item in items:
+        title = item.find("h2").get_text()
+        price = item.find("span", class_="price").get_text()
+        csvwriter.writerow([title, price])
