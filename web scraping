@@ -135,3 +135,9 @@ url = "https://www.example.com"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
 
+# Open a CSV file to save the scraped data
+with open("data.csv", "w", newline="") as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(["Title", "Price"])  # Writing header row
+
+    
