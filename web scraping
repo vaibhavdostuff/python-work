@@ -152,3 +152,10 @@ with open("data.csv", "w", newline="") as csvfile:
 
 import scrapy
 
+class QuotesSpider(scrapy.Spider):
+    name = "quotes"
+    start_urls = [
+        "http://quotes.toscrape.com/",
+    ]
+
+    
