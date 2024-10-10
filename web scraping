@@ -195,3 +195,10 @@ import requests
 from bs4 import BeautifulSoup
 
 url = "https://www.example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
+# Extract and print all heading tags (h1, h2, h3, etc.)
+for heading in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
+    print(heading.name + ":", heading.get_text())
+
