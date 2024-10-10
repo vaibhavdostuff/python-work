@@ -170,3 +170,11 @@ class QuotesSpider(scrapy.Spider):
             yield response.follow(next_page, self.parse)
 
 
+# Basic Web Scraping using requests and BeautifulSoup
+# 2
+
+# Extracting All Links (<a> Tags)
+
+import requests
+from bs4 import BeautifulSoup
+
