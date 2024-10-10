@@ -146,3 +146,9 @@ with open("data.csv", "w", newline="") as csvfile:
         title = item.find("h2").get_text()
         price = item.find("span", class_="price").get_text()
         csvwriter.writerow([title, price])
+
+# 7
+# Using Scrapy for Larger Projects
+
+import scrapy
+
