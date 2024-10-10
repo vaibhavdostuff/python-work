@@ -188,3 +188,10 @@ for link in soup.find_all('a'):
     if href:
         print(href)
 
+# 3
+# Extracting Headings (H1, H2, H3, etc.)
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.example.com"
