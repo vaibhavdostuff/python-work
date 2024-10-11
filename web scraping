@@ -264,3 +264,10 @@ soup = BeautifulSoup(response.content, "html.parser")
 # Extract and print meta tag content
 for meta in soup.find_all('meta'):
     print(meta.get('name'), meta.get('content'))
+
+# 7
+# Extracting Data by Specific Class or ID
+
+import requests
+from bs4 import BeautifulSoup
+
