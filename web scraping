@@ -285,3 +285,10 @@ element = soup.find(id='specific-id')
 if element:
     print(element.get_text())
 
+
+# 8 
+# Extracting Attributes of Elements
+
+import requests
+from bs4 import BeautifulSoup
+
