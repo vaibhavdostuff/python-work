@@ -292,3 +292,13 @@ if element:
 import requests
 from bs4 import BeautifulSoup
 
+url = "https://www.example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
+# Extract and print 'alt' attributes from images
+for img in soup.find_all('img'):
+    alt_text = img.get('alt')
+    print(f"Alt Text: {alt_text}")
+
+ 
