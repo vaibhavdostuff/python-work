@@ -277,3 +277,11 @@ soup = BeautifulSoup(response.content, "html.parser")
 
 # Find and print an element with a specific class
 content = soup.find('div', class_='specific-class-name')
+if content:
+    print(content.get_text())
+
+# Find and print an element by ID
+element = soup.find(id='specific-id')
+if element:
+    print(element.get_text())
+
