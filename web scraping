@@ -216,3 +216,9 @@ soup = BeautifulSoup(response.content, "html.parser")
 for paragraph in soup.find_all('p'):
     print(paragraph.get_text())
 
+# 5
+# Extracting Image URLs
+
+import requests
+from bs4 import BeautifulSoup
+
