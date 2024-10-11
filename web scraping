@@ -250,3 +250,10 @@ for row in table.find_all("tr"):
         data = [cell.get_text() for cell in cells]
         print(data)
 
+
+# 6 
+# Extracting Meta Tags (SEO Data)
+
+import requests
+from bs4 import BeautifulSoup
+
