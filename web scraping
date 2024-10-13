@@ -403,3 +403,11 @@ for link in soup.find_all("a", class_="article-link"):
     url = link.get('href')
     print(f"Title: {title}, URL: {url}")
 
+# 15
+# Scraping Multiple Data Points from an Article (Title, Author, Date)
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example-news.com"
+response = requests.get(url)
