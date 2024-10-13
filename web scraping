@@ -301,4 +301,10 @@ for img in soup.find_all('img'):
     alt_text = img.get('alt')
     print(f"Alt Text: {alt_text}")
 
- 
+ # 9
+ # Extracting and Saving a Webpage's Data to a File
+
+import requests
+from bs4 import BeautifulSoup
+
+
