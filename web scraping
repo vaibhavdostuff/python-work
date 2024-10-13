@@ -324,3 +324,11 @@ from bs4 import BeautifulSoup
 
 base_url = "https://example.com/page/"
 page_num = 1
+
+while True:
+    url = base_url + str(page_num)
+    response = requests.get(url)
+    
+    # Stop if no more pages (or page doesn't exist)
+    if response.status_code != 200:
+        break
