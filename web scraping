@@ -386,3 +386,12 @@ soup = BeautifulSoup(response.content, "html.parser")
 for job in soup.find_all("h2", class_="job-title"):
     print(job.get_text().strip())
 
+
+# 14
+# Scraping Blog Post Titles and URLs
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example-blog.com"
+response = requests.get(url)
