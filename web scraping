@@ -349,3 +349,12 @@ while True:
 import requests
 from bs4 import BeautifulSoup
 
+url = "https://www.example-news.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
+# Assuming the headlines are inside <h3> tags with a class 'headline'
+for headline in soup.find_all("h3", class_="headline"):
+    print(headline.get_text().strip())
+
+
