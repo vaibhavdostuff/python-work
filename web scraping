@@ -316,3 +316,11 @@ with open("webpage_content.txt", "w") as file:
     for paragraph in soup.find_all('p'):
         file.write(paragraph.get_text() + "\n")
 
+# 10
+# Handling Pagination (Multi-Page Scraping)
+
+import requests
+from bs4 import BeautifulSoup
+
+base_url = "https://example.com/page/"
+page_num = 1
