@@ -511,3 +511,9 @@ with open("products.csv", "w", newline="") as csvfile:
         csvwriter.writerow([name, price, rating])
 
 
+# 2
+#  Saving Scraped Data to a JSON File
+
+import json
+import requests
+from bs4 import BeautifulSoup
