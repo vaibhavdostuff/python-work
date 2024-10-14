@@ -536,3 +536,12 @@ for article in articles:
 with open("articles.json", "w") as jsonfile:
     json.dump(articles_data, jsonfile, indent=4)
 
+
+# 3
+# Saving Scraped Data to an Excel File
+
+import requests
+from bs4 import BeautifulSoup
+import openpyxl
+
+
