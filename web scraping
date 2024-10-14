@@ -451,3 +451,10 @@ while True:
     # Move to the next page
     page_number += 1
 
+# 17
+# Scraping Event Titles and Dates from an Events Page
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example-events.com"
