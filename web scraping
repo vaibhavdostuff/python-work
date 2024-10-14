@@ -421,3 +421,11 @@ for article in soup.find_all("div", class_="article"):
     print(f"Title: {title}, Author: {author}, Date: {date}")
 
 
+# 16
+# Scraping Titles from Multiple Pages (Handling Pagination)
+
+import requests
+from bs4 import BeautifulSoup
+
+base_url = "https://example-blog.com/page/"
+page_number = 1
