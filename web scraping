@@ -517,3 +517,9 @@ with open("products.csv", "w", newline="") as csvfile:
 import json
 import requests
 from bs4 import BeautifulSoup
+
+url = "https://example-articles.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
+articles_data = []
