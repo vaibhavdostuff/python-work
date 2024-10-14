@@ -566,3 +566,10 @@ for book in books:
 # Save the workbook to a file
 workbook.save("books.xlsx")
 
+# 4
+# Saving Scraped Data to a Pandas DataFrame
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
