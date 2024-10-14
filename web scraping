@@ -444,3 +444,10 @@ while True:
     titles = soup.find_all("h2", class_="post-title")
     if not titles:
         break
+
+    for title in titles:
+        print(title.get_text().strip())
+
+    # Move to the next page
+    page_number += 1
+
