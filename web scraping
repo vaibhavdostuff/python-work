@@ -467,3 +467,13 @@ for event in soup.find_all("div", class_="event-item"):
     date = event.find("span", class_="event-date").get_text().strip()
     print(f"Event: {title} on {date}")
 
+# 17
+# Scraping Blog Titles and Saving Them to a List
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example-blog.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
