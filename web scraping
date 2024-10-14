@@ -550,3 +550,9 @@ response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
 
 # Create a new Excel workbook and sheet
+workbook = openpyxl.Workbook()
+sheet = workbook.active
+sheet.title = "Books"
+sheet.append(["Title", "Author", "Price"])  # Adding headers
+
+# Scrape data and write to the Excel sheet
