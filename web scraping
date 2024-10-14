@@ -437,3 +437,10 @@ while True:
     # Break if no more pages
     if response.status_code != 200:
         break
+
+    soup = BeautifulSoup(response.content, "html.parser")
+
+    # Scrape titles on the current page
+    titles = soup.find_all("h2", class_="post-title")
+    if not titles:
+        break
