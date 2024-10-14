@@ -556,3 +556,13 @@ sheet.title = "Books"
 sheet.append(["Title", "Author", "Price"])  # Adding headers
 
 # Scrape data and write to the Excel sheet
+books = soup.find_all("div", class_="book")
+for book in books:
+    title = book.find("h3", class_="book-title").get_text()
+    author = book.find("span", class_="book-author").get_text()
+    price = book.find("span", class_="book-price").get_text()
+    sheet.append([title, author, price])
+
+# Save the workbook to a file
+workbook.save("books.xlsx")
+
