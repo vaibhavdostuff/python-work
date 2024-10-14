@@ -467,7 +467,7 @@ for event in soup.find_all("div", class_="event-item"):
     date = event.find("span", class_="event-date").get_text().strip()
     print(f"Event: {title} on {date}")
 
-# 17
+# 18
 # Scraping Blog Titles and Saving Them to a List
 
 import requests
@@ -484,4 +484,12 @@ titles = [title.get_text().strip() for title in soup.find_all("h2", class_="post
 print("Blog Titles:")
 for t in titles:
     print(t)
+
+
+# 1
+# Saving Scraped Data to a CSV File (Multiple Columns)
+
+import csv
+import requests
+from bs4 import BeautifulSoup
 
