@@ -477,3 +477,11 @@ url = "https://example-blog.com"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
 
+# Store titles in a list
+titles = [title.get_text().strip() for title in soup.find_all("h2", class_="post-title")]
+
+# Print the list of titles
+print("Blog Titles:")
+for t in titles:
+    print(t)
+
