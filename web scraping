@@ -500,8 +500,14 @@ soup = BeautifulSoup(response.content, "html.parser")
 # Open a CSV file to save the scraped data
 with open("products.csv", "w", newline="") as csvfile:
      csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(["Product Name", "Price", "Rating"])  # Writing header row
+     csvwriter.writerow(["Product Name", "Price", "Rating"])  # Writing header row
 
-    products = soup.find_all("div", class_="product-item")
+     products = soup.find_all("div", class_="product-item")
 
-    for product in products:
+     for product in products:
+        name = product.find("h3", class_="product-name").get_text()
+        price = product.find("span", class_="price").get_text()
+        rating = product.find("span", class_="rating").get_text()
+        csvwriter.writerow([name, price, rating])
+
+
