@@ -429,3 +429,11 @@ from bs4 import BeautifulSoup
 
 base_url = "https://example-blog.com/page/"
 page_number = 1
+
+while True:
+    url = base_url + str(page_number)
+    response = requests.get(url)
+    
+    # Break if no more pages
+    if response.status_code != 200:
+        break
