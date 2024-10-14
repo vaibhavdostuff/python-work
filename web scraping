@@ -530,3 +530,9 @@ for article in articles:
     author = article.find("span", class_="author").get_text()
     date = article.find("time", class_="date").get_text()
     articles_data.append({"Title": title, "Author": author, "Date": date})
+
+
+# Save to a JSON file
+with open("articles.json", "w") as jsonfile:
+    json.dump(articles_data, jsonfile, indent=4)
+
