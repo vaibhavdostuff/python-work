@@ -545,3 +545,8 @@ from bs4 import BeautifulSoup
 import openpyxl
 
 
+url = "https://example-books.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
+# Create a new Excel workbook and sheet
