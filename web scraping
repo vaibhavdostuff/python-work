@@ -651,3 +651,9 @@ with open("jobs.csv", "w", newline="") as csvfile:
 
 import scrapy
 
+class LoginSpider(scrapy.Spider):
+    name = "login_spider"
+    start_urls = ["http://quotes.toscrape.com/login"]
+
+    def parse(self, response):
+        
