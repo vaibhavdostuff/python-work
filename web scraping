@@ -656,4 +656,11 @@ class LoginSpider(scrapy.Spider):
     start_urls = ["http://quotes.toscrape.com/login"]
 
     def parse(self, response):
-        
+        # Perform login
+        return scrapy.FormRequest.from_response(
+            response,
+            formdata={"username": "your_username", "password": "your_password"},
+            callback=self.after_login
+        )
+    
+    
