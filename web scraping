@@ -610,3 +610,9 @@ soup = BeautifulSoup(response.content, "html.parser")
 current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 filename = f"products_{current_time}.csv"
 
+# Open a CSV file to save the scraped data
+with open(filename, "w", newline="") as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(["Product Name", "Price"])  # Writing header row
+
+    
