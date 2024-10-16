@@ -646,3 +646,8 @@ with open("jobs.csv", "w", newline="") as csvfile:
         csvwriter.writerow([title, company, location])
 
 
+# 1
+# Scraping Data with Login
+
+import scrapy
+
