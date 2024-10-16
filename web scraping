@@ -663,4 +663,13 @@ class LoginSpider(scrapy.Spider):
             callback=self.after_login
         )
     
+    def after_login(self, response):
+        if b"Logout" not in response.body:
+            self.logger.error("Login failed")
+            return
+        else:
+            # Continue scraping quotes
+            yield from self.parse_quotes(response)
+
+    
     
