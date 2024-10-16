@@ -615,4 +615,11 @@ with open(filename, "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(["Product Name", "Price"])  # Writing header row
 
-    
+    products = soup.find_all("div", class_="product-item")
+    for product in products:
+        name = product.find("h3", class_="product-name").get_text()
+        price = product.find("span", class_="price").get_text()
+        csvwriter.writerow([name, price])
+
+print(f"Data saved to {filename}")
+
