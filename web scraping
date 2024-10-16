@@ -623,3 +623,10 @@ with open(filename, "w", newline="") as csvfile:
 
 print(f"Data saved to {filename}")
 
+# 6
+# Handling Missing Data While Scraping
+
+import csv
+import requests
+from bs4 import BeautifulSoup
+
