@@ -740,3 +740,9 @@ class ProxySpider(scrapy.Spider):
             }
 
 
+# 4 
+# Handling AJAX Requests
+
+import scrapy
+import json
+
