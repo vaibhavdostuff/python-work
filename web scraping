@@ -698,3 +698,10 @@ class CustomHeaderSpider(scrapy.Spider):
 
     def start_requests(self):
         headers = {
+            "User-Agent": "MyCustomUserAgent/1.0",
+            "Accept": "text/html,application/xhtml+xml,application/xml",
+        }
+        for url in self.start_urls:
+            yield scrapy.Request(url, headers=headers)
+
+    
