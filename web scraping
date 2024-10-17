@@ -751,3 +751,10 @@ class AjaxSpider(scrapy.Spider):
     start_urls = ["https://example.com/api/getData"]
 
     def parse(self, response):
+        # Parse JSON data
+        data = json.loads(response.text)
+        for item in data.get("items", []):
+            yield {
+                "name": item.get("name"),
+                "price": item.get("price"),
+            }
