@@ -709,3 +709,9 @@ class CustomHeaderSpider(scrapy.Spider):
         self.logger.info(response.text)
 
 
+# 3
+# Scraping Data with Proxy Rotation
+
+import scrapy
+import random
+
