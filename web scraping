@@ -692,3 +692,9 @@ class LoginSpider(scrapy.Spider):
 
 import scrapy
 
+class CustomHeaderSpider(scrapy.Spider):
+    name = "custom_header"
+    start_urls = ["http://httpbin.org/headers"]
+
+    def start_requests(self):
+        headers = {
