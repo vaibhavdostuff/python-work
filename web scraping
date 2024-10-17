@@ -721,3 +721,13 @@ class ProxySpider(scrapy.Spider):
 
     # List of proxy servers
     proxies = [
+        "http://proxy1.example.com:8000",
+        "http://proxy2.example.com:8000",
+        "http://proxy3.example.com:8000"
+    ]
+
+    def start_requests(self):
+        for url in self.start_urls:
+            proxy = random.choice(self.proxies)
+            self.logger.info(f"Using proxy: {proxy}")
+            yield scrapy.Request(url, meta={"proxy": proxy})
