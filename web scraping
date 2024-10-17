@@ -704,4 +704,8 @@ class CustomHeaderSpider(scrapy.Spider):
         for url in self.start_urls:
             yield scrapy.Request(url, headers=headers)
 
-    
+    def parse(self, response):
+        # Print the headers to verify
+        self.logger.info(response.text)
+
+
