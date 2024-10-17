@@ -731,3 +731,12 @@ class ProxySpider(scrapy.Spider):
             proxy = random.choice(self.proxies)
             self.logger.info(f"Using proxy: {proxy}")
             yield scrapy.Request(url, meta={"proxy": proxy})
+
+    def parse(self, response):
+        for quote in response.css("div.quote"):
+            yield {
+                "text": quote.css("span.text::text").get(),
+                "author": quote.css("small.author::text").get(),
+            }
+
+
