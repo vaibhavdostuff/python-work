@@ -715,3 +715,9 @@ class CustomHeaderSpider(scrapy.Spider):
 import scrapy
 import random
 
+class ProxySpider(scrapy.Spider):
+    name = "proxy_spider"
+    start_urls = ["http://quotes.toscrape.com/"]
+
+    # List of proxy servers
+    proxies = [
