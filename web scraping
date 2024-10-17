@@ -746,3 +746,8 @@ class ProxySpider(scrapy.Spider):
 import scrapy
 import json
 
+class AjaxSpider(scrapy.Spider):
+    name = "ajax_spider"
+    start_urls = ["https://example.com/api/getData"]
+
+    def parse(self, response):
