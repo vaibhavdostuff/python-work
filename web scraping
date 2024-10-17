@@ -687,3 +687,8 @@ class LoginSpider(scrapy.Spider):
             yield response.follow(next_page, self.parse_quotes)
 
 
+# 2
+# Scraping Data with Custom Headers
+
+import scrapy
+
