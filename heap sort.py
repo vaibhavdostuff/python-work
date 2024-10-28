@@ -1,5 +1,4 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+
 # Python program for implementation of heap Sort
 
 # To heapify subtree rooted at index i.
@@ -8,8 +7,8 @@
 
 def heapify(arr, n, i):
 	largest = i # Initialize largest as root
-	l = 2 * i + 1 # left = 2*i + 1
-	r = 2 * i + 2 # right = 2*i + 2
+	l = 2 * i + 1 
+	r = 2 * i + 2 
 
 # See if left child of root exists and is
 # greater than root
@@ -73,7 +72,7 @@ def heap_sort(arr):
 	return result
 
 # Driver Code
-arr = [60, 20, 40, 70, 30, 10]
+arr = [40, 10, 40, 60, 30, 20]
 print("Input Array: ", arr)
 print("Sorted Array: ", heap_sort(arr))
 
