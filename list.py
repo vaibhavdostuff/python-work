@@ -453,7 +453,8 @@ else:
 	print("No, 15 does not exists in list")
 
 #31
-word = [6, 0, 4, 1]
+
+word = [8, 0, 2, 1]
 print('word before clear:', word)
 
 # Clearing list
@@ -461,6 +462,7 @@ word.clear()
 print('word after clear:', word)
 
 #32
+
 list1 = [1, 2, 3]
 
 # Printing list2 before deleting
@@ -475,6 +477,7 @@ print("List1 after clearing using reinitialization : "
 	+ str(list1))
 
 #33
+
 # Initializing lists
 list1 = [1, 2, 3]
 
@@ -488,8 +491,9 @@ print("List1 after clearing using *=0 : "
 	+ str(list1))
 
 #34
+
 list1 = [1, 2, 3]
-list2 = [5, 6, 7]
+list2 = [7, 8, 9]
 
 # Printing list1 before deleting
 print("List1 before deleting is : " + str(list1))
@@ -507,6 +511,7 @@ del list2[:]
 print("List2 after clearing using del : " + str(list2))
 
 #35
+
 list1 = [1, 2, 3]
 
 # Printing list1 before deleting
@@ -517,8 +522,10 @@ while(len(list1) != 0):
 	list1.pop()
 print("List1 after clearing using del : " + str(list1))
 
+
 #36
-# Initializing list
+
+
 lst = [1, 2, 3, 4, 5]
 
 print("List before clearing: ",lst)
@@ -526,8 +533,9 @@ print("List before clearing: ",lst)
 lst = lst[:0]
 print("List after clearing using Slicing: ",lst)
 
+
 #37
-# Python program to copy or clone a list
+
 # Using the Slice Operator
 def Cloning(li1):
 	li_copy = li1[:]
@@ -541,7 +549,8 @@ print("Original List:", li1)
 print("After Cloning:", li2)
 
 #38
-# Python code to clone or copy a list
+
+
 # Using the in-built function extend()
 
 
@@ -552,13 +561,15 @@ def Cloning(li1):
 
 
 # Driver Code
-li1 = [4, 8, 2, 10, 15, 18]
+li1 = [6, 10, 4, 9, 15, 18]
 li2 = Cloning(li1)
 print("Original List:", li1)
 print("After Cloning:", li2)
 
+
 #39
-# Python code to clone or copy a list 
+
+
 # Using the List copy using =
 def Cloning(li1): 
 	li_copy = li1
@@ -570,7 +581,9 @@ li2 = Cloning(li1)
 print("Original List:", li1) 
 print("After Cloning:", li2)
 
+
 #40
+
 # importing copy module
 import copy
 
@@ -582,8 +595,10 @@ li2 = copy.copy(li1)
 
 print(li2)
 
+
 #41
-# Python code to clone or copy a list 
+
+
 # Using list comprehension 
 def Cloning(li1): 
 	li_copy = [i for i in li1] 
@@ -595,8 +610,10 @@ li2 = Cloning(li1)
 print("Original List:", li1) 
 print("After Cloning:", li2) 
 
+
 #42
-# Python code to clone or copy a list 
+
+
 # Using append() 
 def Cloning(li1): 
 	li_copy =[] 
@@ -609,8 +626,10 @@ li2 = Cloning(li1)
 print("Original List:", li1) 
 print("After Cloning:", li2)
 
+
 #43
-# Python code to clone or copy a list 
+
+
 # Using built-in method copy() 
 def Cloning(li1): 
 	li_copy =[] 
@@ -623,7 +642,9 @@ li2 = Cloning(li1)
 print("Original List:", li1) 
 print("After Cloning:", li2)
 
+
 #44
+
 # importing copy module
 import copy
 
@@ -634,23 +655,28 @@ li1 = [1, 2, [3,5], 4]
 li3 = copy.deepcopy(li1) 
 print(li3)
 
+
 #45
-# Python code to clone or copy a list 
+
+
 # Using list comprehension 
 lst = [4, 8, 2, 10, 15, 18] 
 li_copy = [i for a,i in enumerate(lst)] 
 print("Original List:", lst) 
 print("After Cloning:", li_copy) 
 
+
 #46
-# Python code to clone or copy a list
+
 # Using map function
 lst = [4, 8, 2, 10, 15, 18]
 li_copy = map(int, lst)
 print("Original List:", lst)
 print("After Cloning:", *li_copy)
 
+
 #47
+
 from collections import deque
 
 original_list = [4, 8, 2, 10, 15, 18]
@@ -662,8 +688,10 @@ print("Original List:", original_list)
 
 print("After Cloning:", copied_list)
 
+
 #48
-# Python code to count the number of occurrences
+
+# to count the number of occurrences
 def countX(lst, x):
 	count = 0
 	for ele in lst:
@@ -677,20 +705,26 @@ lst = [8, 6, 8, 10, 8, 20, 10, 8, 8]
 x = 8
 print('{} has occurred {} times'.format(x, countX(lst, x)))
 
+
 #49
+
 l = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5] 
 ele=1
 x=[i for i in l if i==ele] 
 print("the element",ele,"occurs",len(x),"times")
 
+
 #50
+
 l = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5] 
 ele=1
 x=[i for j,i in enumerate(l) if i==ele] 
 print("the element",ele,"occurs",len(x),"times")
 
+
 #51
-# Python code to count the number of occurrences
+
+# to count the number of occurrences
 def countX(lst, x):
 	return lst.count(x)
 
@@ -701,7 +735,9 @@ x = 8
 print('{} has occurred {} times'.format(x, 
 										countX(lst, x)))
 
+
 #52
+
 from collections import Counter
 
 # declaring the list
@@ -712,7 +748,9 @@ x = 3
 d = Counter(l)
 print('{} has occurred {} times'.format(x, d[x]))
 
+
 #53
+
 import operator as op
 
 # declaring the list
@@ -722,12 +760,16 @@ l = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5]
 x = 2
 print(f"{x} has occurred {op.countOf(l, x)} times")
 
+
 #54
+
 lis = ['a', 'd', 'd', 'c', 'a', 'b', 'b', 'a', 'c', 'd', 'e']
 occurrence = {item: lis.count(item) for item in lis}
 print(occurrence.get('e'))
 
+
 #55
+
 import pandas as pd
 
 # declaring the list
@@ -736,6 +778,7 @@ l = [1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5]
 count = pd.Series(l).value_counts()
 print("Element Count")
 print(count)
+
 
 #56
 # Python program to remove empty tuples from a 
