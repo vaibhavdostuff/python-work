@@ -781,7 +781,8 @@ print(count)
 
 
 #56
-# Python program to remove empty tuples from a 
+
+# to remove empty tuples from a 
 # list of tuples function to remove empty tuples 
 # using list comprehension
 def Remove(tuples):
@@ -790,22 +791,24 @@ def Remove(tuples):
 
 # Driver Code
 tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'), 
-		('krishna', 'akbar', '45'), ('',''),()]
+		('krishna', 'sudhama', '45'), ('',''),()]
 print(Remove(tuples))
 
+
 #57
-# Python2 program to remove empty tuples
+
 # from a list of tuples function to remove 
 # empty tuples using filter
 def Remove(tuples):
 	tuples = filter(None, tuples)
 	return tuples
 # Driver Code
-tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'), ('krishna', 'akbar', '45'), ('',''),()]
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'), ('krishna', 'sudhama', '45'), ('',''),()]
 print Remove(tuples)
 
+
 #58
-# Python program to remove empty tuples from
+
 # a list of tuples function to remove empty
 # tuples using filter
 
@@ -817,11 +820,13 @@ def Remove(tuples):
 
 # Driver Code
 tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
-		('krishna', 'akbar', '45'), ('', ''), ()]
+		('krishna', 'sudhama', '45'), ('', ''), ()]
 print(Remove(tuples))
 
+
 #59
-# Python program to remove empty tuples from a
+
+# to remove empty tuples from a
 # list of tuples function to remove empty tuples
 # using len()
 
@@ -835,11 +840,12 @@ def Remove(tuples):
 
 # Driver Code
 tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
-		('krishna', 'akbar', '45'), ('', ''), ()]
+		('krishna', 'sudhama', '45'), ('', ''), ()]
 print(Remove(tuples))
 
+
 #60
-# Python program to remove empty tuples from a
+
 # list of tuples function to remove empty tuples
 def Remove(tuples):
 	for i in tuples:
@@ -848,17 +854,20 @@ def Remove(tuples):
 			return tuples
 # Driver Code
 tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
-		('krishna', 'akbar', '45'), ('',''),()]
+		('krishna', 'sudhama', '45'), ('',''),()]
 print(Remove(tuples))
 
 #61
+
 tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
-		('krishna', 'akbar', '45'), ('', ''), ()]
+		('krishna', 'sudhama', '45'), ('', ''), ()]
 res = [t for i, t in enumerate(tuples) if t]
 print(res)
 
+
 #62
-# Python program to remove empty tuples from
+
+# to remove empty tuples from
 # a list of tuples function to remove empty
 # tuples using while loop and in operator 
 def Remove(tuples):
@@ -871,8 +880,9 @@ tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
 		('krishna', 'akbar', '45'), ('',''),()]
 print (Remove(tuples))
 
+
 #63
-# Python program to remove empty tuples from a
+
 # list of tuples function to remove empty tuples
 
 
@@ -888,8 +898,9 @@ tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
 		('krishna', 'akbar', '45'), ('', ''), ()]
 print(Remove(tuples))
 
+
 #64
-# Python program to remove empty tuples from
+
 # a list of tuples function to remove empty
 # tuples using lambda function
 
@@ -901,7 +912,9 @@ tuples = [(), ('ram', '15', '8'), (), ('laxman', 'sita'),
 tuples = list(filter(lambda x: len(x) > 0, tuples))
 print(tuples)
 
+
 #65
+
 import itertools # import the itertools module
 
 def Remove(tuples):
@@ -913,7 +926,9 @@ tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'),
 		('krishna', 'akbar', '45'), ('',''),()] # define the input list of tuples
 print(Remove(tuples)) # call the Remove function and print the output
 
+
 #66
+
 # Python program to print duplicates from 
 # a list of integers
 lis = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
@@ -929,7 +944,9 @@ for i in lis:
 
 print(duplicateList)
 
+
 #67
+
 from collections import Counter
 
 l1 = [1,2,1,2,3,4,5,1,1,2,5,6,7,8,9,9]
@@ -940,6 +957,7 @@ new_list = list([item for item in d if d[item]>1])
 print(new_list)
 
 #68
+
 lis = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
 x = []
 y = []
@@ -951,11 +969,15 @@ for i in x:
 		y.append(i)
 print(y)
 
+
 #69
+
 input_list = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
 print(list(set([x for i,x in enumerate(input_list) if input_list.count(x) > 1])))
 
+
 #70
+
 lis = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
 x = []
 y = []
