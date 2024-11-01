@@ -990,8 +990,10 @@ for i in x:
 		y.append(i)
 print(y)
 
+
 #71
-# Python code to get the Cumulative sum of a list 
+
+#  to get the Cumulative sum of a list 
 def Cumulative(lists): 
 	cu_list = [] 
 	length = len(lists) 
@@ -1002,7 +1004,9 @@ def Cumulative(lists):
 lists = [10, 20, 30, 40, 50] 
 print (Cumulative(lists)) 
 
+
 #72
+
 from itertools import accumulate
 import operator
 
@@ -1016,7 +1020,9 @@ input_list = [10, 20, 30, 40, 50]
 output_list = cumulative_sum(input_list)
 print(output_list)
 
+
 #73
+
 import numpy as np
 
 def cumulative_sum(input_list):
@@ -1031,7 +1037,9 @@ input_list = [10, 20, 30, 40, 50]
 output_list = cumulative_sum(input_list)
 print(output_list)
 
+
 #74
+
 from collections import Counter
 
 def cumulative_sum(lst):
@@ -1045,13 +1053,14 @@ lst = [10, 20, 30, 40, 50]
 result = cumulative_sum(lst)
 print(result)
 
+
 #75
-# Python3 code to demonstrate 
-# Sum of number digits in List
+
+# to demonstrate Sum of number digits in List
 # using loop + str()
 
 # Initializing list
-test_list = [12, 67, 98, 34]
+test_list = [32, 57, 98, 44]
 
 # printing original list
 print("The original list is : " + str(test_list))
@@ -1068,13 +1077,13 @@ for ele in test_list:
 # printing result 
 print ("List Integer Summation : " + str(res))
 
+
 #76
-# Python3 code to demonstrate 
-# Sum of number digits in List
+
 # using sum() + list comprehension
 
 # Initializing list
-test_list = [12, 67, 98, 34]
+test_list = [12, 67, 78, 34]
 
 # printing original list
 print("The original list is : " + str(test_list))
@@ -1086,9 +1095,9 @@ res = list(map(lambda ele: sum(int(sub) for sub in str(ele)), test_list))
 # printing result 
 print ("List Integer Summation : " + str(res))
 
+
 #77
-# Python3 code to demonstrate
-# Sum of number digits in a List
+
 # using sum() + reduce()
 from functools import reduce
 
@@ -1105,7 +1114,9 @@ res = [reduce(lambda x, y: int(x) + int(y), list(str(i))) for i in test_list]
 # printing result
 print("List Integer Summation : " + str(res))
 
+
 #78
+
 import numpy as np
 
 # Initializing list
@@ -1121,7 +1132,9 @@ res = np.sum([list(map(int, str(ele))) for ele in test_list], axis=1)
 # printing result
 print("List Integer Summation : " + str(list(res)))
 
+
 #79
+
 lst = [12, 67, 98, 34]
 def digit_sum(num):
 	digit_sum = 0
@@ -1135,7 +1148,9 @@ def sum_of_digits_list(lst):
 
 print(sum_of_digits_list(lst))
 
+
 #80
+
 # Initializing list
 test_list = [12, 67, 98, 34]
 
@@ -1147,5 +1162,3 @@ print("The original list is : " + str(test_list))
 res = list(sum(int(digit) for digit in str(num)) for num in test_list)
 # printing result
 print("List Integer Summation : " + str(list(res)))
-
-#81
