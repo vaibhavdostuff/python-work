@@ -408,19 +408,21 @@ print(min(lst, key=lambda value: int(value)) )
 
 #32
 
-lst = [20, 40, 20, 18, 60] 
+lst = [20, 40, 20, 18, 30] 
 a,i = min((a,i) for (i,a) in enumerate(lst))
 print(a)
 
 #33
-# Python code to print smallest element in the list
+
+# to print smallest element in the list
 from functools import reduce
-lst = [20, 10, 20, 15, 100]
+lst = [20, 10, 20, 25, 30]
 print(reduce(min,lst) )
 
 #34
+
 # defining the list
-arr = [5,2,3,2,5,4,7,9,7,10,15,68]
+arr = [5,2,3,2,5,4,7,9,7,10,9,48]
 
 # converting the list into set
 set_arr = set(arr)
@@ -431,7 +433,8 @@ set_arr = set(arr)
 print(min(set_arr))
 
 #35
-arr = [2,6,8,4,9,7,52,3,6,2,4,5,6,8,2]
+
+arr = [2,6,8,4,9,7,5,3,6,2,4,5,6,8,2]
 
 min_val = min(arr) # Finding the minimum value
 
@@ -446,11 +449,12 @@ for pos,val in enumerate(arr):
 print(values)
 
 #36
-# Python program to find largest
+
+# to find largest
 # number in a list
 
 # list of numbers
-list1 = [10, 20, 4, 45, 99]
+list1 = [10, 20, 4, 15, 9]
 
 # sorting the list
 list1.sort()
@@ -459,18 +463,14 @@ list1.sort()
 print("Largest element is:", list1[-1])
 
 #37
-# Python program to find largest
-# number in a list
 
 # List of numbers
-list1 = [10, 20, 4, 45, 99]
+list1 = [10, 22, 14, 45, 9]
 
 # Printing the maximum element
 print("Largest element is:", max(list1))
 
 #38
-# Python program to find largest
-# number in a list
 
 
 def myMax(list1):
@@ -494,19 +494,23 @@ def myMax(list1):
 list1 = [10, 20, 4, 45, 99]
 print("Largest element is:", myMax(list1))
 
+
 #39
-# python code to print largest element in the list
+
+#  to print largest element in the list
 
 lst = [20, 10, 20, 4, 100]
 print(max(lst, key=lambda value: int(value)) )
 
 #40
+
 from functools import reduce
-lst = [20, 10, 20, 4, 100]
+lst = [30, 10, 20, 40, 100]
 largest_elem = reduce(max, lst)
 print(largest_elem)
 
 #41
+
 # Function to find the largest element in the list
 def FindLargest(itr, ele, list1):
 
@@ -530,6 +534,7 @@ list1 = [2, 1, 7, 9, 5, 4]
 FindLargest(0, list1[0], list1)
 
 #42
+
 import heapq
 
 # list of numbers
@@ -541,7 +546,9 @@ largest_element = heapq.nlargest(1, list1)[0]
 # printing the largest element
 print("Largest element is:", largest_element)
 
+
 #43
+
 import numpy as np
 
 # given list
@@ -557,7 +564,8 @@ num = arr.max()
 print(num)
 
 #44
-# Python program to find second largest
+
+# to find second largest
 # number in a list
 
 # list of numbers - length of 
@@ -582,11 +590,12 @@ print("Second highest number is : ",\
 	str(secondmax))
 
 #45
-# Python program to find largest number
+
+# to find largest number
 # in a list
 
 # List of numbers
-list1 = [10, 20, 20, 4, 45, 45, 45, 99, 99]
+list1 = [10, 20, 20, 4, 45, 5, 45, 99, 99]
 
 # Removing duplicates from the list
 list2 = list(set(list1))
@@ -597,8 +606,10 @@ list2.sort()
 # Printing the second last element
 print("Second largest element is:", list2[-2])
 
+
 #46
-# Python program to find second largest number
+
+# to find second largest number
 # in a list
 
 # List of numbers
@@ -614,9 +625,9 @@ new_list.remove(max(new_list))
 # print(list1)
 print(max(new_list))
 
+
 #47
-# Python program to find second largest
-# number in a list
+
 
 # creating list of integer type
 list1 = [10, 20, 4, 45, 99]
@@ -634,6 +645,7 @@ print("Second largest element is:", list1[-2])
 print("Second largest element is:", sorted(list1)[-2])
 
 #48
+
 def findLargest(arr):
 	secondLargest = 0
 	largest = min(arr)
@@ -652,7 +664,9 @@ def findLargest(arr):
 # Calling above method over this array set
 print(findLargest([10, 20, 4, 45, 99]))
 
+
 #49
+
 def secondmax(arr):
 sublist = [x for x in arr if x < max(arr)]
 return max(sublist)
@@ -662,7 +676,8 @@ arr = [10, 20, 4, 45, 99]
 print(secondmax(arr))
 
 #50
-# python code to print second largest element in list
+
+# to print second largest element in list
 
 lst = [10, 20, 4, 45, 99]
 maximum1 = max(lst)
