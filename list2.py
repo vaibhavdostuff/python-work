@@ -685,12 +685,14 @@ maximum2 = max(lst, key=lambda x: min(lst)-1 if (x == maximum1) else x)
 print(maximum2)
 
 #51
-lst = [10, 20, 4, 45, 99] 
+
+lst = [10, 20, 40, 50, 90] 
 m=max(lst)
 x=[a for i,a in enumerate(lst) if a<m]
 print(max(x))
 
 #52
+
 import heapq
 
 def find_second_largest(numbers):
@@ -707,10 +709,11 @@ def find_second_largest(numbers):
 	return second_largest
 
 # Test the function
-numbers = [10, 20, 4, 45, 99]
-print(find_second_largest(numbers)) # Output: 45
+numbers = [1, 22, 14, 25, 19]
+print(find_second_largest(numbers))
 
 #53
+
 import numpy as np
 
 def find_second_largest(arr):
@@ -727,11 +730,13 @@ def find_second_largest(arr):
 	return np_arr[second_last_index]
 
 # example usage
-arr = [10, 20, 4, 45, 99]
-print(find_second_largest(arr)) # Output: 45
+arr = [18, 23, 41, 45, 32]
+print(find_second_largest(arr)) 
+
 
 #54
-# Python program to find N largest
+
+# to find N largest
 # element from given list of integers
 
 # Function returns N largest elements
@@ -754,23 +759,23 @@ def Nmaxelements(list1, N):
 
 
 # Driver code
-list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+list1 = [2, 6, 41, 3, 0, 3, 7, 6, 10]
 N = 2
 
 # Calling the function
 Nmaxelements(list1, N)
 
 #55
-# Python program to find N largest
-# element from given list of integers
 
-l = [1000, 298, 3579, 100, 200, -45, 900]
+
+l = [1303, 298, 370, 100, 20, -45, 90]
 n = 4
 
 l.sort()
 print(l[-n:])
 
 #56
+
 import heapq
 
 
@@ -780,30 +785,34 @@ def find_n_largest_elements(lst, N):
 
 
 # Test the function with given inputs
-lst = [4, 5, 1, 2, 9]
+lst = [4, 5, 1, 7, 9]
 N = 2
 print(find_n_largest_elements(lst, N))
 
-lst = [81, 52, 45, 10, 3, 2, 96]
+lst = [61, 52, 45, 10, 3, 2, 56]
 N = 3
 print(find_n_largest_elements(lst, N))
 
+
 #57
+
 import numpy as np
 
 def Nmaxelements(list1, N):
 	list1 = np.array(list1) # convert list to numpy array
 	return list1[np.argsort(list1)[-N:]]
 
-list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+list1 = [56, 6, 41, 85, 0, 3, 12, 6, 10]
 N = 3
 print(Nmaxelements(list1, N))
 
+
 #58
-# Python program to print Even Numbers in a List
+
+# to print Even Numbers in a List
 
 # list of numbers
-list1 = [10, 21, 4, 45, 66, 93]
+list1 = [10, 47, 4, 55, 66, 93]
 
 # iterating each number in list
 for num in list1:
@@ -813,7 +822,7 @@ for num in list1:
 		print(num, end=" ")
 
 #59
-# Python program to print Even Numbers in a List
+
 
 # Initializing list and value
 list1 = [10, 24, 4, 45, 66, 93]
@@ -830,7 +839,7 @@ while(num < len(list1)):
 	num += 1
 
 #60
-# Python program to print even Numbers in a List
+
 
 # Initializing list 
 list1 = [10, 21, 4, 45, 66, 93]
@@ -841,7 +850,7 @@ even_nos = [num for num in list1 if num % 2 == 0]
 print("Even numbers in the list: ", even_nos)
 
 #61
-# Python program to print Even Numbers in a List
+
 
 # list of numbers
 list1 = [10, 21, 4, 45, 66, 93, 11]
@@ -853,7 +862,7 @@ even_nos = list(filter(lambda x: (x % 2 == 0), list1))
 print("Even numbers in the list: ", even_nos)
 
 #62
-# Python program to print
+
 # even numbers in a list using recursion
 
 
@@ -875,6 +884,7 @@ print("Even numbers in the list:", end=" ")
 evennumbers(list1)
 
 #63
+
 my_list = ['vaibhav', 'is', 'here', 'like', 
 		'fammily','nerdy', 'negi', 'love', 
 			'questions','words', 'life'] 
@@ -895,6 +905,7 @@ x = list(divide_chunks(my_list, n))
 print (x) 
 
 #64
+
 my_list = [1, 2, 3, 4, 5, 
 		6, 7, 8, 9] 
 start = 0
