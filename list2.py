@@ -906,8 +906,7 @@ print (x)
 
 #64
 
-my_list = [1, 2, 3, 4, 5, 
-		6, 7, 8, 9] 
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9] 
 start = 0
 end = len(my_list) 
 step = 3
@@ -916,8 +915,8 @@ for i in range(start, end, step):
 	print(my_list[x:x+step]) 
 
 #65
-my_list = [1, 2, 3, 4, 5, 
-			6, 7, 8, 9] 
+
+my_list = [11, 12, 13, 14, 15, 16, 17, 18, 19] 
 
 # How many elements each 
 # list should have 
@@ -928,6 +927,7 @@ final = [my_list[i * n:(i + 1) * n] for i in range((len(my_list) + n - 1) // n )
 print (final) 
 
 #66
+
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9] 
 
 # How many elements each 
@@ -939,12 +939,14 @@ x = [l[i:i + n] for i in range(0, len(l), n)]
 print(x) 
 
 #67
+
 import numpy as np 
 
-arr = range(30) 
-np.array_split(arr, 6)
+arr = range(20) 
+np.array_split(arr, 5)
 
 #68
+
 from itertools import islice 
 
 
@@ -956,10 +958,12 @@ def chunk(arr_range, arr_size):
 list(chunk(range(30), 5)) 
 
 #69
+
 from collections import deque 
 
 def split_list(input_list, chunk_size): 
 # Create a deque object from the input list 
+
 deque_obj = deque(input_list) 
 # While the deque object is not empty 
 while deque_obj: 
@@ -978,6 +982,7 @@ chunks = list(split_list(input_list, chunk_size))
 print(chunks) # [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]] 
 
 #70
+
 my_list = list(range(10)) 
 chunk_size = 3
 while my_list: 
@@ -985,8 +990,8 @@ while my_list:
 	print(chunk)
 
 #71
-# Python program to sort
-# one list using
+
+# to sort one list using
 # the other list
 
 
@@ -1001,16 +1006,17 @@ def sort_list(list1, list2):
 
 # driver code
 x = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
-y = [0, 1, 1, 0, 1, 2, 2, 0, 1]
+y = [0, 1, 1, 0, 1, 2, 2, 0, 3]
 
 print(sort_list(x, y))
 
 x = ["g", "e", "e", "k", "s", "f", "o", "r", "g", "e", "e", "k", "s"]
-y = [0, 1, 1, 0, 1, 2, 2, 0, 1]
+y = [0, 1, 1, 0, 1, 2, 2, 0, 3]
 
 print(sort_list(x, y))
 
 #72
+
 def sorting_of_element(list1, list2):
 
 	# initializing blank dictionary
@@ -1039,7 +1045,8 @@ list3 = sorting_of_element(list1, list2)
 print(list3)
 
 #73
-# Python program to sort values of first list based on second list
+
+# to sort values of first list based on second list
 list1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 list2 = [0, 1, 1, 0, 1, 2, 2, 0, 1]
 a = list(set(list2))
@@ -1052,7 +1059,8 @@ for i in a:
 print(res)
 
 #74
-# Python program to sort values of first list based on second list
+
+# to sort values of first list based on second list
 from collections import OrderedDict
 list1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 list2 = [0, 1, 1, 0, 1, 2, 2, 0, 1]
@@ -1061,6 +1069,7 @@ res = list(OrderedDict(sorted(d.items(), key=lambda x: x[1])))
 print(res)
 
 #75
+
 import numpy as np
 
 # Define a function that takes two lists as input, sorts the first list based on
@@ -1085,4 +1094,3 @@ y = [0, 1, 1, 0, 1, 2, 2, 0, 1]
 # Call the sort_list function with the two lists and print the result
 print(sort_list(x, y))
 
-#76
