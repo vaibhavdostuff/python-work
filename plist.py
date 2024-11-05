@@ -359,21 +359,24 @@ x = [i for i in range(4,15+1) if i%2!=0]
 print(*x)
 
 #32
+
 a=4;b=15;l=[]
 for i in range(a,b+1):
-l.append(i)
-print([a for j,a in enumerate(l) if a%2!=0])
+ l.append(i)
+ print([a for j,a in enumerate(l) if a%2!=0])
 
 #33
-a=4;b=15
+
+a=2;b=7
 for i in range(a,b+1):
-if i%2==0:
-	pass
+ if i%2==0:
+	 pass
 else:
 	print(i,end=" ")
 
 #34
-# Python program to print Even Numbers in given range
+
+# to print Even Numbers in given range
 
 # Range declaration
 a=4;
@@ -383,21 +386,16 @@ b=15;
 l= filter(lambda a : a%2 , range(a, b+1))
 print(*l)
 
+
 #35
-# Python program to print odd Numbers in given range
-#using bitwise | operator
 
-
+# to print odd Numbers in given range
+# using bitwise | operator
 start, end = 4, 19
-
-
 
 # iterating each number in list
 
 for num in range(start, end + 1):
-
-	
-
 	# checking condition
 
 	if num | 1 == num:
@@ -405,13 +403,14 @@ for num in range(start, end + 1):
 		print(num, end = " ")
 
 #36
-# Python 3 code to demonstrate
+
+# to demonstrate
 # print odd number in range
 import itertools
 
 # Range declaration
-a = 3
-b = 15
+a = 4
+b = 20
 
 # using filterfalse function 
 evens = list(itertools.filterfalse(lambda x: x%2==0, range(a, b+1)))
@@ -420,10 +419,11 @@ evens = list(itertools.filterfalse(lambda x: x%2==0, range(a, b+1)))
 print(*evens)
 
 #37
-# Python program to print Positive Numbers in a List
+
+# to print Positive Numbers in a List
 
 # list of numbers
-list1 = [-10, -21, -4, 45, -66, 93]
+list1 = [-10, 21, -4, 45, -6, 43]
 
 # using list comprehension
 pos_nos = [num for num in list1 if num >= 0]
@@ -431,9 +431,8 @@ pos_nos = [num for num in list1 if num >= 0]
 print("Positive numbers in the list: ", *pos_nos)
 
 #38
-# Python program to print positive Numbers in a List
 
-# list of numbers
+
 list1 = [11, -21, 0, 45, 66, -93]
 
 # iterating each number in list
@@ -441,13 +440,11 @@ for num in list1:
 
 	# checking condition
 	if num & gt = 0:
-		print(num, end= & quot & quot)
+		print("num, end= & quot & quot")
 
 #39
-# Python program to print positive Numbers in a List
 
-# list of numbers
-list1 = [-10, 21, -4, -45, -66, 93]
+list1 = [10, 21, -4, -45, -66, 33]
 num = 0
 
 # using while loop	 
@@ -461,10 +458,8 @@ while(num < len(list1)):
 	num += 1
 	
 #40
-# Python program to print positive Numbers in a List
 
-# list of numbers 
-list1 = [-10, 21, 4, -45, -66, 93, -11] 
+list1 = [-20, 21, 4, -45, 16, 93, -11] 
 
 
 # we can also print positive no's using lambda exp. 
@@ -473,13 +468,13 @@ pos_nos = list(filter(lambda x: (x >= 0), list1))
 print("Positive numbers in the list: ", *pos_nos) 
 
 #41
+
 l=[12, -7, 5, 64, -14]
 print([a for j,a in enumerate(l) if a>=0])
 
 #42
-# Python program to print positive numbers in a List
 
-# list of numbers
+
 list1 = [11, -21, 0, 45, 66, -93]
 res=[]
 list2=list(map(str,list1))
@@ -490,7 +485,8 @@ res=" ".join(res)
 print(res)
 
 #43
-# Python program to print Positive Numbers in a List
+
+# to print Positive Numbers in a List
 import numpy as np
 # list of numbers
 list1 = np.array([-10, -21, -4, 45, -66, 93])
@@ -501,7 +497,8 @@ pos_nos = list1[list1 >=0];
 print("Positive numbers in the list: ", *pos_nos)
 
 #44
-# Python program to print positive Numbers in a List
+
+# to print positive Numbers in a List
 
 # list of numbers
 list1 = [-10, 21, 4, -45, -66, 93, -11]
@@ -515,7 +512,8 @@ for i in list1:
 print("Positive numbers in the list: ", pos_nos)
 
 #45
-# Python program to print negative Numbers in a List
+
+# to print negative Numbers in a List
 
 # list of numbers
 list1 = [11, -21, 0, 45, 66, -93]
@@ -525,13 +523,11 @@ for num in list1:
 
 	# checking condition
 	if num < 0:
-	print(num, end=" ")
+	 print(num, end=" ")
 
 #46
-# Python program to print negative Numbers in a List
 
-# list of numbers
-list1 = [-10, 21, -4, -45, -66, 93]
+list1 = [-10, 21, -4, -25, 36, 48]
 num = 0
 
 # using while loop
@@ -544,7 +540,8 @@ while(num < len(list1)):
 	num += 1
 
 #47
-# Python program to print negative Numbers in a List
+
+# to print negative Numbers in a List
 
 # list of numbers
 list1 = [-10, -21, -4, 45, -66, 93]
@@ -555,9 +552,8 @@ neg_nos = [num for num in list1 if num < 0]
 print("Negative numbers in the list: ", *neg_nos)
 
 #48
-# Python program to print negative Numbers in a List
 
-# list of numbers
+
 list1 = [-10, 21, 4, -45, -66, 93, -11]
 
 
@@ -567,13 +563,13 @@ neg_nos = list(filter(lambda x: (x < 0), list1))
 print("Negative numbers in the list: ", *neg_nos)
 
 #49
+
 l=[12, -7, 5, 64, -14]
 print([a for j,a in enumerate(l) if a<0])
 
 #50
-# Python program to print negative Numbers in a List
 
-# list of numbers
+
 list1 = [11, -21, 0, 45, 66, -93]
 res = []
 list2 = list(map(str, list1))
@@ -584,7 +580,9 @@ res = " ".join(res)
 print(res)
 
 #51
-# Python program to print negative Numbers in a List
+
+# to print negative Numbers in a List
+
 import numpy as np
 # list of numbers
 list1 = [-10, 21, 4, -45, -66, 93, -11]
@@ -597,18 +595,20 @@ neg_nos = temp[temp <= 0]
 print("Negative numbers in the list: ", *neg_nos)
 
 #52
+
 #Recursive function to check current element negative or not
 def PrintNegative(itr,list1):
-if itr == len(list1): #base condition
-	return
-if list1[itr] < 0: #check negative number or not
-	print( list1[itr],end = " ")
-PrintNegative(itr+1,list1) #recursive function call
+	if itr == len(list1): #base condition
+		return
+		if list1[itr] < 0: #check negative number or not
+			print( list1[itr],end = " ")
+			PrintNegative(itr+1,list1) #recursive function call
 
 list1 = [-1,8,9,-5,7]
 PrintNegative(0,list1)
 
 #53
+
 import numpy as np
 
 # list of numbers
@@ -624,7 +624,8 @@ neg_nums = arr1[np.where(arr1 < 0)]
 print("Negative numbers in the list: ", *neg_nums)
 
 #54
-# Python program to print negative Numbers in a List
+
+# to print negative Numbers in a List
 from functools import reduce
 
 # list of numbers
@@ -636,7 +637,8 @@ neg_nos = reduce(lambda a, b : a + [ b ] if b < 0 else a ,list1, [])
 print("Negative numbers in the list: ", *neg_nos)
 
 #55
-# Python program to print positive Numbers in given range 
+
+# to print positive Numbers in given range 
 
 start, end = -4, 19
 
@@ -648,7 +650,7 @@ for num in range(start, end + 1):
 		print(num, end=" ") 
 
 #56
-# Python program to print positive Numbers in given range 
+
 
 start = int(input("Enter the start of range: ")) 
 end = int(input("Enter the end of range: ")) 
@@ -661,7 +663,7 @@ for num in range(start, end + 1):
 		print(num, end=" ") 
 
 #57
-# Python code To print all positive numbers 
+
 # in a given range using the lambda function 
 a=-4;b=5
 li=[] 
@@ -672,33 +674,34 @@ positive_num = list(filter(lambda x: (x>=0),li))
 print(positive_num)
 
 #58
-# Python code 
-# To print all positive numbers in a given range 
+ 
 a=-4;b=5
 out=[i for i in range(a,b+1) if i>0] 
 # print the all positive numbers 
 print(*out) 
 
 #59
+
 a=-4;b=5;l=[] 
 for i in range(a,b+1): 
-l.append(i) 
-print([a for j,a in enumerate(l) if a>=0]) 
+	l.append(i) 
+	print([a for j,a in enumerate(l) if a>=0]) 
 
 #60
+
 a=-4;b=5
 for i in range(a,b+1): 
-if i<0: 
-	pass
+	if i<0: 
+		pass
 else: 
 	print(i,end=" ") 
 
 
 #61
 def printPositives(start,end): #defining recursive function to print positives 
-if start==end:return #base condition 
-if start>=0: #check for positive number 
-	print(start,end=' ') 
+	if start==end:return #base condition 
+	if start>=0: #check for positive number 
+		print(start,end=' ') 
 printPositives(start+1,end) # recursive calling 
 a,b=-5,10
 printPositives(a,b) #function calling 
