@@ -689,7 +689,7 @@ for i in range(a,b+1):
 
 #60
 
-a=-4;b=5
+a=-10;b=15
 for i in range(a,b+1): 
 	if i<0: 
 		pass
@@ -698,42 +698,43 @@ else:
 
 
 #61
+
 def printPositives(start,end): #defining recursive function to print positives 
 	if start==end:return #base condition 
 	if start>=0: #check for positive number 
 		print(start,end=' ') 
 printPositives(start+1,end) # recursive calling 
-a,b=-5,10
+a,b=-2,8
 printPositives(a,b) #function calling 
 
 #62
+
 a = -4
-b = 5
+b = 12
 
 positive_nums = list(filter(lambda x: x >= 0, range(a, b+1))) 
 print(positive_nums) 
 
 #63
-# Python code
+
 # To print all negative numbers in a given range 
 
 
 def negativenumbers(a,b): 
 # Checking condition for negative numbers 
 # single line solution 
-out=[i for i in range(a,b+1) if i<0] 
+ out=[i for i in range(a,b+1) if i<0] 
 # print the all negative numbers
-print(*out) 
+ print(*out) 
 
 # driver code 
 # a -> start range 
-a=-4
+a=-20
 # b -> end range 
 b=5
 negativenumbers(a,b)
 
 #64
-# Python program to print negative Numbers in given range
 
 start, end = -4, 19
 
@@ -745,7 +746,6 @@ for num in range(start, end + 1):
 		print(num, end = " ")
 
 #65
-# Python program to print negative Numbers in given range
 
 start = int(input("Enter the start of range: "))
 end = int(input("Enter the end of range: "))
@@ -758,7 +758,7 @@ for num in range(start, end + 1):
 		print(num, end = " ")
 
 #66
-# Python code To print all negative 
+
 # numbers in a given range using lambda function
 
 # inputs
@@ -771,17 +771,20 @@ negative_num = list(filter(lambda x: (x<0),li))
 print(negative_num)
 
 #67
-a=-4;b=5;l=[]
+
+a=-8;b=6;l=[]
 for i in range(a,b+1):
 	l.append(i)
 print([a for j,a in enumerate(l) if a<0])
 
 #68
+
 a=-4;b=5
 print([i for i in range(a,b+1) if i<0])
 
 #69
-a=-4;b=5
+
+a=-14;b=25
 for i in range(a,b+1):
 	if i>=0:
 		pass
@@ -789,19 +792,22 @@ else:
 	print(i,end=" ")
 
 #70
+
 #Recursive function to print Negative numbers
 def PrintNegative(itr,end):
 	if itr == end:#Base Condition
 		return
-if itr < 0: #checking Negative or not
-	print(itr,end=" ")
-PrintNegative(itr+1,end) #Recursive function call
-return
+		if itr < 0: #checking Negative or not
+			print(itr,end=" ")
+			PrintNegative(itr+1,end) #Recursive function call
+			return
+
 a = -5
 b = 5
 PrintNegative(a,b) 
 
 #71
+
 import numpy as np
 
 # Taking input values for start and end of the range
@@ -818,7 +824,8 @@ neg_arr = arr[np.where(arr<0)]
 print(neg_arr)
 
 #72
-# Python program to remove multiple
+
+#  to remove multiple
 # elements from a list 
 
 # creating a list
@@ -834,11 +841,10 @@ for ele in list1:
 print("New list after removing all even numbers: ", list1)
 
 #73
-# Python program to remove multiple
-# elements from a list 
+
 
 # creating a list
-list1 = [11, 5, 17, 18, 23, 50] 
+list1 = [10, 15, 7, 28, 23, 50] 
 
 # will create a new list, 
 # excluding all even numbers
@@ -847,21 +853,18 @@ list1 = [ elem for elem in list1 if elem % 2 != 0]
 print(*list1)
 
 #74
-# Python program to remove multiple
-# elements from a list 
+
 
 # creating a list
-list1 = [11, 5, 17, 18, 23, 50] 
+list1 = [1, 5, 37, 28, 42, 20] 
 
 # removes elements from index 1 to 4
-# i.e. 5, 17, 18, 23 will be deleted
 del list1[1:5]
 
 print(*list1)
 
 #75
-# Python program to remove multiple
-# elements from a list 
+
 
 # creating a list
 list1 = [11, 5, 17, 18, 23, 50] 
@@ -875,14 +878,12 @@ list1 = [ele for ele in list1 if ele not in unwanted_num]
 print("New list after removing unwanted numbers: ", list1)
 
 #76
-# Python program to remove multiple
-# elements from a list 
 
 # creating a list
-list1 = [11, 5, 17, 18, 23, 50] 
+list1 = [1, 5, 37, 28, 42, 20] 
 
 # given index of elements 
-# removes 11, 18, 23
+
 unwanted = [0, 3, 4]
 
 for ele in sorted(unwanted, reverse = True): 
@@ -892,6 +893,7 @@ for ele in sorted(unwanted, reverse = True):
 print (*list1)
 
 #77
+
 list1 = [11, 5, 17, 18, 23, 50] 
 
 list1 = [ elem for i,elem in enumerate(list1) if elem % 2 != 0]
@@ -899,6 +901,7 @@ list1 = [ elem for i,elem in enumerate(list1) if elem % 2 != 0]
 print(list1)
 
 #78
+
 import numpy as np
 
 #creating a list
@@ -920,7 +923,8 @@ new_list = new_arr.tolist()
 print("Removed =", [list1[i] for i in remove_idx], ", New_List =", new_list)
 
 #79
-# Python3 code to Demonstrate Remove empty List
+
+# to Demonstrate Remove empty List
 # from List using list comprehension
 
 # Initializing list
@@ -937,7 +941,7 @@ res = [ele for ele in test_list if ele != []]
 print("List after empty list removal : " + str(res))
 
 #80
-# Python3 Code to Demonstrate Remove empty List
+
 # from List using filter() Method
 
 # Initializing list by custom values
@@ -954,7 +958,8 @@ res = list(filter(None, test_list))
 print("List after empty list removal : " + str(res))
 
 #81
-# Python Code to Remove empty List from List
+
+# to Remove empty List from List
 
 def empty_list_remove(input_list):
 	new_list = []
