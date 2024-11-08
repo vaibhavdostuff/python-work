@@ -978,10 +978,11 @@ print(f"The original list is : {input_list}")
 print(f"List after empty list removal : {empty_list_remove(input_list)}")
 
 #82
-# Python3 code to Demonstrate Remove empty List
+
+# to Demonstrate Remove empty List
 
 # Initializing list
-test_list = [5, 6, [], 3, [], [], 9]
+test_list = [10, 6, [], 3, [], [], 4]
 
 # printing original list
 print("The original list is : " + str(test_list))
@@ -998,10 +999,10 @@ for i in test_list:
 print("List after empty list removal : " + str(new_list))
 
 #83
-# Python3 code to Demonstrate Remove empty List
+
 
 # Initializing list
-test_list = [5, 6, [], 3, [], [], 9]
+test_list = [5, 8, [], 12, [], [], 9]
 
 # printing original list
 print("The original list is : " + str(test_list))
@@ -1013,11 +1014,11 @@ while [] in test_list :
 # printing result
 print("List after empty list removal : " + str(test_list))
 
+
 #84
-# Python3 code to Demonstrate Remove empty List
 
 # Initializing list
-test_list = [5, 6, [], 3, [], [], 9]
+test_list = [10, 6, [], 7, [], [], 4]
 
 # printing original list
 print("The original list is : " + str(test_list))
@@ -1029,13 +1030,15 @@ y=list(map(int,y))
 # printing result
 print("List after empty list removal : " + str(y))
 
+
 #85
+
 test_list = [5, 6, [], 3, [], [], 9]
 res = [ele for i,ele in enumerate(test_list) if ele != []]
 print(res)
 
 #86
-# Python3 code to Demonstrate Remove empty List
+
 
 # Initializing list
 test_list = [5, 6, [], 3, [], [], 9]
@@ -1049,12 +1052,13 @@ res = filter(None, test_list)
 # printing result
 print("List after empty list removal : " ,res)
 
+
 #87
-# Python3 Code to Demonstrate Remove empty List
+
 # from List using lambda function
 
 # Initializing list by custom values
-test_list = [5, 6, [], 3, [], [], 9]
+test_list = [15, 26, [], 8, [], [], 10]
 
 # Printing original list
 print("The original list is : " + str(test_list))
@@ -1068,16 +1072,16 @@ print("List after empty list removal : " + str(res))
 
 
 #88 
-# Python3 code to Demonstrate Remove empty List
+
 #defining recursive function to remove empty list 
 def remove_empty(start,oldlist,newlist):
-if start==len(oldlist): #base condition 
-	return newlist
-if oldlist[start]==[]: #checking the element is empty list or not
-	pass
-else:
-	newlist.append(oldlist[start]) #appending non empty list element to newlist
-return remove_empty(start+1,oldlist,newlist) #recursive function call
+	if start==len(oldlist): #base condition 
+		return newlist
+		if oldlist[start]==[]: #checking the element is empty list or not
+			pass
+		else:
+			newlist.append(oldlist[start]) #appending non empty list element to newlist
+			return remove_empty(start+1,oldlist,newlist) #recursive function call
 
 test_list = [5, 6, [], 3, [], [], 9]
 
@@ -1088,8 +1092,8 @@ result=remove_empty(0,test_list,[])
 print("List after empty list removal : " ,result)
 
 #89
-# Python3 Code to Demonstrate Remove empty List
-# from List
+
+
 import itertools
 
 # Initializing list by custom values
@@ -1105,7 +1109,9 @@ res = list(itertools.filterfalse(lambda x: x == [], test_list))
 # Printing the resultant list
 print("List after empty list removal : " + str(res))
 
+
 #90
+
 import re
 
 # input list values
@@ -1119,5 +1125,4 @@ res = list(filter(None, [x for x in input_list if not re.match('\[\]', str(x))])
 
 # print resultant list
 print(f"List after empty list removal : {res}")
-
 
