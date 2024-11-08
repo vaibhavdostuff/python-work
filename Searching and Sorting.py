@@ -1,5 +1,6 @@
 #1
-# Python 3 program for recursive binary search.
+
+# for recursive binary search.
 # Modifications needed for the older Python 2 are found in comments.
 
 # Returns index of x in arr if present, else -1
@@ -40,6 +41,7 @@ else:
     print("Element is not present in array")
 	
 #2
+
 # Iterative Binary Search Function
 # It returns index of x in given array arr if present,
 # else returns -1
@@ -80,6 +82,7 @@ else:
 	print("Element is not present in array")
 
 #3
+
 import bisect
 
 def binary_search_bisect(arr, x):
@@ -102,6 +105,7 @@ else:
 	print("Element is not present in array")
 
 #4
+
 # Searching an element in a list/array in python
 # can be simply done using \'in\' operator
 # Example:
@@ -124,6 +128,7 @@ def search(arr, x):
 	return -1
 
 #5
+
 # This is similar to the above one, with the only difference 
 # being that it is using the recursive approach instead of iterative.
 
@@ -136,6 +141,7 @@ def search(arr, curr_index, key):
 	return search(arr, curr_index-1, key)
 
 #6
+
 import re
 
 # Sample input
@@ -157,6 +163,7 @@ else:
 	print(f"Element {x} is not present in the array")
 
 #7
+
 def insertionSort(arr):
 	n = len(arr) # Get the length of the array
 	
@@ -177,6 +184,7 @@ insertionSort(arr)
 print(arr)
 
 #8
+
 def insertion_sort_recursive(arr):
 	# base case: return when array has only one element
 	if len(arr) <= 1:
@@ -208,7 +216,8 @@ sorted_arr = insertion_sort_recursive(arr)
 print(sorted_arr) # Output: [1, 2, 3, 4, 5, 6]
 
 #9
-# Python program for implementation of Quicksort Sort
+
+# for implementation of Quicksort Sort
 
 # This implementation utilizes pivot as the last element in the nums list
 # It has a pointer to keep track of the elements smaller than the pivot
@@ -272,6 +281,7 @@ print('Sorted Array in Ascending Order:')
 print(data)
 
 #10
+
 # Approach 2: Quicksort using list comprehension
 
 def quicksort(arr):
@@ -290,7 +300,8 @@ print("Sorted Array in Ascending Order:")
 print(sorted_arr)
 
 #11
-# Selection sort in Python
+
+# Selection sort 
 # time complexity O(n*n)
 #sorting by finding min_index
 def selectionSort(array, size):
@@ -312,7 +323,8 @@ print('The array after sorting in Ascending Order by selection sort is:')
 print(arr)
 
 #12
-# Python program for implementation of Bubble Sort
+
+#  for implementation of Bubble Sort
 
 
 def bubbleSort(arr):
@@ -351,6 +363,7 @@ for i in range(len(arr)):
     print("% d" % arr[i], end=" ")
 
 #13
+
 def bubblesort(elements):
     # Looping from size of array from last index[-1] to index [0]
     for n in range(len(elements)-1, 0, -1):
@@ -374,23 +387,25 @@ print("Sorted Array is, ")
 print(elements)
 
 #14
+
 from collections import Counter
 
 def counting_sort(arr):
 	count = Counter(arr)
 	output = []
 	for c in sorted(count.keys()):
-		output +=  * count
-	return output
+		output += * count
+		return output
 
-arr = "geeksforgeeks"
+arr = "vaibhav is here"
 arr = list(arr)
 arr = counting_sort(arr)
 output = ''.join(arr)
 print("Sorted character array is", output)
 
 #15
-# Python program for implementation of Shell Sort
+
+# implementation of Shell Sort
 
 def shellSort(arr):
 
@@ -437,7 +452,8 @@ for i in range(n):
 	print(arr[i]),
 
 #16
-#Python program to print topological sorting of a DAG
+
+#to print topological sorting of a DAG
 from collections import defaultdict
 
 #Class to represent a graph
