@@ -523,6 +523,7 @@ print("The following is a Topological Sort of the given graph")
 g.nonRecursiveTopologicalSort()
 
 #17
+
 import bisect
 
 def binary_search(arr, val, start, end):
@@ -537,11 +538,11 @@ def insertion_sort(arr):
 	return arr
 
 print("Sorted array:")
-print(insertion_sort([37, 23, 0, 17, 12, 72, 31,
-					46, 100, 88, 54]))
+print(insertion_sort([37, 23, 0, 17, 12, 72, 31, 46, 100, 88, 54]))
 
 #18
-# Python program for Bitonic Sort. Note that this program
+
+# for Bitonic Sort
 # works only when size of input is a power of 2.
 
 # The parameter dir indicates the sorting direction, ASCENDING
@@ -598,7 +599,8 @@ for i in range(n):
 	print("%d" % a[i], end=" ")
 
 #19
-# Python program for implementation of CombSort
+
+# for implementation of CombSort
 
 # To find next gap from current
 def getNextGap(gap):
@@ -648,8 +650,10 @@ print ("Sorted array:")
 for i in range(len(arr)):
 	print(arr[i]),
 
+
 #20
-# Python program to implement Pigeonhole Sort 
+
+# to implement Pigeonhole Sort 
 
 # source code : "https://en.wikibooks.org/wiki/ 
 # Algorithm_Implementation/Sorting/Pigeonhole_sort" 
@@ -685,8 +689,10 @@ pigeonhole_sort(a)
 for i in range(0, len(a)): 
 	print(a[i], end =" ")
 
+
 #21
-# Python program for implementation of Cocktail Sort
+
+# for implementation of Cocktail Sort
 
 def cocktailSort(a):
 	n = len(a)
@@ -738,7 +744,9 @@ print("Sorted array is:")
 for i in range(len(a)):
 	print ("%d" %a[i]),
 
+
 #22
+
 def oddEvenSort(arr, n): 
 	isSorted = 0
 	while isSorted == 0: 
@@ -760,7 +768,8 @@ for i in range(0, n):
 	print(arr[i], end =" ") 
 
 #23
-# Python program for implementation of Bogo Sort
+
+# for implementation of Bogo Sort
 import random
 
 # Sorts array a[0..n-1] using Bogo sort
@@ -791,7 +800,9 @@ print("Sorted array :")
 for i in range(len(a)):
 	print ("%d" %a[i]),
 
+
 #24
+
 import random
 
 # Sorts array a[0..n-1] using Bogo sort
@@ -807,8 +818,10 @@ print("Sorted array:")
 for i in range(len(a)):
 	print ("%d" %a[i]),
 
+
 #25
-# Python program to implement cycle sort
+
+# to implement cycle sort
 
 def cycleSort(array):
     writes = 0  # Initialize the number of writes to 0
