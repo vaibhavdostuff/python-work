@@ -1,6 +1,7 @@
 #1
-x = "Hello World"
-x = 50
+
+x = "Hello friends"
+x = 20
 x = 60.5
 x = 3j
 x = ["vaibhav", "is", "here"] 
@@ -15,11 +16,13 @@ x = bytearray(4)
 x = memoryview(bytes(6)) 
 x = None
 
+
 #2
-a = 5
+
+a = 10
 print("Type of a: ", type(a)) 
 
-b = 5.0
+b = 2.5
 print("\nType of b: ", type(b)) 
 
 c = 2 + 4j
@@ -27,6 +30,7 @@ print("\nType of c: ", type(c))
 
 
 #3
+
 String1 = 'vaibhav is here'
 print(String1) 
 String1 = "myself vaibhav"
@@ -42,13 +46,16 @@ here'''
 print("\nCreating a multiline String: ") 
 print(String1) 
 
+
 #4
-String1 = "vaibhav is here"
+
+String1 = "vaibhav is playing"
 print(String1)
 print(String1[0])
 print(String1[-1]) 
 
 #5
+
 List = [] 
 print("Initial blank List: ") 
 print(List) 
@@ -60,8 +67,10 @@ print(List[2])
 List = [['vaibhav', 'is'], ['here']]
 print(List) 
 
+
 #6
-List = ["vaibhav", "is", "here"] 
+
+List = ["vaibhav", "is", "not here"] 
 print("Accessing element from the list") 
 print(List[0]) 
 print(List[2]) 
@@ -69,7 +78,9 @@ print("Accessing element using negative indexing")
 print(List[-1]) 
 print(List[-3]) 
 
+
 #7
+
 Tuple1 = () 
 print("Initial empty Tuple: ") 
 print(Tuple1) 
@@ -89,6 +100,7 @@ print("\nTuple with nested tuples: ")
 print(Tuple3) 
 
 #8
+
 tuple1 = tuple([1, 2, 3, 4, 5]) 
 print("First element of tuple") 
 print(tuple1[0]) 
@@ -99,12 +111,14 @@ print("\nThird last element of tuple")
 print(tuple1[-3]) 
 
 #9
+
 print(type(True)) 
 print(type(False)) 
 
 #print(type(true)) 
 
 #10
+
 set1 = set() 
 print("Initial blank Set: ") 
 print(set1) 
@@ -119,6 +133,7 @@ print("\nSet with the use of Mixed Values")
 print(set1) 
 
 #11
+
 set1 = set(["vaibhav", "is", "here"]) 
 print("\nInitial set") 
 print(set1) 
@@ -128,6 +143,7 @@ for i in set1:
 print("vaibhav" in set1) 
 
 #12
+
 Dict = {} 
 print("Empty Dictionary: ") 
 print(Dict) 
@@ -145,6 +161,7 @@ print("\nDictionary with each item as a pair: ")
 print(Dict) 
 
 #13
+
 Dict = {1: 'vaibhav', 'name': 'is', 3: 'here'} 
 print("Accessing a element using key:") 
 print(Dict['name']) 
@@ -152,6 +169,7 @@ print("Accessing a element using get:")
 print(Dict.get(3)) 
 
 #14
+
 fruits = ["apple", "mango", "banana"] 
 print(fruits) 
 fruits.append("orange") 
@@ -160,6 +178,7 @@ fruits.remove("apple")
 print(fruits)
 
 #15
+
 coordinates = (7, 10) 
 print(coordinates) 
 print("X-coordinate:", coordinates[0]) 
