@@ -1,4 +1,5 @@
 #1
+
 n = 10
 num1 = 0
 num2 = 1
@@ -13,6 +14,7 @@ while count <= n:
 print()
 
 #2
+
 def Fibonacci(n):
 
 	# Check if input is 0 then it will
@@ -38,6 +40,7 @@ def Fibonacci(n):
 print(Fibonacci(9))
 
 #3
+
 # Function for nth fibonacci 
 # number
 FibArray = [0, 1]
@@ -61,6 +64,7 @@ def fibonacci(n):
 print(fibonacci(9))
 
 #4
+
 # Function for nth fibonacci number 
 def fibonacci(n):
 	a = 0
@@ -90,6 +94,7 @@ def fibonacci(n):
 print(fibonacci(9))
 
 #5
+
 from functools import lru_cache
 
 # Function for nth Fibonacci number
@@ -116,6 +121,7 @@ def fibonacci(num: int) -> int:
 print(fibonacci(9))
 
 #6
+
 def fibonacci(n, memo={}):
 	if n <= 0:
 		return 0

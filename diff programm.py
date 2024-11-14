@@ -1,4 +1,5 @@
 #1
+
 def check_year(year):
     # Leap year condition: 
     # 1. If the year is divisible by 4 and not divisible by 100, or
@@ -8,7 +9,7 @@ def check_year(year):
     else:
         return False  # It's not a leap year
  
-year = 2000  # Sample input to test
+year = 2003  # Sample input to test
  
 if check_year(year):
     print("Leap Year")
@@ -16,6 +17,7 @@ else:
     print("Not a Leap Year")
 
 #2
+
 def checkYear(year): 
 	
 	# Return true if year is a multiple 
@@ -25,13 +27,14 @@ def checkYear(year):
 	return(calendar.isleap(year)) 
 	
 # Driver Code 
-year = 2000
+year = 2024
 if (checkYear(year)): 
 	print("Leap Year") 
 else: 
 	print("Not a Leap Year") 
 
 #3
+
 def ISLP(y):
     if (y % 400 == 0) or (y % 100 != 0 and y % 4 == 0):
         print("its a leap year")
@@ -42,6 +45,7 @@ def ISLP(y):
 if __name__ == '__main__':
     year = 2020
     print(ISLP(year))
+
 
 #4
 

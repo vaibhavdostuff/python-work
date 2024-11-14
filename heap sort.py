@@ -1,5 +1,5 @@
 
-# Python program for implementation of heap Sort
+#1
 
 # To heapify subtree rooted at index i.
 # n is size of heap
@@ -60,6 +60,7 @@ for i in range(n):
 	print(arr[i])
 
 #2
+
 import heapq
 
 # Function to perform the sorting using
@@ -77,6 +78,7 @@ print("Input Array: ", arr)
 print("Sorted Array: ", heap_sort(arr))
 
 #3
+
 def heapify(arr, n, i):
     largest = i
     l = 2 * i + 1

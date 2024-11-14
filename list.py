@@ -1,5 +1,6 @@
 #1
-# program to swap first
+
+# to swap first
 # and last element of a list
 
 # Swap function
@@ -88,7 +89,6 @@ print(swapPositions(List, pos1-1, pos2-1))
 
 #6
 
-
 # Swap function
 def swapPositions(list, pos1, pos2):
 	
@@ -130,7 +130,6 @@ pos1, pos2 = 1, 3
 print(swapPositions(List, pos1-1, pos2-1))
 
 #8
-
 
 # Swap function
 def swapPositions(lis, pos1, pos2):
