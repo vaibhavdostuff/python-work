@@ -1,7 +1,5 @@
 #1
-# Python 3 code to find sum
-# of elements in given array
-
+# to find sum of elements in given array
 
 def _sum(arr):
 
@@ -22,10 +20,9 @@ def _sum(arr):
 
 # main function
 if __name__ == "__main__":
-	# input values to list
+
 	arr = [12, 3, 4, 15]
 
-	# calculating length of array
 	n = len(arr)
 	# calling function ans store the sum in ans
 	ans = _sum(arr)
@@ -33,10 +30,7 @@ if __name__ == "__main__":
 	print('Sum of the array is ', ans)
 	
 #2
-# Python 3 code to find sum
-# of elements in given array
 
-# input values to list
 arr = [12, 3, 4, 15]
 
 # sum() is an inbuilt function in python that adds
@@ -48,10 +42,8 @@ ans = sum(arr)
 print('Sum of the array is ', ans)
 
 #3
-from functools import reduce
-# Python 3 code to find sum
-# of elements in given array
 
+from functools import reduce
 
 def _sum(arr):
 
@@ -77,6 +69,7 @@ ans = _sum(arr)
 print('Sum of the array is ', ans)
 
 #4
+
 list1 = [12, 3, 4, 15];
 s = 0
 for i,a in enumerate(list1): 
@@ -84,6 +77,7 @@ for i,a in enumerate(list1):
 print(s)
 
 #5
+
 def sum_of_array(arr, low, high):
 	if low == high:
 		return arr[low]
@@ -99,9 +93,10 @@ arr = [15, 12, 13, 10]
 print(sum_of_array(arr, 0, len(arr)-1)) # Output: 50
 
 #6
+
 from collections import Counter
 
-arr = [12, 3, 4, 15]
+arr = [22, 30, 14, 5]
 c = Counter(arr)
 sum = 0
 
@@ -111,12 +106,8 @@ for key, value in c.items():
 print("Sum of the array is", sum)
 
 #7
-# Python3 program to find maximum
-# in arr[] of size n
 
-# python function to find maximum
-# in arr[] of size n
-
+# to find maximum in arr[] of size n
 
 def largest(arr, n):
 
@@ -133,27 +124,26 @@ def largest(arr, n):
 
 
 # Driver Code
-arr = [10, 324, 45, 90, 9808]
+arr = [10, 324, 45, 90, 988]
 n = len(arr)
 Ans = largest(arr, n)
 print("Largest in given array ", Ans)
 
 #8
-# Python3 program to find maximum
-# in arr[] of size n
+
+
 def largest(arr, n):
 	ans = max(arr)
 	return ans;
 
 # Driver code
 if __name__ == '__main__':
-	arr = [10, 324, 45, 90, 9808]
+	arr = [34, 24, 4, 63, 908]
 	n = len(arr)
 	print ("Largest in given array ", largest(arr, n))
 
 #9
-# Python3 program to find maximum
-# in arr[] of size n
+
 from functools import reduce
 
 
@@ -167,13 +157,14 @@ def largest(arr):
 
 
 # Driver Code
-arr = [10, 324, 45, 90, 9808]
+arr = [101, 324, 65, 90, 808]
 n = len(arr)
 Ans = largest(arr)
 print("Largest in given array ", Ans)
 
 #10
-# python program to find large number in the given array
+
+# to find large number in the given array
 import operator
 # Initializing the list
 arr = [2, 1, 7, 3, 0]
@@ -191,12 +182,14 @@ for i in arr:
 print('The biggest number in the given array is:', max)
 
 #11
+
 array = [10, 5, 20, 8, 15]
 
 largest_element = max(array, key=lambda x: x)
 print("Largest element in the array:", largest_element)
 
 #12
+
 # function to rotate array by d elements using temp array
 def rotateArray(arr, n, d):
 	temp = []
@@ -219,6 +212,7 @@ print("Array after left rotation is: ", end=' ')
 print(rotateArray(arr, len(arr), 2))
 
 #13
+
 # Function to left rotate arr[] of size n by d
 def leftRotate(arr, d, n):
 	for i in range(gcd(d, n)):
@@ -260,6 +254,7 @@ leftRotate(arr, 2, 7)
 printArray(arr, 7)
 
 #14
+
 # Function to reverse arr[]
 def rverseArray(arr,d):
 	c=(arr[d:])+(arr[:d])
@@ -270,7 +265,8 @@ d=2
 print(rverseArray(arr,d))
 
 #15
-# Python program for reversal algorithm of array rotation
+
+# for reversal algorithm of array rotation
 
 # Function to reverse arr[] from index start to end
 def rverseArray(arr, start, end):
@@ -297,7 +293,8 @@ leftRotate(arr, 2) # Rotate array by 2
 printArray(arr)
 
 #16
-# Python program to split array and move first
+
+# to split array and move first
 # part to end.
 
 
@@ -315,10 +312,8 @@ for i in range(0, n):
 	print(arr[i], end=' ')
 
 #17
-# Python program to split array and move first
-# part to end.
 
-arr = [12, 10, 5, 6, 52, 36]
+arr = [10, 20, 15, 60, 12, 46]
 n = len(arr)
 position = 2
 x = arr[:position]
@@ -328,6 +323,7 @@ for i in y:
 	print(i, end=" ")
 
 #18
+
 def split_and_add(arr, n):
 	return [arr[(i + n) % len(arr)] for i in range(len(arr))]
 
