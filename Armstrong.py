@@ -1,9 +1,7 @@
 #1
-# Python program to determine whether
+
 # the number is Armstrong number or not
- 
-# Function to calculate x raised to 
-# the power y
+# Function to calculate x raised to the power y
 def power(x, y):
      
     if y == 0:
@@ -41,15 +39,14 @@ def isArmstrong(x):
     return (sum1 == x)
  
 # Driver code
-x = 153
+x = 141
 print(isArmstrong(x))
  
-x = 1253
+x = 1554
 print(isArmstrong(x))
 
 #2
-# python 3 program
-# to check whether the given number is armstrong or not
+
 # without using power function
 
 n = 153 # or n=int(input()) -> taking input from user
@@ -65,9 +62,8 @@ if s == sum1:
 else:
 	print("The given number", s, "is not armstrong number")
 
-# This code is contributed by Gangarajula Laxmi
-
 #3
+
 def is_armstrong(num):
 	num_str = str(num)
 	n = len(num_str)
@@ -78,10 +74,11 @@ def is_armstrong(num):
 		return True
 	else:
 		return False
-num=153
+num=128
 print(is_armstrong(num))
 
 #4
+
 import math
 
 def isArmstrong(num):
@@ -108,13 +105,15 @@ def isArmstrong(num):
 	return False
 
 # Example 1
-num1 = 1634
+
+num1 = 634
 if isArmstrong(num1):
 	print(num1, "is an Armstrong number.")
 else:
 	print(num1, "is not an Armstrong number.")
 
 # Example 2
+
 num2 = 120
 if isArmstrong(num2):
 	print(num2, "is an Armstrong number.")
@@ -122,12 +121,12 @@ else:
 	print(num2, "is not an Armstrong number.")
 
 #5
+
 def is_armstrong_number(number):
 	return sum(int(digit)**len(str(number)) for digit in str(number)) == number
 
-
 # Example usage:
-num = 153
+num = 438
 if is_armstrong_number(num):
 	print(f"{num} is an Armstrong number")
 else:

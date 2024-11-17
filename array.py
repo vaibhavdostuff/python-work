@@ -336,6 +336,7 @@ result = split_and_add(arr, n)
 print(*result)
 
 #19
+
 # This code finds the remainder of the product of all the elements in the array arr divided by 'n'.
 def findremainder(arr, len, n):
 	product = 1
@@ -350,6 +351,7 @@ n = 11
 print(findremainder(arr, len, n))
 
 #20
+
 from functools import reduce
 
 def remainderAfterMultiplication(arr, n):
@@ -368,6 +370,7 @@ result2 = remainderAfterMultiplication(arr2, n2)
 print(result2)
 
 #21
+
 # Check if given array is Monotonic
 def isMonotonic(A):
 	x, y = [], []
@@ -386,8 +389,8 @@ A = [6, 5, 4, 4]
 # Print required result
 print(isMonotonic(A))
 
-
 #22
+
 def isMonotonic(arr):
 	if len(arr) <= 2:
 		return True
@@ -403,8 +406,8 @@ def isMonotonic(arr):
 # Example usage
 arr1 = [1, 2, 3, 4, 5] # True
 arr2 = [5, 4, 3, 2, 1] # True
-arr3 = [1, 2, 2, 3, 4] # True
-arr4 = [1, 2, 3, 4, 5, 4] # False
+arr3 = [1, 3, 3, 5, 4] # True
+arr4 = [4, 2, 3, 4, 1, 4] # False
 
 print(isMonotonic(arr1)) # should return True
 print(isMonotonic(arr2)) # should return True
