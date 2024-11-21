@@ -160,9 +160,8 @@ import time
 print("Epoch Time is : ", int(time.time()))
 
 #16
+
 # to find yesterday, today and tomorrow
-
-
 # Import datetime and timedelta
 # class from datetime module
 from datetime import datetime, timedelta
@@ -185,6 +184,7 @@ print("Today = ", presentday.strftime('%d-%m-%Y'))
 print("Tomorrow = ", tomorrow.strftime('%d-%m-%Y'))
 
 #17
+
 import calendar
 from datetime import date, timedelta
 
@@ -196,9 +196,10 @@ print("Yesterday = ", calendar.day_name[yesterday.weekday()], yesterday.strftime
 print("Today = ", calendar.day_name[today.weekday()], today.strftime('%d-%m-%Y'))
 print("Tomorrow = ", calendar.day_name[tomorrow.weekday()], tomorrow.strftime('%d-%m-%Y'))
 
+
 #18
-# Python program to convert time 
-# from 12 hour to 24 hour format 
+
+#  to convert time from 12 hour to 24 hour format 
 
 # Function to convert the date format 
 def convert24(str1): 
@@ -225,7 +226,9 @@ def convert24(str1):
 # Driver Code		 
 print(convert24("08:05:45 PM")) 
 
+
 #19
+
 from datetime import datetime
 
 def convert24(time):
@@ -236,8 +239,10 @@ def convert24(time):
 
 print(convert24('11:21:30 PM')) # Output: '23:21:30'
 print(convert24('12:12:20 AM')) # Output: '00:12:20'
+
 
 #20
+
 from datetime import datetime
 
 def convert24(time):
@@ -249,7 +254,9 @@ def convert24(time):
 print(convert24('11:21:30 PM')) # Output: '23:21:30'
 print(convert24('12:12:20 AM')) # Output: '00:12:20'
 
+
 #21
+
 import re
 
 def convert_to_24hour(time_str):
@@ -263,8 +270,9 @@ def convert_to_24hour(time_str):
 print(convert_to_24hour('11:21:30 PM')) 
 print(convert_to_24hour('12:12:20 AM'))
 
+
 #22
-# importing libraries
+
 import time
 
 
@@ -305,9 +313,10 @@ try:
 except KeyboardInterrupt:
 	print("Done")
 
+
 #23
-# Python program to convert
-# date to timestamp
+
+# to convert date to timestamp
 
 
 import time
@@ -315,20 +324,16 @@ import datetime
 
 
 string = "20/01/2020"
-print(time.mktime(datetime.datetime.strptime(string,
-											"%d/%m/%Y").timetuple()))
+print(time.mktime(datetime.datetime.strptime(string, "%d/%m/%Y").timetuple()))
+
 
 #24
-# Python program to convert
-# date to timestamp
-
-
 
 import time
 import datetime
 
 
-string = "20/01/2020"
+string = "20/11/2024"
 
 element = datetime.datetime.strptime(string,"%d/%m/%Y")
 
@@ -337,10 +342,8 @@ timestamp = time.mktime(tuple)
 
 print(timestamp)
 
-#25
-# Python program to convert
-# date to timestamp
 
+#25
 
 import time
 import datetime
@@ -354,7 +357,9 @@ element = datetime.datetime.strptime(string,"%d/%m/%Y")
 timestamp = datetime.datetime.timestamp(element)
 print(timestamp)
 
+
 #26
+
 from datetime import datetime
 
 timestamp_string = "2023-07-21 15:30:45"
@@ -362,7 +367,9 @@ format_string = "%Y-%m-%d %H:%M:%S"
 datetime_object = datetime.strptime(timestamp_string, format_string)
 print(datetime_object)
 
+
 #27
+
 from datetime import datetime
 
 
@@ -372,7 +379,9 @@ dt_obj = datetime.fromtimestamp(1140825600)
 print("date_time:",dt_obj)
 print("type of dt:",type(dt_obj))
 
+
 #28
+
 from dateutil.parser import parse
 
 timestamp_string = "2023-07-17 11:30:45"
@@ -380,7 +389,9 @@ timestamp_string = "2023-07-17 11:30:45"
 datetime_object = parse(timestamp_string)
 print(datetime_object)
 
+
 #29
+
 import datetime
 
 timestamp = 1690433696
@@ -390,9 +401,10 @@ dt_object = datetime.datetime.fromtimestamp(timestamp)
 
 print(dt_object) 
 
+
 #30
-# python program Find number of
-# times every day occurs in a Year 
+
+#  Find number of times every day occurs in a Year 
 
 
 import datetime 
@@ -435,4 +447,3 @@ def day_occur_time(year):
 year = 2019
 day_occur_time(year)
 
-#31
